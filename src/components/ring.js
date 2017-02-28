@@ -8,7 +8,7 @@ String.prototype.capitalizeFirstLetter = function() {
 class Ring extends React.Component {
 
 	static defaultProps = {
-    	radius: 30, angle: 2,
+    	radius: 30, angle: 10,
     	startRaduis: 70, gap: 2
   	};
 
@@ -61,19 +61,15 @@ class Ring extends React.Component {
 
 		let colors = this.props.arrColor;
 		colors.map((val) => {
-			this.draw(val["feq"], val["color"]);
+			this.draw(1, val["color"]);
 		});	
 		
 		return(
 			<g className="ring">
 				{this.drawColors}
-				<circle cx={center[0]}
-						cy={center[1]}
-						r={14*this.curRLevel}
-						fill="white" />
 				<text textAnchor="middle"
 					  alignmentBaseline="middle" 
-					  fontSize={(this.drawColors.length==0) ? 50:10*this.curRLevel}
+					  fontSize={20}
 					  fontWeight="bold" 
 					  fill="#191919"
 					  x={center[0]} 

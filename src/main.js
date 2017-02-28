@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Ring from './ring.js';
-import { searchKeyWords } from './utils.js'
-import { keyWords } from './Carol_all.js';
+import Ring from './components/ring.js';
+import { searchKeyWords } from './utils/utils.js';
+import { keyWords } from './data/Carol_all.js';
 
 class Main extends React.Component{
 	static defaultProps = {
