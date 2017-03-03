@@ -1,0 +1,4 @@
+<Ring keyword={this.state.input.toLowerCase()}
+	  arrColor={ (findWord==undefined)?[]:findWord["colors"]}
+	  center={[300, 300]} 
+	  startRaduis={2} />

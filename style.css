@@ -1,6 +1,56 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: "Whitney SSm", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
+  width: 100%;
+}
+.main {
+	text-align: center;
+}
+.graph .discribe {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 10px;
+	padding-top: 30px;
+	color: #999999;
+	font-size: 60px;
+	text-align: left;
+	cursor: default;
+}
+.graph .discribe .keyword {
+	font-weight: bold;
+	color: #82A0BC;
+}
+.graph svg {
+	display: inline-block;
+	vertical-align: top;
+}
+/*.graph {
+	background: #000;
+}*/
+
+.graph #dots:hover {
+	stroke: #fff;
+	stroke-width: 3;
+	
+}
+
+.nameList ul{
+	list-style: none outside none;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.nameList ul li {
+	display: inline-block;
+	font-size: 20px;
+	cursor: default;
+	padding: 0;
+	margin: 5px;
+	color: #a9a9a9;
+}
+.nameList ul li:hover {
+	text-decoration: underline;
 }

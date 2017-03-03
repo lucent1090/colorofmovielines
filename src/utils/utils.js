@@ -1,9 +1,9 @@
-export function searchKeyWords(arrKeyWord, word){
-	let find = undefined;
-	arrKeyWord.map((val, idx) => {
+export function searchKeyWords(wordColor, word){
+	let found = undefined;
+	wordColor.map((val, idx) => {
 		if( val["keyword"] == word ){
-			find = arrKeyWord[idx];
+			found = val.colors;
 		}
 	});
-	return find;
+	return found;
 }

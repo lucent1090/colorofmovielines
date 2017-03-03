@@ -61,7 +61,7 @@ class Ring extends React.Component {
 
 		let colors = this.props.arrColor;
 		colors.map((val) => {
-			this.draw(1, val["color"]);
+			this.draw(val["feq"], val["color"]);
 		});	
 		
 		return(
