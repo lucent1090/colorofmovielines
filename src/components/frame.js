@@ -3,13 +3,14 @@ import { colorFrame } from './../data/Carol2.js';
 
 class ShowFrame extends React.Component{
 	static defaultProps = {
-		colorClicked: ""
+		colorClicked: "",
+		width: 800
 	};
 
 	constructor(props){
 		super(props);
 		this.state = {
-			show: false
+			show: true
 		};
 
 		this.close = this.close.bind(this);
@@ -35,6 +36,10 @@ class ShowFrame extends React.Component{
 	}
 
 	render(){
+		let style = {
+			width: 1.5*this.props.width
+		};
+
 		let frame = undefined, drawFrame = [];
 		if( this.state.show ){
 			colorFrame.map((val) => {
@@ -44,7 +49,7 @@ class ShowFrame extends React.Component{
 			});
 			if( frame != undefined ){
 				drawFrame = frame.map((val, idx) => {
-					let url = "./src/data/frames/" + val + ".png";
+					let url = "./src/img/" + val + ".png";
 					return (
 						<img key={idx} src={url} />
 					);
@@ -55,14 +60,16 @@ class ShowFrame extends React.Component{
 		let radius = 20;
 		let d = this.drawCross(radius);
 		let closeButton = (this.state.show) ? 
-					 (<svg>
+					 (<svg width={radius*2} height={radius*2}>
 						<circle cx={radius} cy={radius} r={radius} fill="gray" onClick={this.close} />
 					 	<path d={d} stroke="white" strokeWidth={3} strokeLinecap="round" />
 					  </svg>) : (undefined);
 		return (
-			<div className="relatedFrames">
+			<div className="relatedFrames" style={style}>
 				{closeButton}
-				{drawFrame}
+				<div className="frames">
+					{drawFrame}
+				</div>
 			</div>
 		);
 	}
