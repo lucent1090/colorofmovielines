@@ -9689,6 +9689,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var characters = [["carol", "aird"], ["therese", "belivet"], ["abby", "gerhard"], ["richard", "semco"], ["harge", "aird"], ["dannie", "mcelroy"], ["tommy", "tucker"], ["fred", "haymes"], ["phil", "mcelroy"]];
 
+String.prototype.capitalizeFirstLetter = function () {
+	return this.charAt(0).toUpperCase() + this.slice(1);
+};
+
 var ShowName = function (_React$Component) {
 	_inherits(ShowName, _React$Component);
 
@@ -9717,6 +9721,8 @@ var ShowName = function (_React$Component) {
 				var foundFirstName = _Carol.wordColor.indexOfKeyword(val[0], _Carol.wordColor);
 				var foundLastName = _Carol.wordColor.indexOfKeyword(val[1], _Carol.wordColor);
 
+				var path = "./src/img/character/" + val[0] + ".png";
+
 				return _react2.default.createElement(
 					'div',
 					{ className: 'names', key: idx },
@@ -9725,15 +9731,16 @@ var ShowName = function (_React$Component) {
 						{ type: 'button',
 							disabled: foundFirstName == undefined ? true : false,
 							onClick: _this2.handleClick.bind(_this2, val[0]) },
-						val[0]
+						val[0].capitalizeFirstLetter()
 					),
 					_react2.default.createElement(
 						'button',
 						{ type: 'button',
 							disabled: foundLastName == undefined ? true : false,
 							onClick: _this2.handleClick.bind(_this2, val[1]) },
-						val[1]
-					)
+						val[1].capitalizeFirstLetter()
+					),
+					_react2.default.createElement('img', { src: path })
 				);
 			});
 			this.setState({ names: getNames });
@@ -9744,7 +9751,7 @@ var ShowName = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'nameList' },
 				this.state.names
 			);
 		}
@@ -22281,20 +22288,11 @@ var Main = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			var _this2 = this;
-
 			var style = {
 				height: this.props.height,
 				width: this.props.width / 2.2
 			};
 			var found = (0, _utils.searchKeyWords)(_Carol.wordColor, this.state.input.toLowerCase());
-			var names = _Carol.wordColor.map(function (val, idx) {
-				return _react2.default.createElement(
-					'li',
-					{ key: idx, onClick: _this2.clickNames.bind(_this2, val.keyword) },
-					val.keyword
-				);
-			});
 
 			return _react2.default.createElement(
 				'div',
@@ -22319,7 +22317,6 @@ var Main = function (_React$Component) {
 							this.state.input.toUpperCase()
 						)
 					),
-					_react2.default.createElement(_name2.default, { callback: this.clickNames }),
 					_react2.default.createElement(
 						'svg',
 						{ width: this.props.width, height: this.props.height },
@@ -22327,7 +22324,8 @@ var Main = function (_React$Component) {
 							center: [300, 300],
 							radius: 300,
 							callback: this.clickColor })
-					)
+					),
+					_react2.default.createElement(_name2.default, { callback: this.clickNames })
 				),
 				_react2.default.createElement(
 					'div',

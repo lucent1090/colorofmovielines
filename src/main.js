@@ -36,13 +36,6 @@ class Main extends React.Component{
 			width: this.props.width / 2.2
 		};
 		let found = searchKeyWords(wordColor, this.state.input.toLowerCase());
-		let names = wordColor.map((val, idx) => {
-			return (
-				<li key={idx} onClick={this.clickNames.bind(this, val.keyword)}>
-					{val.keyword}
-				</li>
-			);
-		});
 
 		return(
 			<div className="main">
@@ -55,7 +48,6 @@ class Main extends React.Component{
 							{this.state.input.toUpperCase()}
 						</div>
 					</div>
-					<ShowName callback={this.clickNames} />
 
 					<svg width={this.props.width} height={this.props.height}>
 						<Dot arrColor={ (found==undefined)?[]:found}
@@ -63,6 +55,8 @@ class Main extends React.Component{
 		  					 radius={300}
 		  					 callback={this.clickColor} />
 					</svg>
+
+					<ShowName callback={this.clickNames} />
 
 				</div>
 

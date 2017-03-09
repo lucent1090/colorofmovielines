@@ -36,6 +36,12 @@ html, body {
 	stroke: #fff;
 	stroke-width: 3;
 }
+.graph .nameList {
+	display: inline-block;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 30px;
+}
 
 .name {
 	margin: 20px 0 0 0;
@@ -45,12 +51,12 @@ html, body {
 .names button {
 	border: none;
 	background: none;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 0;
 	margin: 4px;
 	color: #a9a9a9;
 }
-.names button:hover {
+.names button:hover:enabled {
 	text-decoration: underline;
 }
 
