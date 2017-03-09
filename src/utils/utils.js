@@ -7,3 +7,13 @@ export function searchKeyWords(wordColor, word){
 	});
 	return found;
 }
+
+Array.prototype.indexOfKeyword = function (word, arr) {
+	let index = undefined;
+	arr.map((val, idx) => {
+		if( word == val.keyword ){
+			index = idx;
+		}
+	});
+	return index;
+};

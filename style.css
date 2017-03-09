@@ -37,21 +37,20 @@ html, body {
 	stroke-width: 3;
 }
 
-.nameList ul{
-	list-style: none outside none;
+.name {
 	margin: 20px 0 0 0;
 	padding: 0;
 	font-size: 0;
 }
-.nameList ul li {
-	display: inline-block;
+.names button {
+	border: none;
+	background: none;
 	font-size: 20px;
-	cursor: default;
 	padding: 0;
 	margin: 4px;
 	color: #a9a9a9;
 }
-.nameList ul li:hover {
+.names button:hover {
 	text-decoration: underline;
 }
 

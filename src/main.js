@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Dot from './components/dot.js';
 import ShowFrame from './components/frame.js';
+import ShowName from './components/name.js';
 import { searchKeyWords } from './utils/utils.js';
 import { wordColor } from './data/Carol1.js';
 
@@ -18,6 +19,7 @@ class Main extends React.Component{
 		};
 
 		this.clickColor = this.clickColor.bind(this);
+		this.clickNames = this.clickNames.bind(this);
 	}
 
 	clickColor(color){
@@ -52,12 +54,8 @@ class Main extends React.Component{
 						<div className="keyword">
 							{this.state.input.toUpperCase()}
 						</div>
-						<div className="nameList">
-							<ul>
-								{names}
-							</ul>
-						</div>
 					</div>
+					<ShowName callback={this.clickNames} />
 
 					<svg width={this.props.width} height={this.props.height}>
 						<Dot arrColor={ (found==undefined)?[]:found}
