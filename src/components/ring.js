@@ -1,5 +1,7 @@
 import React from 'react';
 import Slice from './slice.js';
+import { searchKeyWords, getSumFeq } from './../utils/utils.js';
+import { keyWords } from './../data/names.js';
 
 String.prototype.capitalizeFirstLetter = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
@@ -8,8 +10,8 @@ String.prototype.capitalizeFirstLetter = function() {
 class Ring extends React.Component {
 
 	static defaultProps = {
-    	radius: 30, angle: 10,
-    	startRaduis: 70, gap: 2
+    	radius: 30, angle: 5,
+    	startRaduis: 50, gap: 2
   	};
 
   	constructor(props){
@@ -23,6 +25,16 @@ class Ring extends React.Component {
 		this.curBlock = 0;
 		this.curRLevel = 0;
 		this.nBlock = 360 / this.props.angle;
+	}
+
+	componentWillReceiveProps(nextProps)
+	{
+		if( this.props.keyword != nextProps ){
+			this.drawColors = []; 
+			this.curBlock = 0;
+			this.curRLevel = 0;
+			this.nBlock = 360 / this.props.angle;
+		}
 	}
 
 	drawBlock(rLevel, numStart, numEnd, color){
@@ -56,14 +68,16 @@ class Ring extends React.Component {
 	}
 
 	render(){
+
 		let { center } = this.props;
 		let capKeyword = this.props.keyword.capitalizeFirstLetter();
 
-		let colors = this.props.arrColor;
+		let colors = searchKeyWords(keyWords, this.props.keyword);
+		let sumFeq = getSumFeq(colors);
 		colors.map((val) => {
-			this.draw(val["feq"], val["color"]);
+			this.draw( Math.ceil((val.feq/sumFeq)*360) , val["color"]);
 		});	
-		
+
 		return(
 			<g className="ring">
 				{this.drawColors}

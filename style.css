@@ -10,9 +10,6 @@ html, body {
 	text-align: center;
 }
 
-.graph {
-	/*background: #050505;*/
-}
 .graph .discribe {
 	display: inline-block;
 	vertical-align: top;
@@ -53,45 +50,4 @@ html, body {
 }
 .nameList ul li:hover {
 	text-decoration: underline;
-}
-
-.relatedFrames {
-	position: static;
-	margin: 0 auto;
-}
-.relatedFrames .frames {
-	margin: 0 auto;
-	text-align: left;
-}
-.relatedFrames svg {
-	position: relative;
-	left: -55%;
-}
-
-.intro {
-	width: 60%;
-	color: #444444;
-	margin: 0 auto;
-	line-height: 36px;
-	padding-top: 30px;
-	font-weight: 300;
-	font-size: 18px;
-}
-
-#separate {
-	margin: 40px auto;
-	margin-bottom: 10px;
-	padding: 10px;
-	width: 300px;
-	border-top: solid #58382D 2px;
-	color: #58382D;
-}
-
-.content {
-	width: 60%;
-	color: #444444;
-	margin: 0 auto;
-	line-height: 36px;
-	font-weight: 300;
-	font-size: 18px;
 }
