@@ -54,10 +54,18 @@ html, body {
 	font-size: 18px;
 	padding: 0;
 	margin: 4px;
-	color: #a9a9a9;
+	color: #6a6a6a;
+	outline: none;
 }
 .names button:hover:enabled {
 	text-decoration: underline;
+}
+.names button:disabled {
+	color: #aaaaaa;
+}
+.names img {
+	vertical-align: middle;
+	margin-left: 8px;
 }
 
 .relatedFrames {
