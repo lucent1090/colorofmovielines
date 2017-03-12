@@ -4,7 +4,7 @@ In order to associate the actor/actress and their color, we extract the color th
 <br/>
 By MCCQ (median-cut color quantization) algorithm, we can extract a set of colors as the color theme of each frame. With this set of colors, we now can associate the character with a specific set of colors.To improve the result of MCCQ and consider that this is an extraction from a film scene, we did not put the black color as part of color theme. <br/>
 <br/>
-You can now try to click on different name above and see the beautiful colors associate with them. And you can also click on the color dot to see all the frames that contain this color. (Notice: some general color may be contained in lots of frames and the frame list will be really long.)
+You can now try to click on different name above and see the beautiful colors associate with them. 
 
 MCCQ algorithm works based on the RGB color space, which means it's on a 3-dimension world. To show the color in 2-dimension world, we decide to use the concept of color ring by converting the RGB color to HSV (Hue, Saturation, Value) color space. <br/>
 <br/>
