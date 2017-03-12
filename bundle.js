@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 184);
+/******/ 	return __webpack_require__(__webpack_require__.s = 182);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1133,7 +1133,7 @@ module.exports = ReactComponentTreeHook;
 var debugTool = null;
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactDebugTool = __webpack_require__(130);
+  var ReactDebugTool = __webpack_require__(128);
   debugTool = ReactDebugTool;
 }
 
@@ -1208,7 +1208,7 @@ var CallbackQueue = __webpack_require__(58);
 var PooledClass = __webpack_require__(14);
 var ReactFeatureFlags = __webpack_require__(63);
 var ReactReconciler = __webpack_require__(18);
-var Transaction = __webpack_require__(29);
+var Transaction = __webpack_require__(28);
 
 var invariant = __webpack_require__(1);
 
@@ -2494,7 +2494,7 @@ module.exports = reactProdInvariant;
 
 
 var DOMNamespaces = __webpack_require__(34);
-var setInnerHTML = __webpack_require__(31);
+var setInnerHTML = __webpack_require__(30);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(41);
 var setTextContent = __webpack_require__(76);
@@ -2616,7 +2616,7 @@ module.exports = DOMLazyTree;
 
 
 
-var ReactRef = __webpack_require__(144);
+var ReactRef = __webpack_require__(142);
 var ReactInstrumentation = __webpack_require__(8);
 
 var warning = __webpack_require__(2);
@@ -2792,16 +2792,16 @@ module.exports = ReactReconciler;
 
 var _assign = __webpack_require__(4);
 
-var ReactChildren = __webpack_require__(175);
+var ReactChildren = __webpack_require__(173);
 var ReactComponent = __webpack_require__(48);
-var ReactPureComponent = __webpack_require__(179);
-var ReactClass = __webpack_require__(176);
-var ReactDOMFactories = __webpack_require__(177);
+var ReactPureComponent = __webpack_require__(177);
+var ReactClass = __webpack_require__(174);
+var ReactDOMFactories = __webpack_require__(175);
 var ReactElement = __webpack_require__(15);
-var ReactPropTypes = __webpack_require__(178);
-var ReactVersion = __webpack_require__(180);
+var ReactPropTypes = __webpack_require__(176);
+var ReactVersion = __webpack_require__(178);
 
-var onlyChild = __webpack_require__(182);
+var onlyChild = __webpack_require__(180);
 var warning = __webpack_require__(2);
 
 var createElement = ReactElement.createElement;
@@ -2913,7 +2913,7 @@ module.exports = emptyObject;
 
 var _prodInvariant = __webpack_require__(3);
 
-var EventPluginRegistry = __webpack_require__(26);
+var EventPluginRegistry = __webpack_require__(25);
 var EventPluginUtils = __webpack_require__(35);
 var ReactErrorUtils = __webpack_require__(39);
 
@@ -3440,16 +3440,6 @@ module.exports = SyntheticUIEvent;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-module.exports = __webpack_require__(19);
-
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -3707,7 +3697,7 @@ module.exports = EventPluginRegistry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3725,11 +3715,11 @@ module.exports = EventPluginRegistry;
 
 var _assign = __webpack_require__(4);
 
-var EventPluginRegistry = __webpack_require__(26);
-var ReactEventEmitterMixin = __webpack_require__(134);
+var EventPluginRegistry = __webpack_require__(25);
+var ReactEventEmitterMixin = __webpack_require__(132);
 var ViewportMetrics = __webpack_require__(69);
 
-var getVendorPrefixedEventName = __webpack_require__(170);
+var getVendorPrefixedEventName = __webpack_require__(168);
 var isEventSupported = __webpack_require__(45);
 
 /**
@@ -4040,7 +4030,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 module.exports = ReactBrowserEventEmitter;
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4117,7 +4107,7 @@ SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 module.exports = SyntheticMouseEvent;
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4348,7 +4338,7 @@ module.exports = TransactionImpl;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4476,7 +4466,7 @@ function escapeTextContentForBrowser(text) {
 module.exports = escapeTextContentForBrowser;
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4579,6 +4569,16 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = setInnerHTML;
 
 /***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(19);
+
+
+/***/ }),
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4669,12 +4669,12 @@ module.exports = shallowEqual;
 
 
 var DOMLazyTree = __webpack_require__(17);
-var Danger = __webpack_require__(107);
+var Danger = __webpack_require__(105);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(41);
-var setInnerHTML = __webpack_require__(31);
+var setInnerHTML = __webpack_require__(30);
 var setTextContent = __webpack_require__(76);
 
 function getNodeAfter(parentNode, node) {
@@ -7199,7 +7199,7 @@ var DOMProperty = __webpack_require__(13);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInstrumentation = __webpack_require__(8);
 
-var quoteAttributeValueForBrowser = __webpack_require__(171);
+var quoteAttributeValueForBrowser = __webpack_require__(169);
 var warning = __webpack_require__(2);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -7803,9 +7803,9 @@ module.exports = ReactHostComponent;
 
 
 
-var ReactDOMSelection = __webpack_require__(125);
+var ReactDOMSelection = __webpack_require__(123);
 
-var containsNode = __webpack_require__(90);
+var containsNode = __webpack_require__(88);
 var focusNode = __webpack_require__(55);
 var getActiveElement = __webpack_require__(56);
 
@@ -7937,15 +7937,15 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(17);
 var DOMProperty = __webpack_require__(13);
 var React = __webpack_require__(19);
-var ReactBrowserEventEmitter = __webpack_require__(27);
+var ReactBrowserEventEmitter = __webpack_require__(26);
 var ReactCurrentOwner = __webpack_require__(11);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMContainerInfo = __webpack_require__(117);
-var ReactDOMFeatureFlags = __webpack_require__(119);
+var ReactDOMContainerInfo = __webpack_require__(115);
+var ReactDOMFeatureFlags = __webpack_require__(117);
 var ReactFeatureFlags = __webpack_require__(63);
 var ReactInstanceMap = __webpack_require__(23);
 var ReactInstrumentation = __webpack_require__(8);
-var ReactMarkupChecksum = __webpack_require__(139);
+var ReactMarkupChecksum = __webpack_require__(137);
 var ReactReconciler = __webpack_require__(18);
 var ReactUpdateQueue = __webpack_require__(40);
 var ReactUpdates = __webpack_require__(10);
@@ -7953,7 +7953,7 @@ var ReactUpdates = __webpack_require__(10);
 var emptyObject = __webpack_require__(20);
 var instantiateReactComponent = __webpack_require__(74);
 var invariant = __webpack_require__(1);
-var setInnerHTML = __webpack_require__(31);
+var setInnerHTML = __webpack_require__(30);
 var shouldUpdateReactComponent = __webpack_require__(46);
 var warning = __webpack_require__(2);
 
@@ -8752,11 +8752,11 @@ module.exports = getTextContentAccessor;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var ReactCompositeComponent = __webpack_require__(114);
+var ReactCompositeComponent = __webpack_require__(112);
 var ReactEmptyComponent = __webpack_require__(62);
 var ReactHostComponent = __webpack_require__(64);
 
-var getNextDebugID = __webpack_require__(168);
+var getNextDebugID = __webpack_require__(166);
 var invariant = __webpack_require__(1);
 var warning = __webpack_require__(2);
 
@@ -8940,8 +8940,8 @@ module.exports = isTextInputElement;
 
 
 var ExecutionEnvironment = __webpack_require__(6);
-var escapeTextContentForBrowser = __webpack_require__(30);
-var setInnerHTML = __webpack_require__(31);
+var escapeTextContentForBrowser = __webpack_require__(29);
+var setInnerHTML = __webpack_require__(30);
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -8999,9 +8999,9 @@ module.exports = setTextContent;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(11);
-var REACT_ELEMENT_TYPE = __webpack_require__(133);
+var REACT_ELEMENT_TYPE = __webpack_require__(131);
 
-var getIteratorFn = __webpack_require__(167);
+var getIteratorFn = __webpack_require__(165);
 var invariant = __webpack_require__(1);
 var KeyEscapeUtils = __webpack_require__(36);
 var warning = __webpack_require__(2);
@@ -9214,7 +9214,7 @@ var ReactCurrentOwner = __webpack_require__(11);
 var ReactComponentTreeHook = __webpack_require__(7);
 var ReactElement = __webpack_require__(15);
 
-var checkReactTypeSpec = __webpack_require__(181);
+var checkReactTypeSpec = __webpack_require__(179);
 
 var canDefineProperty = __webpack_require__(51);
 var getIteratorFn = __webpack_require__(52);
@@ -9461,11 +9461,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(25);
+var _react = __webpack_require__(31);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _colorConversionAlgorithms = __webpack_require__(87);
+var _colorConversionAlgorithms = __webpack_require__(85);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9488,11 +9488,6 @@ var Dot = function (_React$Component) {
 	}
 
 	_createClass(Dot, [{
-		key: 'handleClick',
-		value: function handleClick(val) {
-			this.props.callback(val);
-		}
-	}, {
 		key: 'getCoord',
 		value: function getCoord(angle, radius) {
 			var x = void 0,
@@ -9525,7 +9520,7 @@ var Dot = function (_React$Component) {
 					cy: coord.y,
 					r: 10,
 					fill: val,
-					onClick: _this2.handleClick.bind(_this2, val) });
+					fillOpacity: _this2.props.opacity });
 			});
 			return _react2.default.createElement(
 				'g',
@@ -9556,124 +9551,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(25);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Carol = __webpack_require__(86);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ShowFrame = function (_React$Component) {
-	_inherits(ShowFrame, _React$Component);
-
-	function ShowFrame(props) {
-		_classCallCheck(this, ShowFrame);
-
-		var _this = _possibleConstructorReturn(this, (ShowFrame.__proto__ || Object.getPrototypeOf(ShowFrame)).call(this, props));
-
-		_this.state = {
-			show: true
-		};
-
-		_this.close = _this.close.bind(_this);
-		return _this;
-	}
-
-	_createClass(ShowFrame, [{
-		key: 'componentWillReceiveProps',
-		value: function componentWillReceiveProps(nextProps) {
-			if (nextProps.colorClicked != "") {
-				this.setState({ show: true });
-			}
-		}
-	}, {
-		key: 'close',
-		value: function close() {
-			this.setState({ show: false });
-		}
-	}, {
-		key: 'drawCross',
-		value: function drawCross(r) {
-			var num1 = r / 1.9;
-			var num2 = r * 1.5;
-			return ['M' + num1 + ' ' + num1, 'L' + num2 + ' ' + num2, 'M' + num1 + ' ' + num2, 'L' + num2 + ' ' + num1].join(' ');
-		}
-	}, {
-		key: 'render',
-		value: function render() {
-			var _this2 = this;
-
-			var style = {
-				width: 1.5 * this.props.width
-			};
-
-			var frame = undefined,
-			    drawFrame = [];
-			if (this.state.show) {
-				_Carol.colorFrame.map(function (val) {
-					if (val.color == _this2.props.colorClicked.substring(1, 7)) {
-						frame = val.frames;
-					}
-				});
-				if (frame != undefined) {
-					drawFrame = frame.map(function (val, idx) {
-						var url = "./src/img/" + val + ".png";
-						return _react2.default.createElement('img', { key: idx, src: url });
-					});
-				}
-			}
-
-			var radius = 20;
-			var d = this.drawCross(radius);
-			var closeButton = this.state.show ? _react2.default.createElement(
-				'svg',
-				{ width: radius * 2, height: radius * 2 },
-				_react2.default.createElement('circle', { cx: radius, cy: radius, r: radius, fill: 'gray', onClick: this.close }),
-				_react2.default.createElement('path', { d: d, stroke: 'white', strokeWidth: 3, strokeLinecap: 'round' })
-			) : undefined;
-			return _react2.default.createElement(
-				'div',
-				{ className: 'relatedFrames', style: style },
-				closeButton,
-				_react2.default.createElement(
-					'div',
-					{ className: 'frames' },
-					drawFrame
-				)
-			);
-		}
-	}]);
-
-	return ShowFrame;
-}(_react2.default.Component);
-
-ShowFrame.defaultProps = {
-	colorClicked: "",
-	width: 800
-};
-exports.default = ShowFrame;
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(25);
+var _react = __webpack_require__(31);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -9763,7 +9641,7 @@ var ShowName = function (_React$Component) {
 exports.default = ShowName;
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9794,29 +9672,17 @@ Array.prototype.indexOfKeyword = function (word, arr) {
 };
 
 /***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = __webpack_require__(113);
+
+
+/***/ }),
 /* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(115);
-
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var colorFrame = exports.colorFrame = [{ color: "010101", frames: [3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 31, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 47, 48, 49, 50, 51, 52, 54, 55, 57, 58, 59, 60, 61, 65, 66, 67, 70, 71, 72, 73, 74, 76, 77, 78, 79, 80, 81, 82, 83, 85, 86, 88, 89, 92, 93, 94, 95, 97, 98, 99, 101, 103, 105, 106, 107, 113, 114, 115, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 129, 130, 132, 134, 135, 136, 139, 140, 141, 143, 145, 146, 147, 149, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 162, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 188, 189, 190, 192, 193, 194, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 212, 213, 214, 221, 222, 223, 224, 225, 226, 228, 229, 231, 235, 237, 238, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 269, 270, 272, 273, 274, 275, 276, 277, 278, 279, 281, 282, 283, 284, 285, 286, 288, 289, 290, 291, 293, 294, 295, 296, 298, 299, 302, 303, 304, 305, 307, 308, 309, 310, 311, 312, 314, 315, 317, 318, 319, 322, 323, 325, 326, 328, 334, 335, 336, 337, 338, 339, 340, 341, 343, 344, 345, 349, 350, 351, 352, 354, 355, 356, 357, 359, 362, 363, 364, 365, 366, 367, 368, 369, 371, 372, 373, 374, 376, 377, 378, 379, 380, 381, 383, 384, 385, 386, 387, 388, 389, 390, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 406, 407, 409, 410, 411, 415, 417, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 433, 434, 435, 436, 437, 438, 441, 442, 443, 444, 445, 446, 449, 450, 451, 453, 456, 457, 458, 459, 460, 461, 462, 463, 466, 468, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 483, 484, 486, 487, 489, 490, 491, 494, 497, 499, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 513, 514, 516, 517, 518, 519, 520, 521, 522, 523, 525, 526, 527, 528, 532, 533, 534, 535, 536, 538, 539, 540, 542, 543, 545, 547, 548, 549, 551, 553, 554, 555, 556, 557, 558, 560, 561, 562, 563, 564, 565, 566, 567, 569, 570, 571, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 595, 598, 599, 600, 601, 602, 603, 604, 606, 607, 609, 610, 612, 614, 615, 616, 617, 618, 621, 622, 623, 624, 628, 630, 631, 632, 633, 634, 635, 636, 639, 640, 641, 642, 644, 646, 647, 648, 649, 650, 651, 652, 653, 655, 657, 658, 659, 661, 667, 668, 669, 670, 671, 673, 674, 675, 676, 678, 679, 680, 681, 683, 684, 686, 687, 693, 694, 695, 696, 697, 698, 700, 701, 702, 704, 705, 706, 707, 708, 709, 711, 712, 714, 715, 716, 717, 718, 719, 722, 724, 726, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 741, 742, 743, 744, 745, 746, 748, 751, 753, 754, 755, 756, 759, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 781, 782, 783, 784, 785, 786, 788, 791, 794, 795, 796, 797, 800, 803, 804, 805, 807, 808, 809, 810, 811, 812, 813, 815, 816, 817, 818, 819, 821, 822, 824, 825, 826, 827, 828, 829, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 853, 855, 857, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 887, 888, 889, 891, 892, 893, 895, 896, 897, 898, 899, 900, 901, 904, 905, 907, 908, 910, 911, 912, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 925, 926, 927, 928, 929, 930, 931, 932, 936, 937, 938, 939, 940, 941, 943, 944, 946, 947, 948, 951, 952, 953, 954, 955, 956, 957, 958, 959, 960, 961, 964, 965, 967, 968, 969, 970, 971, 972, 973, 974, 975, 977, 978, 980, 982, 984, 985, 986, 988, 993, 995, 996, 997, 1000, 1002, 1003, 1004, 1005, 1006, 1007, 1009, 1010, 1012, 1013, 1014, 1015, 1016, 1017, 1020, 1021, 1023, 1026, 1029, 1031, 1032, 1033, 1035, 1037, 1038, 1039, 1040, 1041, 1043, 1044, 1047, 1048, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1058, 1059, 1061, 1062, 1063, 1064, 1066, 1067, 1068, 1069, 1070, 1071, 1072, 1073, 1074, 1075, 1077, 1078, 1080, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1089, 1090, 1091, 1092, 1093, 1094, 1095, 1096, 1097, 1099, 1100, 1101, 1106, 1108, 1109, 1110, 1111, 1112, 1113, 1114, 1115, 1116, 1117, 1120, 1121, 1122, 1123, 1124, 1125, 1126, 1127, 1131, 1134, 1135, 1136, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1148, 1149, 1150, 1151, 1152, 1153, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 1163, 1164, 1165, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175, 1176, 1177, 1179, 1180, 1181, 1182, 1183, 1184, 1185, 1186, 1187, 1188, 1189, 1190, 1191, 1193, 1195, 1196, 1197, 1198, 1200, 1201, 1202, 1204, 1205, 1206, 1207, 1208, 1209, 1210, 1214, 1215, 1216, 1217, 1218, 1219, 1220, 1221, 1222, 1223, 1226, 1228, 1229, 1230, 1231, 1232, 1234, 1235, 1236, 1237, 1239, 1240, 1241, 1242, 1243, 1244, 1245, 1246, 1247, 1248, 1249, 1250, 1251, 1252, 1253, 1255, 1256, 1257, 1258, 1259, 1261, 1262, 1263, 1264, 1265, 1266, 1267, 1268, 1269, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279, 1280, 1281, 1282, 1283, 1284, 1285, 1286, 1287, 1288, 1289, 1290, 1291, 1292, 1293, 1294, 1295, 1297, 1298, 1299, 1300, 1301, 1305, 1306, 1307, 1309, 1310, 1311, 1312, 1316, 1317, 1318, 1319, 1320, 1321, 1323, 1324, 1325, 1326, 1328, 1330, 1331, 1332, 1333, 1334, 1335, 1337, 1338, 1342, 1343, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1353, 1354, 1355, 1356, 1357, 1358, 1359, 1360, 1361, 1362, 1363, 1364, 1365, 1366, 1368, 1369, 1370, 1372, 1374, 1375, 1376, 1377, 1378, 1379, 1380, 1381, 1382, 1383, 1384, 1385, 1386, 1387, 1389, 1390, 1391, 1392, 1393, 1394, 1395, 1396, 1397, 1398, 1399, 1400, 1401, 1402, 1403, 1404, 1405, 1406, 1408, 1409, 1410, 1411, 1412, 1413, 1414, 1415, 1416, 1417, 1418, 1419, 1420, 1421] }, { color: "010102", frames: [1, 4, 6, 8, 10, 20, 23, 27, 31, 33, 37, 43, 49, 50, 64, 77, 88, 92, 101, 116, 119, 121, 122, 125, 146, 167, 169, 172, 173, 174, 175, 184, 187, 191, 207, 242, 245, 258, 278, 282, 286, 290, 295, 296, 297, 317, 319, 327, 359, 365, 373, 378, 395, 399, 402, 415, 426, 433, 439, 442, 446, 451, 455, 460, 500, 506, 509, 515, 517, 518, 526, 527, 532, 548, 554, 555, 562, 570, 576, 578, 588, 600, 604, 606, 618, 654, 655, 656, 660, 662, 663, 666, 667, 671, 679, 703, 707, 709, 712, 714, 719, 723, 724, 728, 731, 739, 748, 754, 759, 766, 768, 771, 782, 788, 797, 811, 819, 820, 829, 842, 849, 853, 857, 864, 871, 873, 887, 898, 907, 920, 923, 933, 938, 950, 953, 970, 971, 972, 976, 982, 985, 990, 994, 999, 1006, 1011, 1017, 1040, 1050, 1054, 1062, 1068, 1075, 1080, 1098, 1099, 1116, 1126, 1147, 1149, 1159, 1162, 1164, 1172, 1174, 1177, 1178, 1184, 1192, 1193, 1194, 1196, 1197, 1198, 1199, 1200, 1202, 1207, 1208, 1210, 1223, 1226, 1229, 1231, 1232, 1238, 1246, 1248, 1250, 1251, 1252, 1265, 1281, 1282, 1284, 1286, 1287, 1290, 1291, 1292, 1323, 1332, 1333, 1334, 1335, 1342, 1343, 1350, 1363, 1368, 1372, 1374, 1378, 1379, 1391, 1395, 1402, 1408, 1410, 1413, 1416, 1418, 1419, 1420] }, { color: "010201", frames: [7, 16, 17, 29, 32, 36, 46, 62, 63, 64, 68, 69, 79, 151, 159, 160, 162, 164, 165, 168, 169, 182, 201, 203, 204, 205, 216, 224, 245, 247, 250, 251, 266, 284, 317, 319, 328, 336, 356, 363, 386, 399, 409, 451, 460, 466, 475, 480, 494, 502, 505, 508, 519, 524, 528, 547, 548, 551, 558, 562, 563, 565, 570, 573, 575, 577, 585, 604, 606, 624, 648, 674, 675, 678, 689, 695, 701, 703, 707, 708, 709, 712, 724, 729, 744, 754, 765, 771, 772, 784, 790, 794, 803, 809, 822, 825, 831, 848, 849, 850, 859, 867, 872, 873, 884, 888, 891, 909, 911, 918, 919, 920, 927, 930, 938, 944, 947, 960, 973, 974, 980, 996, 1003, 1005, 1017, 1032, 1054, 1066, 1075, 1094, 1148, 1152, 1163, 1174, 1175, 1179, 1183, 1186, 1189, 1190, 1198, 1199, 1200, 1202, 1207, 1215, 1226, 1230, 1231, 1243, 1244, 1246, 1247, 1253, 1268, 1269, 1270, 1287, 1295, 1310, 1317, 1326, 1333, 1343, 1348, 1349, 1359, 1370, 1373, 1377, 1384, 1386, 1391, 1400, 1401, 1404, 1405, 1406] }, { color: "010202", frames: [39, 40, 42, 70, 76, 81, 83, 107, 152, 171, 174, 177, 178, 179, 182, 183, 192, 209, 210, 212, 241, 356, 363, 399, 451, 460, 462, 466, 497, 505, 528, 532, 547, 553, 554, 563, 565, 566, 569, 606, 658, 665, 678, 695, 701, 707, 708, 771, 780, 810, 812, 845, 858, 859, 872, 884, 900, 901, 938, 940, 996, 1069, 1135, 1163, 1174, 1176, 1184, 1207, 1231, 1333, 1342, 1343, 1348, 1349, 1384, 1386, 1387, 1393, 1400, 1408] }, { color: "010303", frames: [38, 40, 42, 61, 156, 171, 205, 222, 224, 228, 354, 357, 363, 377, 434, 441, 466, 483, 532, 558, 575, 618, 631, 652, 716, 742, 743, 804, 845, 872, 873, 922, 966, 985, 1035, 1064, 1174, 1198, 1210, 1218, 1219, 1247, 1253, 1317, 1344, 1410, 1411, 1418] }, { color: "010306", frames: [171, 172, 174, 175, 184, 188, 466, 532, 719, 839, 842, 845, 860, 878, 884, 889, 1082, 1083, 1112, 1142, 1162, 1164, 1170, 1171, 1231, 1284, 1332, 1393] }, { color: "010401", frames: [40, 171, 176, 178, 296, 363, 386, 466, 532, 639, 644, 678, 845, 868, 893, 974, 1075, 1143, 1170, 1184, 1185, 1187, 1188, 1249, 1331] }, { color: "010406", frames: [39, 42, 170, 172, 173, 177, 178, 180, 182, 206, 212, 298, 356, 399, 451, 460, 462, 497, 505, 523, 528, 547, 549, 553, 563, 606, 658, 678, 695, 707, 708, 771, 810, 812, 847, 859, 872, 884, 901, 938, 940, 996, 1163, 1174, 1176, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "010502", frames: [174, 182, 192, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386, 1387, 1400] }, { color: "010506", frames: [41, 61, 136, 170, 174, 181, 192, 222, 362, 366, 400, 570, 631, 652, 835, 840, 951, 1016, 1122, 1123, 1188, 1215, 1233, 1263, 1384, 1387, 1388, 1390, 1400] }, { color: "020101", frames: [12, 18, 20, 32, 36, 37, 40, 45, 49, 51, 54, 61, 62, 63, 64, 65, 66, 68, 69, 70, 75, 76, 81, 82, 83, 84, 85, 91, 92, 98, 102, 107, 108, 110, 112, 113, 122, 125, 129, 135, 137, 145, 147, 151, 152, 153, 159, 160, 164, 165, 166, 169, 170, 178, 179, 181, 182, 185, 187, 190, 191, 193, 197, 198, 199, 200, 201, 202, 204, 205, 207, 208, 210, 211, 222, 223, 237, 249, 253, 263, 266, 267, 269, 274, 276, 283, 284, 292, 295, 297, 298, 299, 302, 303, 304, 305, 307, 317, 319, 329, 350, 354, 362, 379, 384, 386, 387, 388, 390, 394, 405, 413, 415, 417, 420, 421, 422, 423, 425, 428, 431, 434, 435, 439, 443, 444, 450, 451, 457, 460, 470, 474, 477, 488, 491, 493, 494, 495, 496, 502, 503, 504, 505, 514, 518, 519, 520, 521, 523, 526, 528, 530, 533, 536, 537, 538, 542, 543, 546, 547, 555, 556, 557, 563, 570, 572, 576, 578, 582, 583, 585, 586, 587, 589, 594, 598, 603, 604, 607, 609, 613, 614, 617, 618, 619, 629, 630, 631, 633, 637, 639, 641, 642, 643, 645, 646, 647, 648, 649, 650, 654, 657, 661, 662, 664, 666, 670, 671, 676, 677, 678, 680, 681, 682, 695, 697, 708, 718, 719, 721, 731, 734, 744, 754, 757, 758, 760, 762, 765, 771, 778, 788, 791, 792, 794, 795, 800, 815, 816, 819, 821, 825, 834, 835, 836, 840, 845, 847, 850, 851, 852, 868, 869, 871, 872, 874, 880, 886, 887, 888, 890, 893, 894, 897, 900, 905, 906, 907, 917, 918, 921, 923, 925, 926, 947, 948, 949, 951, 953, 955, 958, 968, 969, 974, 975, 976, 977, 980, 984, 985, 987, 996, 1003, 1010, 1016, 1018, 1026, 1030, 1031, 1032, 1033, 1036, 1037, 1041, 1042, 1043, 1050, 1051, 1054, 1055, 1068, 1069, 1073, 1081, 1085, 1088, 1090, 1092, 1096, 1102, 1104, 1111, 1112, 1118, 1127, 1135, 1140, 1143, 1151, 1152, 1160, 1161, 1163, 1165, 1166, 1170, 1171, 1177, 1184, 1187, 1188, 1190, 1231, 1232, 1234, 1238, 1239, 1240, 1242, 1243, 1244, 1245, 1250, 1251, 1252, 1254, 1257, 1258, 1259, 1260, 1263, 1267, 1268, 1271, 1273, 1274, 1276, 1277, 1278, 1279, 1280, 1283, 1284, 1285, 1286, 1287, 1288, 1289, 1291, 1296, 1298, 1299, 1300, 1301, 1304, 1306, 1308, 1309, 1313, 1326, 1330, 1332, 1336, 1337, 1339, 1341, 1348, 1351, 1355, 1360, 1373, 1376, 1377, 1378, 1379, 1380, 1381, 1382, 1383, 1384, 1385, 1387, 1390, 1395, 1403, 1404, 1411, 1412, 1413, 1414, 1417, 1422] }, { color: "020103", frames: [2, 40, 270, 289, 363, 490, 518, 562, 638, 639, 653, 672, 690, 771, 774, 792, 825, 846, 893, 914, 1029, 1114, 1142, 1251, 1254, 1283, 1305] }, { color: "02010f", frames: [238, 240, 242, 243, 327, 329, 384, 409, 439, 443, 448, 450, 530, 533, 546, 572, 583, 594, 639, 642, 643, 734, 887, 1010, 1011, 1012, 1013, 1051, 1123, 1164, 1190, 1239, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "020112", frames: [238, 239, 240, 242, 243, 249, 267, 281, 283, 285, 306, 327, 329, 331, 336, 342, 367, 368, 370, 384, 396, 409, 414, 439, 443, 448, 450, 469, 470, 509, 511, 530, 533, 546, 548, 549, 550, 554, 565, 572, 583, 594, 632, 639, 642, 643, 662, 672, 675, 684, 734, 752, 773, 808, 821, 873, 874, 877, 878, 880, 884, 887, 888, 893, 895, 941, 1010, 1011, 1012, 1013, 1032, 1051, 1052, 1164, 1165, 1190, 1191, 1193, 1195, 1207, 1219, 1222, 1231, 1243, 1244, 1249, 1259, 1260, 1263, 1270, 1278, 1280, 1286, 1287, 1288, 1294, 1301, 1330, 1337, 1352, 1362, 1372, 1376, 1391, 1403, 1404, 1410] }, { color: "020201", frames: [3, 6, 7, 8, 12, 13, 15, 18, 19, 22, 23, 24, 25, 28, 29, 32, 33, 34, 35, 36, 40, 43, 47, 49, 52, 54, 57, 61, 65, 71, 75, 79, 82, 83, 84, 85, 86, 88, 89, 92, 93, 94, 103, 113, 114, 115, 117, 118, 119, 122, 123, 124, 125, 126, 130, 136, 139, 143, 153, 154, 160, 161, 165, 166, 168, 169, 170, 172, 174, 175, 177, 179, 180, 181, 182, 185, 186, 188, 189, 191, 192, 194, 196, 198, 201, 202, 203, 204, 205, 208, 209, 215, 223, 224, 226, 229, 235, 237, 238, 241, 244, 245, 246, 248, 250, 256, 258, 264, 265, 266, 270, 272, 274, 275, 277, 279, 282, 283, 285, 286, 288, 291, 293, 294, 299, 301, 315, 317, 324, 326, 334, 341, 345, 349, 351, 356, 357, 358, 359, 360, 362, 363, 364, 366, 367, 368, 372, 376, 378, 379, 386, 387, 388, 390, 392, 394, 395, 398, 399, 400, 404, 406, 407, 409, 410, 415, 417, 419, 420, 421, 422, 428, 429, 430, 431, 442, 444, 450, 451, 458, 460, 466, 468, 470, 471, 473, 475, 478, 479, 481, 483, 486, 491, 493, 497, 499, 501, 505, 506, 508, 509, 514, 518, 519, 523, 524, 527, 528, 532, 535, 536, 543, 545, 547, 550, 552, 554, 556, 557, 558, 561, 562, 563, 565, 566, 567, 569, 570, 573, 575, 577, 578, 579, 580, 581, 582, 584, 587, 588, 589, 592, 593, 595, 596, 599, 601, 603, 604, 606, 607, 609, 610, 614, 615, 617, 618, 620, 623, 624, 627, 628, 629, 630, 631, 632, 634, 636, 637, 640, 643, 644, 648, 659, 666, 677, 678, 681, 687, 691, 692, 693, 694, 695, 696, 697, 701, 702, 704, 707, 708, 709, 712, 714, 715, 722, 724, 729, 730, 733, 734, 735, 738, 739, 741, 743, 745, 753, 756, 757, 758, 760, 763, 764, 768, 769, 771, 773, 775, 786, 788, 790, 791, 794, 795, 796, 800, 804, 805, 806, 807, 808, 809, 811, 817, 819, 821, 822, 824, 826, 827, 831, 832, 836, 838, 839, 840, 841, 842, 843, 844, 846, 847, 849, 850, 853, 855, 857, 859, 862, 865, 866, 867, 869, 871, 872, 873, 875, 880, 881, 884, 885, 887, 888, 893, 896, 897, 898, 900, 905, 906, 908, 909, 911, 914, 915, 918, 921, 922, 923, 924, 925, 926, 927, 928, 931, 935, 938, 947, 948, 951, 952, 957, 962, 965, 970, 972, 974, 975, 976, 980, 988, 996, 997, 999, 1004, 1006, 1023, 1031, 1033, 1035, 1037, 1047, 1050, 1051, 1052, 1053, 1059, 1061, 1064, 1066, 1068, 1070, 1074, 1075, 1080, 1081, 1083, 1085, 1086, 1089, 1090, 1091, 1092, 1094, 1096, 1097, 1099, 1106, 1109, 1110, 1111, 1112, 1115, 1134, 1135, 1136, 1140, 1141, 1142, 1143, 1145, 1148, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1161, 1162, 1163, 1165, 1169, 1170, 1172, 1175, 1179, 1180, 1182, 1183, 1188, 1189, 1190, 1191, 1192, 1193, 1194, 1195, 1197, 1199, 1200, 1202, 1207, 1209, 1211, 1216, 1217, 1218, 1223, 1229, 1231, 1232, 1235, 1236, 1240, 1244, 1261, 1263, 1264, 1265, 1269, 1273, 1279, 1281, 1283, 1284, 1287, 1290, 1291, 1298, 1299, 1300, 1304, 1306, 1307, 1310, 1316, 1317, 1318, 1320, 1321, 1322, 1323, 1324, 1331, 1333, 1335, 1342, 1343, 1344, 1345, 1346, 1348, 1349, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1369, 1370, 1373, 1374, 1375, 1377, 1379, 1380, 1382, 1383, 1384, 1385, 1386, 1387, 1388, 1390, 1391, 1392, 1394, 1396, 1397, 1398, 1400, 1401, 1404, 1407, 1413, 1414, 1415, 1416, 1418] }, { color: "020202", frames: [5, 9, 14, 15, 16, 20, 27, 36, 40, 42, 53, 55, 59, 77, 79, 80, 82, 92, 97, 98, 107, 119, 120, 121, 123, 132, 135, 136, 149, 161, 164, 165, 167, 170, 172, 173, 174, 175, 178, 180, 184, 188, 190, 199, 200, 201, 203, 206, 207, 231, 251, 259, 260, 264, 265, 266, 267, 269, 276, 284, 287, 290, 294, 296, 298, 303, 304, 305, 307, 311, 312, 314, 317, 320, 321, 325, 328, 332, 334, 336, 338, 341, 344, 347, 359, 363, 364, 367, 371, 372, 379, 381, 382, 384, 389, 395, 398, 410, 419, 420, 423, 429, 438, 441, 443, 445, 446, 449, 450, 451, 454, 461, 466, 470, 480, 489, 490, 498, 499, 502, 503, 506, 508, 510, 511, 512, 513, 519, 523, 526, 532, 538, 541, 543, 547, 549, 554, 555, 562, 565, 566, 572, 573, 574, 575, 583, 584, 588, 591, 597, 598, 604, 605, 610, 624, 636, 642, 647, 650, 657, 669, 671, 684, 696, 705, 719, 731, 738, 739, 744, 745, 747, 750, 753, 754, 767, 782, 785, 789, 797, 803, 812, 815, 816, 819, 822, 826, 830, 838, 839, 842, 847, 848, 849, 850, 853, 859, 860, 861, 867, 871, 872, 873, 878, 879, 882, 884, 889, 891, 894, 899, 900, 906, 915, 916, 918, 919, 920, 929, 930, 932, 937, 938, 939, 947, 948, 951, 954, 956, 957, 960, 961, 962, 963, 966, 974, 975, 980, 982, 985, 993, 997, 1002, 1003, 1005, 1010, 1015, 1016, 1017, 1026, 1031, 1039, 1051, 1062, 1063, 1069, 1076, 1078, 1081, 1082, 1083, 1084, 1087, 1096, 1097, 1101, 1108, 1112, 1113, 1115, 1116, 1120, 1121, 1125, 1126, 1127, 1135, 1142, 1143, 1144, 1150, 1151, 1152, 1162, 1164, 1169, 1170, 1171, 1173, 1174, 1175, 1177, 1185, 1186, 1187, 1189, 1191, 1198, 1207, 1219, 1221, 1231, 1239, 1245, 1246, 1247, 1249, 1253, 1255, 1267, 1268, 1270, 1273, 1276, 1284, 1285, 1287, 1292, 1295, 1300, 1301, 1309, 1310, 1311, 1318, 1324, 1330, 1332, 1333, 1338, 1342, 1343, 1348, 1357, 1358, 1359, 1362, 1363, 1376, 1382, 1385, 1392, 1393, 1397, 1399, 1403, 1405, 1406, 1409, 1412, 1413, 1417, 1418, 1420, 1421] }, { color: "020207", frames: [121, 149, 273, 421, 628, 655, 656, 660, 678, 685, 689, 759, 760, 888, 941, 998, 999, 1057, 1121, 1152, 1286, 1314] }, { color: "020306", frames: [1, 4, 6, 8, 10, 20, 23, 27, 31, 33, 37, 38, 42, 43, 49, 50, 61, 77, 88, 92, 101, 116, 119, 121, 122, 125, 146, 156, 167, 169, 172, 173, 174, 175, 184, 187, 191, 205, 207, 222, 224, 228, 242, 245, 258, 278, 282, 286, 290, 295, 296, 297, 317, 319, 327, 354, 357, 359, 365, 373, 377, 378, 395, 399, 402, 415, 426, 433, 434, 439, 441, 442, 446, 451, 455, 483, 500, 506, 509, 515, 517, 518, 526, 527, 532, 548, 554, 555, 558, 570, 575, 576, 578, 588, 600, 604, 606, 618, 631, 652, 655, 656, 662, 663, 666, 667, 671, 679, 703, 707, 709, 712, 716, 719, 723, 724, 728, 731, 739, 742, 743, 748, 754, 759, 766, 768, 771, 782, 788, 797, 804, 811, 819, 820, 829, 842, 849, 853, 857, 864, 871, 873, 887, 898, 907, 920, 922, 923, 933, 938, 950, 953, 963, 966, 970, 971, 972, 976, 982, 985, 990, 994, 999, 1006, 1011, 1017, 1035, 1040, 1050, 1054, 1062, 1064, 1075, 1080, 1098, 1099, 1116, 1126, 1134, 1136, 1137, 1138, 1139, 1147, 1149, 1159, 1162, 1164, 1172, 1174, 1177, 1178, 1184, 1192, 1193, 1194, 1196, 1197, 1198, 1199, 1200, 1202, 1207, 1208, 1210, 1218, 1223, 1226, 1229, 1231, 1232, 1246, 1248, 1265, 1281, 1282, 1286, 1291, 1292, 1317, 1323, 1332, 1333, 1334, 1335, 1342, 1344, 1350, 1363, 1368, 1372, 1374, 1378, 1379, 1391, 1395, 1402, 1408, 1410, 1411, 1413, 1416, 1418, 1419, 1420] }, { color: "02030a", frames: [42, 60, 92, 541, 577, 601, 632, 666, 667, 745, 795, 810, 817, 896, 963, 966, 1002, 1055, 1418] }, { color: "020401", frames: [5, 15, 16, 59, 61, 80, 120, 121, 170, 172, 173, 174, 177, 178, 180, 181, 183, 184, 190, 192, 201, 202, 206, 231, 284, 298, 303, 304, 305, 311, 325, 338, 386, 387, 410, 423, 429, 461, 489, 490, 511, 523, 547, 549, 554, 556, 562, 565, 566, 570, 586, 591, 598, 614, 617, 630, 631, 650, 671, 782, 785, 800, 810, 812, 835, 840, 847, 871, 873, 879, 888, 900, 929, 930, 951, 954, 974, 985, 997, 1037, 1039, 1063, 1082, 1087, 1092, 1096, 1101, 1113, 1116, 1135, 1140, 1143, 1169, 1207, 1219, 1240, 1263, 1273, 1283, 1284, 1318, 1333, 1338, 1342, 1343, 1358, 1359, 1385, 1387, 1400, 1409, 1418] }, { color: "020501", frames: [154, 182, 209, 356, 399, 451, 460, 505, 528, 547, 553, 562, 563, 569, 586, 606, 678, 695, 707, 708, 771, 859, 872, 884, 888, 938, 943, 996, 1163, 1231, 1333, 1343, 1348, 1349, 1384, 1386] }, { color: "02050a", frames: [172, 173, 174, 175, 182, 184, 188, 192, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 719, 771, 839, 842, 859, 860, 872, 878, 884, 889, 938, 996, 1082, 1083, 1112, 1142, 1162, 1163, 1164, 1170, 1171, 1231, 1284, 1332, 1333, 1348, 1349, 1384, 1386, 1387, 1393, 1400] }, { color: "020706", frames: [182, 183, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "020d02", frames: [587, 679, 689, 761, 781, 796, 897, 951, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1063, 1066, 1113, 1115, 1117, 1155, 1168, 1179, 1190, 1227, 1302, 1303, 1329, 1360, 1390] }, { color: "030102", frames: [171, 179, 319, 384, 409, 428, 448, 456, 466, 477, 503, 513, 528, 532, 555, 557, 563, 588, 589, 623, 625, 641, 670, 674, 680, 734, 762, 767, 771, 800, 819, 845, 939, 1002, 1011, 1012, 1013, 1144, 1145, 1164, 1267, 1268, 1278, 1399, 1418] }, { color: "030202", frames: [10, 14, 15, 19, 21, 23, 27, 28, 31, 43, 44, 47, 51, 52, 54, 55, 58, 59, 60, 70, 74, 76, 78, 79, 82, 85, 86, 92, 94, 97, 99, 105, 106, 107, 113, 119, 123, 129, 130, 134, 140, 145, 153, 157, 168, 170, 171, 172, 174, 175, 176, 185, 186, 188, 190, 192, 193, 197, 198, 199, 202, 204, 206, 207, 208, 213, 214, 225, 228, 229, 238, 241, 242, 243, 247, 249, 250, 252, 257, 258, 266, 273, 275, 279, 281, 283, 284, 285, 286, 289, 290, 294, 318, 322, 323, 335, 337, 338, 339, 340, 341, 343, 352, 354, 355, 356, 357, 363, 364, 365, 366, 368, 373, 374, 377, 380, 383, 390, 393, 395, 396, 397, 398, 402, 403, 409, 416, 417, 420, 427, 429, 433, 435, 436, 437, 438, 441, 444, 446, 449, 450, 453, 457, 458, 463, 466, 472, 474, 477, 484, 486, 487, 490, 506, 507, 508, 509, 514, 516, 517, 522, 525, 526, 527, 532, 535, 536, 547, 548, 549, 550, 551, 556, 560, 564, 566, 569, 577, 581, 587, 598, 599, 600, 602, 603, 604, 607, 612, 615, 616, 621, 622, 623, 628, 630, 631, 632, 633, 635, 640, 642, 643, 644, 647, 649, 655, 659, 667, 670, 671, 675, 686, 701, 717, 722, 728, 729, 730, 732, 736, 737, 741, 742, 745, 748, 751, 754, 755, 761, 762, 765, 768, 770, 772, 773, 776, 777, 781, 783, 784, 785, 791, 794, 795, 796, 803, 804, 807, 809, 811, 816, 817, 819, 821, 822, 824, 825, 826, 827, 828, 829, 835, 836, 837, 838, 840, 842, 843, 844, 846, 847, 853, 857, 859, 860, 861, 863, 864, 868, 873, 874, 876, 877, 878, 880, 881, 894, 895, 896, 904, 910, 912, 914, 915, 917, 926, 927, 932, 936, 941, 943, 946, 948, 951, 956, 957, 958, 959, 961, 965, 967, 968, 969, 971, 973, 974, 982, 985, 986, 1004, 1006, 1010, 1012, 1013, 1017, 1020, 1021, 1023, 1040, 1043, 1053, 1054, 1058, 1067, 1071, 1072, 1073, 1075, 1077, 1078, 1081, 1083, 1084, 1085, 1086, 1091, 1092, 1093, 1096, 1099, 1110, 1112, 1117, 1122, 1139, 1140, 1141, 1145, 1147, 1149, 1151, 1152, 1153, 1156, 1157, 1161, 1162, 1163, 1168, 1169, 1170, 1172, 1180, 1186, 1188, 1195, 1201, 1204, 1206, 1208, 1210, 1214, 1215, 1216, 1218, 1220, 1226, 1228, 1232, 1235, 1237, 1240, 1241, 1244, 1249, 1255, 1256, 1257, 1261, 1262, 1263, 1264, 1265, 1270, 1272, 1273, 1274, 1275, 1276, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1293, 1294, 1295, 1297, 1299, 1300, 1306, 1307, 1310, 1311, 1317, 1318, 1321, 1323, 1330, 1344, 1345, 1347, 1350, 1351, 1354, 1357, 1358, 1361, 1363, 1365, 1368, 1369, 1372, 1379, 1387, 1391, 1397, 1398, 1400, 1403, 1404, 1408, 1410, 1412, 1414, 1418, 1420] }, { color: "030203", frames: [64, 67, 88, 92, 94, 176, 178, 181, 182, 247, 270, 296, 354, 356, 372, 386, 387, 395, 399, 400, 451, 460, 476, 492, 497, 505, 517, 528, 547, 563, 570, 589, 598, 606, 630, 631, 638, 639, 644, 650, 666, 678, 695, 707, 708, 762, 766, 771, 810, 822, 835, 840, 859, 872, 884, 893, 914, 926, 938, 951, 955, 974, 996, 1005, 1095, 1163, 1171, 1231, 1249, 1252, 1263, 1284, 1289, 1295, 1299, 1300, 1325, 1331, 1333, 1348, 1349, 1350, 1351, 1384, 1386, 1392] }, { color: "030401", frames: [3, 6, 8, 12, 13, 15, 18, 19, 22, 24, 25, 29, 33, 34, 35, 40, 47, 49, 52, 54, 57, 61, 71, 82, 83, 88, 89, 92, 93, 94, 103, 113, 114, 115, 118, 122, 123, 124, 125, 126, 136, 139, 143, 153, 154, 159, 160, 161, 166, 168, 172, 174, 175, 177, 179, 180, 181, 185, 188, 189, 192, 194, 198, 201, 202, 203, 205, 209, 224, 229, 235, 237, 238, 241, 245, 247, 248, 256, 264, 270, 272, 274, 277, 279, 282, 283, 284, 286, 288, 291, 293, 294, 299, 315, 317, 326, 334, 336, 341, 345, 349, 351, 357, 359, 362, 363, 367, 368, 372, 376, 379, 386, 392, 395, 400, 404, 407, 415, 417, 419, 420, 421, 422, 430, 431, 444, 450, 451, 466, 468, 471, 475, 479, 480, 486, 491, 494, 497, 499, 502, 505, 514, 518, 519, 523, 535, 536, 543, 545, 551, 557, 558, 561, 562, 566, 567, 569, 570, 571, 573, 574, 575, 577, 578, 579, 580, 581, 582, 584, 587, 588, 589, 592, 593, 595, 601, 603, 604, 607, 609, 614, 617, 618, 623, 624, 628, 630, 631, 636, 640, 648, 659, 675, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 738, 739, 741, 744, 753, 763, 764, 768, 769, 772, 773, 775, 784, 786, 788, 795, 796, 800, 804, 805, 808, 809, 819, 822, 824, 826, 827, 832, 836, 838, 840, 841, 842, 843, 844, 846, 847, 848, 849, 850, 855, 857, 859, 862, 865, 867, 873, 875, 885, 887, 888, 891, 893, 896, 897, 898, 908, 911, 914, 918, 921, 922, 927, 928, 931, 932, 937, 947, 951, 952, 965, 969, 970, 972, 973, 974, 980, 985, 988, 996, 1003, 1004, 1005, 1006, 1023, 1026, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1056, 1059, 1061, 1066, 1068, 1070, 1074, 1075, 1080, 1081, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1135, 1140, 1141, 1143, 1145, 1150, 1151, 1152, 1153, 1156, 1157, 1159, 1160, 1162, 1163, 1165, 1170, 1172, 1174, 1175, 1180, 1181, 1182, 1183, 1184, 1207, 1209, 1214, 1215, 1217, 1219, 1223, 1229, 1236, 1242, 1248, 1261, 1263, 1264, 1283, 1284, 1298, 1299, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1343, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418, 1420] }, { color: "030403", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 977, 978, 980, 983, 1000, 1002, 1062, 1183, 1312, 1385] }, { color: "030406", frames: [171, 466, 532, 845, 1289] }, { color: "030508", frames: [660, 816] }, { color: "03050a", frames: [170, 171, 172, 178, 180, 206, 298, 466, 523, 532, 547, 549, 812, 845, 847, 1333] }, { color: "030618", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "030810", frames: [174, 192, 1387, 1400] }, { color: "030902", frames: [174, 183, 192, 1226, 1387, 1400] }, { color: "030a1e", frames: [632, 637, 649, 653, 666, 672, 676, 677, 689, 691, 692, 698, 715, 726, 734, 735, 742, 747, 754, 755, 768, 775, 778, 780, 791, 796, 800, 804, 817, 832, 840, 841, 843, 847, 858, 859, 873, 874, 881, 884, 890, 893, 899, 903, 912, 914, 942, 948, 962, 969, 1020, 1043, 1049, 1070, 1109, 1113, 1118, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1171, 1200, 1207, 1251, 1254, 1273, 1279, 1283, 1286, 1287, 1293, 1298, 1299, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1362, 1372, 1377, 1379, 1380, 1386, 1392, 1398] }, { color: "030b0a", frames: [174, 192, 1387, 1400] }, { color: "040103", frames: [660, 681, 754, 769, 1245, 1286, 1287] }, { color: "040301", frames: [159, 160, 162, 164, 165, 168, 169, 174, 176, 178, 182, 187, 191, 192, 193, 197, 198, 205, 208, 224, 247, 266, 284, 296, 363, 386, 387, 388, 389, 390, 394, 409, 451, 460, 475, 476, 494, 502, 519, 538, 541, 543, 551, 554, 558, 565, 570, 575, 577, 585, 598, 601, 604, 629, 639, 643, 644, 648, 666, 675, 678, 701, 708, 709, 712, 744, 757, 758, 760, 766, 769, 772, 784, 788, 794, 800, 803, 809, 822, 840, 852, 879, 893, 900, 911, 919, 920, 927, 944, 947, 973, 974, 980, 1005, 1011, 1017, 1031, 1054, 1066, 1075, 1081, 1094, 1135, 1138, 1148, 1152, 1163, 1186, 1188, 1197, 1207, 1215, 1216, 1231, 1232, 1244, 1249, 1251, 1257, 1287, 1292, 1331, 1342, 1343, 1379, 1383, 1387, 1391, 1400, 1401, 1403, 1404, 1405, 1406, 1413] }, { color: "040305", frames: [173, 442, 472, 474, 717, 767, 811, 826, 957, 963, 966, 974, 1016, 1030, 1032, 1080, 1186, 1245, 1267, 1309, 1314, 1383] }, { color: "04030c", frames: [963, 966, 1290] }, { color: "040402", frames: [62, 63, 64, 68, 69, 151, 158, 170, 171, 172, 177, 180, 181, 206, 298, 466, 523, 532, 547, 548, 549, 570, 593, 631, 689, 810, 825, 835, 840, 845, 847, 873, 918, 951, 954, 1003, 1184, 1230, 1243, 1246, 1263, 1270, 1326, 1333] }, { color: "040405", frames: [87, 156, 182, 183, 224, 226, 228, 243, 246, 263, 301, 356, 399, 441, 451, 460, 482, 483, 484, 505, 528, 546, 547, 557, 563, 564, 606, 626, 678, 695, 707, 708, 717, 771, 859, 872, 884, 938, 960, 995, 996, 1141, 1151, 1163, 1203, 1207, 1231, 1254, 1333, 1348, 1349, 1384, 1386] }, { color: "040406", frames: [174, 192, 970, 1387, 1400] }, { color: "040409", frames: [138, 140, 714, 809, 963, 966, 974, 1110, 1292] }, { color: "040505", frames: [158, 963, 966] }, { color: "040508", frames: [220, 221, 222, 228, 268, 271, 273, 367, 455, 464, 485, 608, 611, 637, 784, 842, 885, 963, 966, 986, 1001, 1148, 1154, 1174, 1209, 1231, 1311, 1386, 1387, 1390, 1419] }, { color: "040702", frames: [171, 466, 532, 845] }, { color: "04070a", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "040807", frames: [171, 466, 532, 845] }, { color: "04080e", frames: [178, 179, 182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 812, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "04080f", frames: [171, 238, 247, 340, 363, 466, 472, 532, 598, 618, 675, 686, 845, 951, 967, 1017, 1023, 1112, 1151, 1255, 1318, 1358, 1400] }, { color: "040819", frames: [632, 653, 672, 730, 735, 745, 817, 821, 866, 906, 962, 999, 1083, 1161, 1251, 1254, 1281, 1283, 1290, 1365, 1379, 1380] }, { color: "040a06", frames: [173, 174, 181, 182, 192, 356, 399, 451, 460, 505, 528, 547, 563, 570, 606, 631, 678, 695, 707, 708, 771, 835, 840, 859, 872, 884, 938, 951, 996, 1163, 1231, 1263, 1333, 1348, 1349, 1384, 1386, 1387, 1400] }, { color: "040b0a", frames: [179, 182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "040b0b", frames: [171, 466, 532, 845] }, { color: "050302", frames: [200, 237, 395, 400, 441, 517, 532, 555, 573, 579, 580, 582, 584, 601, 640, 657, 709, 753, 762, 772, 791, 809, 850, 859, 879, 920, 960, 963, 966, 970, 1121, 1141, 1252, 1325, 1330, 1333, 1393, 1398, 1410, 1412, 1413] }, { color: "050303", frames: [153, 160, 161, 185, 194, 198, 384, 401, 404, 407, 409, 503, 505, 513, 555, 587, 588, 610, 660, 704, 755, 762, 795, 819, 939, 969, 1037, 1140, 1147, 1267, 1268, 1278, 1284, 1399, 1414] }, { color: "05030b", frames: [119, 120, 148, 182, 244, 245, 247, 447, 448, 449, 581, 650, 660, 664, 891, 920, 1009, 1010, 1013, 1018, 1031, 1035, 1071, 1199, 1215, 1238, 1251, 1265, 1322] }, { color: "050401", frames: [72, 159, 160, 166, 168, 179, 187, 191, 197, 198, 208, 222, 224, 247, 259, 261, 262, 269, 284, 302, 310, 334, 363, 385, 387, 388, 390, 405, 428, 431, 435, 460, 494, 502, 519, 539, 551, 554, 558, 562, 566, 573, 575, 577, 586, 603, 609, 629, 635, 642, 643, 648, 666, 675, 684, 708, 709, 757, 758, 760, 772, 784, 788, 791, 809, 822, 840, 850, 878, 887, 888, 900, 905, 927, 947, 960, 964, 973, 974, 980, 1000, 1005, 1031, 1062, 1066, 1081, 1083, 1085, 1094, 1107, 1135, 1136, 1138, 1152, 1177, 1188, 1207, 1210, 1215, 1232, 1244, 1312, 1342, 1343, 1351, 1379, 1382, 1383, 1385, 1391, 1400, 1401, 1404, 1413] }, { color: "050502", frames: [174, 182, 192, 233, 250, 356, 387, 395, 399, 442, 451, 460, 505, 528, 532, 542, 545, 547, 563, 565, 573, 606, 609, 644, 678, 695, 707, 708, 769, 771, 850, 859, 872, 884, 891, 938, 960, 996, 1163, 1200, 1231, 1269, 1291, 1333, 1348, 1349, 1384, 1385, 1386, 1387, 1400, 1413, 1415] }, { color: "050504", frames: [203, 336, 466, 480, 553, 569, 575, 586, 707, 708, 744, 848, 849, 867, 888, 891, 962, 1003, 1005, 1174, 1175] }, { color: "05050b", frames: [96, 501, 963, 966, 1178] }, { color: "05060c", frames: [660, 714] }, { color: "050903", frames: [398, 476, 521, 565, 660, 797, 1165, 1292, 1326] }, { color: "050a02", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "050c07", frames: [171, 179, 466, 532, 845] }, { color: "051302", frames: [171, 186, 221, 238, 247, 307, 317, 323, 329, 340, 344, 363, 385, 389, 401, 466, 469, 472, 477, 483, 498, 513, 523, 532, 533, 550, 565, 598, 618, 668, 672, 675, 682, 686, 692, 696, 700, 718, 723, 778, 845, 859, 879, 884, 889, 893, 918, 919, 921, 943, 951, 967, 1004, 1017, 1023, 1054, 1067, 1087, 1105, 1112, 1151, 1190, 1196, 1208, 1250, 1255, 1296, 1308, 1318, 1351, 1353, 1358, 1400] }, { color: "060111", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "060201", frames: [159, 160, 161, 164, 166, 168, 171, 173, 178, 179, 185, 191, 194, 198, 200, 201, 203, 208, 209, 224, 247, 284, 305, 336, 363, 387, 388, 390, 401, 404, 407, 409, 431, 441, 460, 466, 480, 494, 502, 505, 519, 532, 547, 551, 558, 575, 577, 585, 593, 603, 610, 612, 613, 629, 641, 642, 643, 648, 657, 666, 670, 675, 680, 682, 695, 704, 708, 744, 753, 757, 758, 760, 771, 772, 784, 794, 809, 812, 822, 840, 845, 848, 849, 859, 867, 881, 891, 893, 894, 923, 925, 926, 927, 947, 973, 974, 975, 980, 1003, 1005, 1006, 1010, 1012, 1013, 1031, 1043, 1066, 1081, 1094, 1121, 1135, 1152, 1163, 1174, 1175, 1188, 1207, 1215, 1232, 1309, 1330, 1333, 1351, 1379, 1382, 1383, 1391, 1392, 1400, 1401, 1404, 1413] }, { color: "060302", frames: [23, 43, 61, 65, 82, 84, 85, 86, 119, 130, 170, 177, 179, 188, 193, 199, 201, 202, 203, 207, 215, 223, 238, 241, 246, 258, 265, 266, 270, 275, 279, 282, 285, 293, 301, 324, 336, 358, 363, 366, 367, 372, 378, 386, 387, 398, 438, 460, 466, 470, 478, 480, 481, 483, 508, 523, 532, 552, 556, 562, 566, 575, 577, 578, 582, 589, 596, 601, 610, 612, 614, 615, 617, 620, 629, 630, 631, 632, 644, 692, 705, 730, 735, 743, 744, 745, 773, 774, 791, 800, 806, 807, 811, 816, 817, 821, 826, 848, 849, 850, 853, 866, 867, 871, 873, 880, 891, 898, 906, 915, 928, 931, 935, 947, 962, 966, 974, 980, 996, 997, 999, 1001, 1003, 1004, 1037, 1064, 1083, 1085, 1092, 1096, 1099, 1106, 1134, 1140, 1142, 1143, 1145, 1148, 1151, 1161, 1174, 1175, 1180, 1191, 1197, 1211, 1240, 1273, 1281, 1283, 1284, 1290, 1291, 1300, 1304, 1322, 1332, 1365, 1379, 1380, 1384, 1387, 1388, 1390, 1397, 1405, 1406, 1407] }, { color: "060303", frames: [244, 245, 247, 266, 447, 448, 449, 508, 562, 581, 627, 640, 660, 664, 891, 1006, 1039, 1069, 1071, 1215, 1249, 1270, 1287, 1322, 1349] }, { color: "060515", frames: [242, 243, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 643, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "060701", frames: [168, 203, 207, 336, 428, 466, 480, 575, 744, 788, 848, 849, 867, 891, 905, 1003, 1083, 1085, 1136, 1174, 1175, 1309] }, { color: "060702", frames: [173, 203, 210, 241, 336, 398, 466, 476, 480, 521, 565, 575, 701, 744, 797, 848, 849, 867, 891, 1003, 1165, 1174, 1175, 1292, 1326] }, { color: "060b02", frames: [171, 209, 466, 532, 845, 1163] }, { color: "060c09", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "061102", frames: [174, 192, 1387, 1400] }, { color: "070202", frames: [11, 15, 18, 74, 94, 115, 123, 183, 188, 221, 245, 251, 259, 260, 267, 269, 273, 307, 308, 310, 313, 314, 334, 349, 353, 357, 363, 369, 372, 387, 393, 440, 452, 456, 465, 468, 477, 501, 505, 525, 541, 584, 587, 598, 628, 634, 636, 645, 648, 676, 679, 719, 721, 726, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 868, 873, 881, 888, 897, 916, 917, 922, 924, 954, 964, 987, 992, 993, 998, 999, 1000, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1073, 1079, 1087, 1092, 1101, 1104, 1110, 1113, 1115, 1117, 1143, 1146, 1147, 1155, 1158, 1160, 1170, 1179, 1184, 1185, 1190, 1205, 1215, 1220, 1221, 1230, 1232, 1252, 1257, 1258, 1264, 1271, 1273, 1277, 1302, 1303, 1308, 1311, 1320, 1325, 1355, 1358, 1360, 1384] }, { color: "070401", frames: [9, 20, 27, 36, 55, 77, 79, 80, 82, 92, 97, 119, 132, 135, 136, 149, 165, 168, 180, 185, 188, 198, 203, 260, 265, 267, 276, 290, 296, 307, 312, 314, 328, 334, 336, 341, 344, 364, 367, 371, 372, 379, 395, 407, 419, 420, 428, 435, 438, 443, 446, 449, 450, 451, 466, 470, 480, 499, 502, 510, 519, 526, 543, 549, 554, 562, 565, 575, 583, 584, 587, 598, 604, 636, 642, 647, 671, 696, 731, 744, 754, 765, 767, 768, 803, 815, 819, 826, 838, 848, 849, 861, 867, 872, 882, 884, 891, 899, 905, 915, 918, 938, 948, 951, 956, 957, 969, 980, 982, 993, 997, 1003, 1010, 1016, 1017, 1031, 1051, 1078, 1081, 1082, 1083, 1084, 1085, 1096, 1097, 1108, 1112, 1115, 1120, 1125, 1127, 1135, 1136, 1142, 1143, 1144, 1150, 1152, 1174, 1175, 1177, 1185, 1187, 1191, 1198, 1221, 1239, 1246, 1253, 1255, 1267, 1273, 1276, 1287, 1300, 1301, 1309, 1311, 1324, 1330, 1332, 1342, 1348, 1362, 1363, 1376, 1382, 1392, 1397, 1412, 1421] }, { color: "070610", frames: [85, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1247, 1302, 1303, 1360] }, { color: "070616", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "070617", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "07070a", frames: [94, 103, 122, 147, 398, 694, 795, 804, 896, 915, 927, 963, 966, 1202, 1344] }, { color: "070904", frames: [159, 160, 168, 203, 224, 247, 284, 336, 363, 466, 480, 494, 502, 519, 539, 551, 558, 562, 565, 566, 575, 577, 648, 675, 744, 772, 784, 809, 822, 848, 849, 867, 891, 900, 927, 947, 973, 974, 980, 990, 1003, 1005, 1020, 1066, 1094, 1124, 1135, 1152, 1174, 1175, 1183, 1207, 1215, 1343, 1391, 1400, 1401] }, { color: "070b1d", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "070c0b", frames: [42, 171, 466, 532, 845] }, { color: "071102", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "080101", frames: [11, 12, 13, 14, 15, 18, 20, 47, 57, 66, 75, 76, 112, 118, 119, 124, 151, 160, 171, 174, 178, 180, 181, 185, 188, 191, 192, 197, 198, 200, 204, 208, 222, 229, 238, 259, 264, 269, 282, 284, 288, 289, 295, 302, 303, 307, 308, 310, 314, 329, 330, 334, 335, 343, 349, 351, 357, 359, 362, 369, 380, 387, 388, 390, 392, 394, 397, 402, 404, 407, 412, 415, 420, 421, 428, 435, 436, 444, 451, 453, 458, 460, 466, 468, 488, 493, 494, 499, 503, 514, 518, 519, 532, 535, 536, 537, 538, 543, 545, 551, 561, 570, 577, 579, 580, 584, 585, 598, 607, 609, 621, 629, 631, 637, 643, 648, 649, 664, 666, 670, 674, 678, 687, 701, 704, 708, 732, 741, 744, 753, 754, 757, 758, 760, 766, 767, 772, 773, 775, 784, 787, 788, 791, 794, 795, 796, 800, 808, 816, 819, 821, 824, 827, 834, 835, 836, 840, 845, 852, 861, 865, 867, 877, 880, 881, 887, 888, 890, 893, 897, 911, 915, 916, 923, 947, 951, 962, 964, 968, 970, 971, 975, 977, 979, 981, 987, 1000, 1001, 1026, 1031, 1033, 1042, 1043, 1051, 1054, 1058, 1066, 1069, 1072, 1075, 1079, 1080, 1081, 1083, 1084, 1085, 1087, 1091, 1102, 1104, 1109, 1112, 1135, 1140, 1149, 1151, 1152, 1158, 1159, 1160, 1170, 1171, 1177, 1188, 1201, 1212, 1217, 1221, 1230, 1232, 1234, 1237, 1242, 1244, 1248, 1252, 1258, 1263, 1267, 1271, 1275, 1286, 1287, 1303, 1310, 1313, 1320, 1323, 1324, 1326, 1355, 1356, 1357, 1358, 1360, 1379, 1380, 1382, 1383, 1387, 1391, 1400, 1403, 1404, 1408, 1409, 1413, 1416] }, { color: "080202", frames: [20, 22, 30, 31, 34, 35, 36, 41, 52, 62, 63, 68, 69, 72, 79, 94, 98, 101, 104, 107, 108, 109, 110, 111, 112, 121, 123, 127, 130, 133, 151, 168, 169, 182, 195, 197, 202, 203, 230, 231, 239, 245, 249, 250, 263, 264, 265, 267, 278, 279, 280, 281, 283, 285, 286, 294, 299, 302, 306, 327, 331, 336, 337, 339, 342, 347, 354, 355, 356, 357, 361, 363, 367, 368, 372, 376, 377, 378, 379, 383, 384, 386, 387, 390, 395, 399, 400, 404, 408, 409, 410, 412, 414, 415, 416, 417, 420, 422, 426, 437, 438, 444, 451, 460, 468, 469, 477, 480, 502, 505, 509, 511, 518, 519, 523, 528, 529, 532, 534, 547, 550, 554, 555, 558, 563, 564, 571, 575, 581, 588, 589, 601, 602, 604, 605, 606, 614, 618, 625, 630, 631, 632, 637, 638, 643, 646, 662, 663, 666, 674, 676, 678, 689, 691, 694, 695, 696, 698, 703, 704, 705, 707, 708, 715, 721, 726, 727, 728, 729, 730, 731, 742, 747, 752, 754, 766, 771, 773, 775, 778, 794, 795, 800, 804, 809, 815, 819, 820, 822, 825, 826, 829, 832, 839, 841, 843, 847, 859, 869, 871, 872, 873, 874, 875, 876, 877, 879, 880, 881, 883, 884, 888, 893, 894, 899, 902, 912, 913, 914, 917, 924, 938, 941, 942, 962, 968, 974, 996, 1005, 1020, 1022, 1025, 1032, 1036, 1043, 1049, 1050, 1058, 1064, 1070, 1109, 1113, 1132, 1135, 1139, 1140, 1142, 1145, 1146, 1148, 1163, 1172, 1178, 1182, 1184, 1189, 1190, 1191, 1193, 1195, 1207, 1215, 1231, 1238, 1239, 1240, 1243, 1244, 1248, 1252, 1253, 1257, 1258, 1259, 1268, 1270, 1272, 1277, 1281, 1283, 1286, 1293, 1295, 1299, 1300, 1301, 1302, 1303, 1304, 1306, 1315, 1318, 1320, 1322, 1324, 1326, 1333, 1344, 1348, 1349, 1352, 1362, 1363, 1364, 1371, 1372, 1375, 1376, 1377, 1379, 1384, 1385, 1386, 1392, 1394, 1396, 1398, 1399, 1400, 1410, 1412] }, { color: "080801", frames: [72, 168, 185, 186, 193, 194, 203, 206, 222, 226, 259, 261, 262, 269, 302, 310, 334, 360, 401, 404, 407, 409, 420, 428, 429, 431, 505, 539, 609, 636, 637, 691, 704, 791, 795, 800, 832, 836, 887, 888, 905, 925, 964, 1000, 1032, 1062, 1083, 1085, 1092, 1109, 1120, 1136, 1140, 1177, 1190, 1191, 1269, 1312, 1326, 1385, 1400, 1403, 1417] }, { color: "080811", frames: [85, 273, 274, 465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "080909", frames: [62, 63, 64, 68, 69, 151, 270, 548, 689, 825, 873, 918, 963, 966, 1003, 1037, 1230, 1243, 1246, 1270, 1326] }, { color: "080914", frames: [744, 848, 849, 852, 867, 1003, 1403] }, { color: "080b09", frames: [289, 963, 966, 1179] }, { color: "080d22", frames: [174, 192, 1387, 1400] }, { color: "080e01", frames: [1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "090810", frames: [64, 660, 1128] }, { color: "090902", frames: [174, 183, 186, 188, 190, 191, 192, 198, 203, 208, 226, 360, 387, 388, 390, 420, 431, 460, 571, 574, 603, 629, 636, 637, 642, 643, 648, 666, 691, 708, 757, 758, 760, 791, 832, 836, 840, 887, 888, 919, 920, 921, 925, 1031, 1081, 1109, 1135, 1177, 1188, 1191, 1232, 1269, 1351, 1379, 1383, 1384, 1387, 1400, 1404, 1413] }, { color: "090c04", frames: [543, 644, 660, 1054, 1187, 1188] }, { color: "090c1f", frames: [171, 186, 466, 469, 498, 513, 532, 533, 550, 668, 692, 696, 700, 718, 723, 845, 884, 893, 918, 921, 943, 1105, 1208, 1250, 1296, 1308, 1353] }, { color: "090d1d", frames: [182, 205, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 712, 771, 859, 872, 884, 920, 938, 996, 1009, 1010, 1013, 1017, 1018, 1075, 1163, 1199, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "0a0408", frames: [85, 660] }, { color: "0a0616", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "0a0817", frames: [259, 269, 307, 308, 310, 334, 369, 468, 871, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "0a1006", frames: [489, 660] }, { color: "0a351b", frames: [867, 875, 877, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 915, 918, 921, 923, 927, 928, 931, 951, 952, 965, 968, 970, 971, 972, 988, 996, 1003, 1004, 1006, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1058, 1059, 1061, 1062, 1066, 1068, 1070, 1074, 1075, 1079, 1080, 1081, 1085, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1140, 1141, 1143, 1145, 1149, 1150, 1151, 1152, 1153, 1156, 1157, 1159, 1160, 1162, 1163, 1165, 1170, 1172, 1175, 1180, 1182, 1183, 1201, 1207, 1209, 1217, 1223, 1229, 1236, 1237, 1261, 1263, 1264, 1275, 1283, 1284, 1287, 1298, 1299, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "0b0302", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 350, 369, 468, 791, 794, 887, 888, 897, 916, 964, 1000, 1087, 1158, 1177, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "0b0602", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 612, 678, 695, 707, 708, 771, 783, 859, 872, 884, 938, 953, 956, 966, 968, 996, 1163, 1187, 1188, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "0b070c", frames: [655, 656, 660, 685, 759, 760] }, { color: "0b0803", frames: [72, 207, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 788, 964, 1000, 1062, 1309, 1312, 1385, 1393] }, { color: "0b0901", frames: [72, 207, 222, 259, 261, 262, 269, 302, 310, 334, 409, 419, 420, 423, 505, 539, 609, 705, 788, 964, 1000, 1062, 1309, 1312, 1385] }, { color: "0b0908", frames: [660] }, { color: "0b0a02", frames: [182, 356, 399, 405, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "0b0d03", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 566, 609, 964, 1000, 1062, 1135, 1312, 1385] }, { color: "0b1214", frames: [72, 107, 111, 222, 231, 259, 261, 262, 269, 278, 302, 310, 334, 355, 379, 384, 395, 400, 422, 539, 555, 571, 609, 638, 775, 815, 820, 825, 826, 829, 876, 913, 917, 964, 1000, 1022, 1049, 1058, 1062, 1142, 1252, 1312, 1322, 1364, 1385, 1396, 1410] }, { color: "0c0102", frames: [77, 171, 309, 311, 355, 416, 417, 466, 473, 532, 646, 671, 677, 766, 768, 845, 881, 888, 916, 1009, 1022, 1043, 1117, 1151, 1240, 1252, 1262, 1299, 1300] }, { color: "0c0201", frames: [11, 15, 26, 34, 35, 65, 183, 188, 191, 259, 269, 289, 307, 308, 309, 310, 321, 325, 334, 338, 350, 369, 403, 432, 468, 487, 489, 547, 559, 568, 613, 688, 695, 696, 720, 725, 737, 740, 771, 774, 793, 823, 825, 846, 857, 868, 882, 897, 916, 948, 964, 971, 1000, 1008, 1023, 1065, 1080, 1081, 1087, 1095, 1103, 1134, 1140, 1142, 1148, 1158, 1221, 1224, 1225, 1230, 1232, 1236, 1245, 1271, 1282, 1285, 1286, 1309, 1311, 1318, 1320, 1321, 1323, 1327, 1331, 1342, 1347, 1355, 1358, 1367, 1375, 1384, 1412, 1414] }, { color: "0c0401", frames: [203, 336, 466, 480, 575, 744, 788, 795, 848, 849, 867, 891, 1003, 1096, 1099, 1140, 1174, 1175, 1297] }, { color: "0c040f", frames: [242, 327, 329, 370, 439, 443, 450, 530, 533, 546, 549, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "0c0511", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "0c0703", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 543, 644, 897, 916, 964, 1000, 1054, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "0c0b02", frames: [171, 400, 406, 419, 420, 466, 525, 532, 551, 788, 795, 844, 845, 1083, 1094, 1110, 1151, 1223, 1249, 1281, 1292, 1395] }, { color: "0c0c18", frames: [85, 244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "0c110b", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "0d0102", frames: [75, 76, 125, 129, 164, 263, 298, 314, 408, 409, 412, 415, 416, 417, 418, 419, 420, 422, 496, 518, 526, 561, 589, 630, 637, 660, 662, 663, 728, 729, 730, 752, 755, 795, 815, 825, 869, 873, 880, 893, 894, 913, 923, 951, 958, 974, 1016, 1090, 1118, 1135, 1136, 1187, 1239, 1271, 1274, 1280, 1285, 1288, 1291, 1298, 1301, 1332, 1336, 1337, 1348, 1390, 1399] }, { color: "0d010a", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "0d0502", frames: [74, 75, 76, 83, 101, 119, 171, 185, 237, 247, 258, 327, 331, 395, 400, 407, 415, 416, 418, 442, 466, 493, 494, 501, 502, 504, 532, 534, 555, 561, 579, 580, 582, 584, 719, 772, 833, 845, 847, 853, 923, 947, 962, 974, 977, 978, 980, 1065, 1067, 1096, 1099, 1106, 1122, 1174, 1177, 1185, 1199, 1216, 1238, 1246, 1252, 1265, 1266, 1269, 1276, 1278, 1279, 1281, 1299, 1300, 1309, 1333, 1393, 1398, 1408, 1410] }, { color: "0d0503", frames: [334, 337, 356, 395, 400, 406, 444, 445, 460, 525, 551, 630, 773, 774, 788, 795, 822, 832, 844, 963, 966, 976, 1013, 1015, 1083, 1094, 1095, 1110, 1111, 1142, 1151, 1223, 1249, 1281, 1292, 1344, 1417] }, { color: "0d0604", frames: [32, 45, 203, 204, 210, 211, 264, 336, 413, 425, 456, 466, 480, 491, 494, 528, 563, 575, 695, 744, 848, 849, 850, 867, 886, 891, 906, 949, 962, 1003, 1166, 1174, 1175, 1249, 1289, 1303, 1373, 1381, 1383, 1420, 1422] }, { color: "0d0902", frames: [203, 336, 412, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175, 1230, 1398] }, { color: "0d0909", frames: [963, 966, 1196] }, { color: "0d0a06", frames: [1, 4, 6, 8, 10, 11, 15, 20, 23, 27, 31, 33, 37, 43, 49, 50, 77, 88, 92, 101, 116, 119, 121, 122, 125, 146, 167, 169, 172, 173, 174, 175, 184, 187, 188, 191, 207, 242, 245, 258, 259, 269, 278, 282, 286, 290, 295, 296, 297, 307, 308, 310, 317, 319, 327, 334, 359, 365, 369, 373, 378, 395, 399, 402, 415, 426, 433, 439, 442, 446, 451, 455, 468, 500, 506, 509, 515, 517, 518, 526, 527, 532, 548, 554, 555, 570, 576, 578, 585, 588, 600, 604, 606, 618, 655, 656, 662, 663, 666, 667, 671, 679, 703, 707, 709, 712, 724, 728, 731, 739, 748, 754, 759, 766, 768, 771, 782, 788, 797, 811, 819, 820, 829, 842, 849, 853, 857, 864, 871, 887, 897, 898, 907, 916, 920, 923, 933, 938, 950, 953, 964, 970, 971, 972, 976, 982, 985, 990, 994, 999, 1000, 1006, 1011, 1017, 1040, 1050, 1054, 1062, 1075, 1080, 1087, 1098, 1099, 1126, 1147, 1149, 1158, 1159, 1162, 1164, 1172, 1174, 1177, 1178, 1184, 1192, 1193, 1194, 1196, 1197, 1198, 1199, 1200, 1202, 1207, 1208, 1210, 1221, 1223, 1226, 1229, 1230, 1231, 1232, 1246, 1248, 1265, 1271, 1281, 1282, 1286, 1291, 1292, 1320, 1323, 1332, 1333, 1334, 1335, 1342, 1350, 1355, 1358, 1363, 1368, 1372, 1374, 1378, 1379, 1391, 1395, 1402, 1408, 1410, 1413, 1416, 1418, 1419, 1420] }, { color: "0d0b08", frames: [963, 966] }, { color: "0d0b1b", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "0d0c04", frames: [160, 161, 164, 203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "0d0d06", frames: [181, 182, 356, 399, 451, 460, 505, 528, 547, 563, 570, 585, 606, 631, 678, 695, 707, 708, 771, 835, 840, 859, 872, 884, 938, 951, 996, 1163, 1231, 1263, 1333, 1348, 1349, 1384, 1386] }, { color: "0d101d", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "0d1114", frames: [829, 963, 966, 1032, 1120, 1245, 1421] }, { color: "0d1713", frames: [221, 228, 273, 307, 317, 323, 329, 344, 385, 389, 401, 465, 477, 483, 523, 565, 628, 672, 682, 778, 859, 879, 885, 889, 919, 964, 966, 998, 999, 1001, 1004, 1054, 1057, 1067, 1087, 1148, 1190, 1196, 1209, 1231, 1351, 1360, 1419] }, { color: "0d1802", frames: [1057, 1360] }, { color: "0e0202", frames: [174, 181, 192, 235, 416, 417, 420, 422, 505, 506, 570, 630, 631, 635, 715, 822, 835, 840, 843, 844, 930, 947, 951, 1095, 1257, 1263, 1277, 1387, 1400] }, { color: "0e0302", frames: [11, 15, 188, 193, 259, 269, 307, 308, 310, 334, 369, 428, 468, 623, 625, 644, 765, 767, 768, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1252, 1271, 1320, 1355, 1358] }, { color: "0e0402", frames: [25, 42, 136, 191, 198, 199, 208, 357, 387, 388, 390, 460, 629, 643, 648, 660, 666, 708, 757, 758, 760, 840, 940, 951, 1031, 1081, 1102, 1135, 1188, 1190, 1191, 1232, 1268, 1366, 1379, 1383, 1404, 1410, 1413] }, { color: "0e040b", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "0e0501", frames: [11, 15, 188, 249, 250, 259, 269, 307, 308, 310, 334, 369, 419, 420, 423, 451, 468, 509, 534, 715, 794, 897, 916, 964, 1000, 1010, 1038, 1087, 1140, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "0e0602", frames: [174, 186, 192, 203, 226, 251, 360, 408, 409, 415, 416, 417, 420, 431, 518, 636, 637, 691, 728, 729, 730, 832, 836, 873, 925, 1069, 1081, 1109, 1189, 1191, 1194, 1196, 1242, 1269, 1301, 1348, 1387, 1399, 1400] }, { color: "0e0606", frames: [84, 115, 182, 189, 236, 274, 275, 318, 356, 399, 400, 406, 431, 451, 460, 505, 525, 528, 547, 551, 563, 587, 606, 635, 678, 695, 707, 708, 752, 771, 777, 788, 795, 844, 850, 859, 872, 884, 913, 938, 996, 1038, 1068, 1083, 1094, 1110, 1136, 1151, 1163, 1223, 1231, 1249, 1281, 1292, 1333, 1348, 1349, 1384, 1386] }, { color: "0e0703", frames: [201, 202, 386, 387, 523, 556, 614, 617, 630, 660, 783, 800, 1037, 1092, 1096, 1140, 1143, 1240, 1273, 1283, 1284, 1392] }, { color: "0e0903", frames: [623, 625, 963, 966, 1075, 1392, 1398] }, { color: "0e0918", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "0e0d10", frames: [174, 192, 756, 1387, 1400] }, { color: "0e0e02", frames: [174, 192, 1387, 1400] }, { color: "0e0f09", frames: [203, 336, 466, 480, 575, 652, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "0e1425", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "0e1a22", frames: [182, 205, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 712, 771, 859, 872, 884, 920, 938, 996, 1009, 1010, 1013, 1017, 1018, 1075, 1163, 1199, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "0f0302", frames: [167, 179, 183, 187, 244, 245, 247, 317, 319, 447, 448, 449, 520, 581, 660, 664, 891, 968, 996, 1071, 1196, 1215, 1238, 1251, 1265, 1294, 1322, 1362, 1390, 1391] }, { color: "0f0501", frames: [12, 18, 20, 32, 45, 66, 112, 151, 160, 178, 185, 197, 203, 204, 210, 211, 222, 269, 302, 307, 329, 336, 386, 394, 413, 421, 425, 428, 466, 480, 488, 491, 494, 503, 514, 519, 534, 564, 575, 581, 582, 585, 609, 629, 633, 637, 641, 649, 664, 670, 678, 695, 714, 744, 765, 767, 768, 771, 791, 816, 819, 821, 834, 836, 848, 849, 850, 866, 867, 886, 887, 888, 890, 891, 897, 906, 941, 949, 975, 987, 1003, 1026, 1042, 1051, 1069, 1085, 1102, 1104, 1122, 1148, 1160, 1166, 1170, 1171, 1174, 1175, 1177, 1181, 1213, 1242, 1244, 1252, 1258, 1267, 1286, 1287, 1313, 1326, 1355, 1360, 1373, 1380, 1381, 1383, 1387, 1417, 1422] }, { color: "0f0607", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 775, 875, 891, 1047, 1071, 1215, 1322, 1404] }, { color: "0f080f", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "0f0902", frames: [11, 13, 14, 15, 47, 57, 75, 76, 118, 119, 124, 180, 181, 183, 185, 188, 190, 200, 204, 229, 238, 259, 269, 282, 284, 288, 289, 307, 308, 310, 334, 335, 343, 349, 351, 362, 369, 380, 388, 397, 402, 404, 407, 408, 409, 415, 416, 417, 420, 421, 435, 436, 453, 458, 468, 493, 494, 499, 518, 519, 535, 536, 543, 545, 551, 561, 577, 579, 580, 584, 609, 613, 621, 637, 648, 649, 687, 701, 704, 728, 729, 730, 732, 741, 753, 754, 772, 773, 775, 784, 788, 791, 796, 808, 821, 824, 827, 836, 865, 867, 873, 877, 880, 887, 893, 897, 911, 915, 916, 923, 964, 968, 970, 971, 1000, 1058, 1066, 1072, 1075, 1079, 1083, 1084, 1085, 1087, 1091, 1109, 1149, 1151, 1152, 1158, 1159, 1184, 1201, 1217, 1221, 1230, 1231, 1232, 1237, 1252, 1271, 1275, 1287, 1301, 1309, 1310, 1320, 1324, 1348, 1355, 1356, 1357, 1358, 1382, 1391, 1399, 1416] }, { color: "0f0c0f", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "0f120c", frames: [654, 963, 966, 1248] }, { color: "0f1b24", frames: [171, 174, 175, 184, 186, 187, 191, 192, 207, 238, 242, 245, 247, 258, 278, 282, 286, 290, 295, 296, 297, 317, 319, 327, 340, 359, 363, 365, 373, 378, 395, 399, 415, 426, 433, 442, 446, 451, 466, 469, 472, 498, 506, 509, 513, 515, 517, 518, 526, 527, 532, 533, 548, 550, 554, 555, 576, 578, 588, 598, 600, 604, 606, 618, 655, 656, 662, 663, 666, 667, 668, 671, 675, 679, 686, 692, 696, 700, 703, 707, 709, 712, 718, 723, 724, 728, 731, 739, 748, 754, 759, 766, 768, 771, 788, 797, 811, 819, 820, 829, 842, 845, 849, 853, 857, 864, 871, 884, 887, 893, 898, 907, 918, 920, 921, 923, 938, 943, 951, 967, 970, 971, 972, 976, 982, 985, 990, 999, 1006, 1011, 1017, 1023, 1040, 1050, 1054, 1062, 1075, 1080, 1099, 1105, 1112, 1126, 1147, 1149, 1151, 1162, 1164, 1172, 1174, 1177, 1178, 1192, 1193, 1194, 1196, 1197, 1198, 1199, 1200, 1202, 1207, 1208, 1210, 1223, 1226, 1229, 1231, 1232, 1246, 1248, 1250, 1255, 1265, 1281, 1282, 1286, 1291, 1292, 1296, 1308, 1318, 1323, 1332, 1333, 1334, 1335, 1342, 1350, 1353, 1358, 1363, 1368, 1372, 1374, 1378, 1379, 1387, 1391, 1395, 1400, 1402, 1408, 1410, 1413, 1416, 1418] }, { color: "0f2a0f", frames: [867, 1003] }, { color: "100616", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "100801", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "100802", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "100e09", frames: [963, 966] }, { color: "100e0f", frames: [70, 76, 81, 83, 107, 152, 171, 466, 532, 780, 845, 858] }, { color: "101003", frames: [72, 196, 210, 222, 241, 244, 259, 261, 262, 269, 302, 310, 334, 356, 410, 420, 428, 509, 527, 539, 573, 603, 609, 634, 701, 709, 734, 756, 831, 839, 881, 893, 964, 980, 1000, 1062, 1096, 1150, 1179, 1216, 1244, 1265, 1312, 1348, 1385, 1414] }, { color: "10151b", frames: [632, 653, 672, 810, 1251, 1254, 1283] }, { color: "10162c", frames: [1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "101828", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "110301", frames: [327, 347, 361, 550, 588, 644, 660, 664, 665, 743, 751, 877, 888, 1025, 1117, 1118, 1160, 1267, 1416] }, { color: "110401", frames: [187, 197, 337, 339, 415, 459, 461, 612, 652, 654, 660, 683, 709, 788, 843, 853, 946, 997, 1138, 1146, 1160, 1183, 1196, 1244, 1292] }, { color: "110403", frames: [245, 353, 356, 457, 505, 525, 660, 719, 726, 868, 881, 888, 1073, 1110, 1111, 1190, 1200, 1205, 1269, 1325] }, { color: "110501", frames: [11, 14, 15, 26, 42, 53, 65, 98, 107, 123, 161, 164, 167, 183, 188, 191, 259, 264, 269, 287, 289, 294, 307, 308, 309, 310, 317, 320, 321, 332, 334, 338, 347, 359, 369, 381, 382, 398, 403, 432, 445, 454, 468, 487, 489, 498, 506, 512, 538, 541, 559, 566, 568, 572, 574, 597, 605, 610, 624, 630, 642, 652, 664, 669, 684, 688, 719, 720, 725, 737, 738, 739, 740, 744, 745, 747, 750, 751, 754, 767, 778, 789, 791, 793, 797, 822, 830, 853, 857, 868, 882, 887, 888, 894, 897, 906, 916, 957, 961, 964, 971, 975, 1000, 1005, 1008, 1015, 1016, 1023, 1062, 1065, 1076, 1078, 1080, 1081, 1087, 1092, 1095, 1103, 1134, 1140, 1148, 1158, 1173, 1177, 1189, 1221, 1224, 1225, 1230, 1232, 1236, 1245, 1271, 1282, 1285, 1286, 1292, 1295, 1310, 1311, 1320, 1321, 1323, 1327, 1331, 1333, 1347, 1348, 1355, 1357, 1358, 1367, 1393, 1412, 1414, 1417] }, { color: "110605", frames: [174, 177, 192, 756, 810, 1033, 1387, 1400] }, { color: "110a06", frames: [171, 466, 532, 641, 670, 680, 771, 845, 1181] }, { color: "110d10", frames: [660] }, { color: "110d19", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "110f17", frames: [225, 560, 660, 826, 1053, 1228] }, { color: "110f1f", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "111215", frames: [217, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "111a14", frames: [65, 66, 72, 98, 101, 120, 123, 149, 169, 196, 197, 222, 223, 246, 247, 259, 261, 262, 269, 286, 296, 302, 310, 322, 334, 337, 377, 387, 394, 424, 425, 426, 428, 480, 518, 528, 534, 538, 539, 540, 558, 561, 575, 581, 582, 589, 609, 624, 646, 650, 659, 661, 669, 671, 679, 702, 715, 717, 724, 726, 730, 733, 739, 741, 742, 754, 756, 774, 788, 796, 804, 826, 836, 871, 878, 880, 883, 884, 885, 891, 892, 893, 896, 912, 921, 922, 927, 964, 968, 971, 1000, 1047, 1054, 1062, 1081, 1100, 1115, 1123, 1140, 1143, 1148, 1165, 1187, 1190, 1197, 1201, 1243, 1245, 1265, 1266, 1270, 1271, 1275, 1287, 1288, 1293, 1294, 1299, 1312, 1337, 1344, 1345, 1385, 1392] }, { color: "111c39", frames: [632, 637, 649, 653, 672, 676, 677, 691, 692, 698, 726, 734, 735, 755, 768, 780, 791, 796, 817, 840, 858, 859, 873, 890, 893, 903, 948, 969, 1043, 1118, 1125, 1127, 1128, 1137, 1139, 1144, 1171, 1200, 1251, 1254, 1273, 1279, 1283, 1287, 1298, 1299, 1332, 1372, 1380, 1386] }, { color: "120509", frames: [632, 653, 672, 1251, 1254, 1283, 1416] }, { color: "120601", frames: [18, 25, 28, 42, 74, 75, 94, 115, 117, 123, 165, 172, 185, 199, 205, 209, 221, 250, 251, 260, 267, 269, 273, 279, 286, 313, 314, 317, 319, 356, 357, 363, 364, 366, 372, 379, 387, 393, 394, 406, 421, 429, 431, 440, 452, 456, 457, 458, 465, 477, 493, 501, 506, 509, 526, 541, 584, 587, 599, 601, 603, 604, 628, 634, 642, 645, 648, 654, 660, 674, 676, 679, 697, 721, 730, 733, 751, 761, 765, 766, 768, 770, 781, 786, 803, 816, 819, 822, 834, 836, 847, 868, 869, 873, 897, 924, 948, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1032, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1054, 1057, 1060, 1072, 1079, 1092, 1096, 1099, 1101, 1102, 1104, 1106, 1111, 1113, 1115, 1117, 1120, 1143, 1155, 1160, 1162, 1169, 1170, 1175, 1179, 1184, 1185, 1186, 1190, 1191, 1200, 1215, 1220, 1232, 1234, 1235, 1252, 1258, 1279, 1281, 1302, 1303, 1308, 1311, 1326, 1351, 1360, 1366, 1369, 1403] }, { color: "12060f", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "120703", frames: [20, 22, 30, 31, 34, 35, 36, 41, 52, 62, 63, 68, 69, 72, 79, 94, 98, 101, 104, 107, 108, 109, 110, 111, 112, 121, 123, 127, 130, 133, 151, 168, 169, 195, 197, 202, 203, 206, 230, 231, 239, 245, 249, 250, 263, 264, 265, 267, 278, 280, 281, 283, 285, 286, 299, 302, 303, 306, 319, 327, 331, 336, 337, 339, 342, 354, 355, 357, 361, 363, 367, 368, 372, 377, 379, 383, 384, 387, 390, 395, 400, 404, 409, 410, 412, 414, 415, 422, 426, 437, 438, 444, 451, 468, 469, 477, 480, 502, 505, 509, 511, 523, 529, 532, 534, 538, 543, 550, 554, 555, 558, 564, 571, 575, 581, 588, 589, 598, 601, 602, 604, 614, 618, 625, 630, 631, 632, 638, 643, 660, 662, 663, 666, 674, 676, 689, 691, 696, 698, 703, 704, 715, 721, 726, 727, 728, 731, 742, 744, 747, 752, 754, 762, 766, 773, 775, 778, 795, 800, 804, 809, 815, 819, 820, 822, 825, 826, 829, 832, 839, 841, 843, 847, 852, 869, 871, 874, 875, 876, 877, 879, 880, 881, 883, 884, 888, 893, 899, 902, 912, 913, 914, 917, 942, 962, 968, 996, 1005, 1020, 1022, 1025, 1032, 1036, 1049, 1050, 1058, 1064, 1070, 1109, 1113, 1132, 1135, 1139, 1140, 1142, 1145, 1146, 1148, 1172, 1178, 1182, 1184, 1189, 1190, 1191, 1193, 1195, 1207, 1238, 1239, 1240, 1243, 1244, 1248, 1252, 1253, 1257, 1259, 1268, 1277, 1278, 1281, 1283, 1286, 1293, 1295, 1302, 1303, 1304, 1306, 1315, 1318, 1320, 1322, 1326, 1344, 1348, 1352, 1362, 1363, 1364, 1371, 1372, 1375, 1376, 1377, 1379, 1384, 1385, 1392, 1394, 1396, 1398, 1399, 1400, 1403, 1410, 1412] }, { color: "120705", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 311, 313, 314, 356, 357, 363, 372, 387, 393, 440, 452, 456, 457, 465, 473, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1111, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1200, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "120707", frames: [75, 76, 125, 129, 164, 263, 298, 374, 422, 496, 526, 589, 630, 660, 683, 752, 795, 815, 825, 843, 869, 880, 913, 923, 951, 958, 974, 1016, 1090, 1118, 1135, 1136, 1187, 1271, 1274, 1280, 1285, 1288, 1291, 1298, 1332, 1336, 1337, 1390] }, { color: "121102", frames: [170, 172, 180, 182, 186, 203, 206, 208, 226, 298, 356, 360, 399, 420, 431, 451, 460, 505, 523, 528, 542, 547, 549, 563, 578, 606, 634, 636, 637, 678, 691, 695, 707, 708, 751, 771, 832, 836, 847, 859, 872, 884, 925, 938, 950, 996, 1101, 1109, 1163, 1191, 1231, 1269, 1333, 1348, 1349, 1384, 1386, 1400] }, { color: "121502", frames: [169, 171, 466, 532, 845, 1390] }, { color: "121603", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "121708", frames: [171, 466, 532, 845] }, { color: "121b01", frames: [1049, 1060, 1070, 1109, 1113, 1115, 1117, 1139, 1140, 1143, 1145, 1148, 1155, 1179, 1190, 1197, 1201, 1207, 1265, 1275, 1283, 1286, 1287, 1293, 1294, 1299, 1302, 1303, 1318, 1320, 1322, 1326, 1344, 1345, 1360, 1362, 1377, 1379, 1392, 1398] }, { color: "122050", frames: [182, 205, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 712, 771, 859, 872, 884, 920, 938, 996, 1009, 1010, 1013, 1017, 1018, 1075, 1163, 1199, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "122052", frames: [171, 186, 192, 199, 221, 229, 238, 247, 252, 273, 307, 317, 323, 329, 338, 340, 344, 352, 363, 365, 374, 377, 385, 389, 401, 402, 427, 437, 463, 466, 469, 472, 477, 483, 484, 490, 498, 507, 513, 523, 532, 533, 550, 565, 598, 602, 618, 628, 632, 668, 672, 675, 682, 686, 692, 696, 700, 718, 723, 761, 778, 781, 827, 845, 857, 859, 863, 879, 881, 884, 889, 893, 918, 919, 921, 943, 951, 956, 959, 961, 967, 986, 1004, 1017, 1023, 1054, 1067, 1071, 1087, 1091, 1105, 1112, 1151, 1161, 1168, 1180, 1190, 1196, 1204, 1206, 1208, 1214, 1250, 1255, 1296, 1308, 1318, 1351, 1353, 1358, 1387, 1400] }, { color: "12212a", frames: [897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "122135", frames: [1312, 1385] }, { color: "12225a", frames: [174, 192, 1387, 1400] }, { color: "130402", frames: [182, 300, 356, 359, 399, 451, 460, 505, 528, 547, 563, 606, 664, 678, 695, 707, 708, 751, 771, 859, 872, 884, 938, 996, 1163, 1231, 1250, 1333, 1348, 1349, 1384, 1386] }, { color: "130502", frames: [171, 297, 316, 344, 466, 532, 563, 646, 647, 718, 767, 845, 980, 1017, 1053, 1240, 1243, 1268, 1299, 1300] }, { color: "130601", frames: [19, 203, 207, 304, 336, 361, 372, 386, 466, 467, 480, 552, 575, 601, 604, 642, 731, 744, 755, 778, 788, 832, 848, 849, 867, 891, 907, 951, 965, 1003, 1025, 1034, 1064, 1092, 1127, 1146, 1174, 1175, 1239, 1298, 1299, 1309, 1323, 1334, 1344, 1349, 1361, 1402, 1410, 1411] }, { color: "130702", frames: [182, 356, 399, 408, 409, 415, 416, 417, 420, 451, 460, 505, 518, 528, 547, 563, 606, 637, 664, 678, 695, 707, 708, 728, 729, 730, 751, 771, 859, 872, 873, 884, 938, 996, 1163, 1231, 1301, 1333, 1348, 1349, 1384, 1386, 1399] }, { color: "130c02", frames: [182, 356, 399, 405, 419, 420, 431, 451, 460, 505, 528, 547, 563, 603, 606, 642, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1351, 1384, 1386] }, { color: "130f06", frames: [174, 192, 490, 518, 562, 1029, 1114, 1387, 1400] }, { color: "131007", frames: [203, 336, 466, 480, 575, 623, 625, 744, 848, 849, 867, 891, 1003, 1075, 1174, 1175, 1392, 1398] }, { color: "13100c", frames: [84, 92, 94, 242, 247, 327, 329, 354, 372, 387, 395, 400, 439, 443, 450, 476, 504, 505, 517, 530, 533, 546, 572, 583, 587, 589, 594, 638, 639, 642, 650, 666, 762, 830, 887, 914, 926, 958, 974, 1010, 1051, 1096, 1171, 1177, 1190, 1252, 1260, 1278, 1280, 1284, 1288, 1289, 1295, 1299, 1300, 1301, 1325, 1330, 1337, 1350, 1351, 1392] }, { color: "131019", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "131110", frames: [466, 512, 660, 951] }, { color: "131315", frames: [468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358, 1400] }, { color: "131530", frames: [632, 633, 635, 640, 653, 655, 671, 672, 736, 741, 742, 748, 754, 768, 796, 804, 809, 822, 825, 826, 836, 837, 838, 843, 846, 847, 853, 873, 874, 876, 878, 915, 917, 941, 946, 948, 951, 958, 965, 968, 969, 985, 1004, 1012, 1020, 1023, 1052, 1054, 1072, 1081, 1085, 1099, 1110, 1112, 1122, 1139, 1145, 1149, 1151, 1162, 1163, 1169, 1170, 1172, 1188, 1207, 1210, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1276, 1283, 1284, 1290, 1293, 1294, 1295, 1299, 1300, 1318, 1344, 1350, 1357, 1358, 1361, 1363, 1365, 1368, 1372, 1403, 1404, 1410, 1412] }, { color: "131802", frames: [174, 192, 1387, 1400] }, { color: "131807", frames: [174, 192, 1387, 1400] }, { color: "140402", frames: [172, 174, 175, 183, 184, 188, 192, 501, 636, 719, 762, 839, 842, 860, 876, 878, 884, 889, 1022, 1082, 1083, 1112, 1142, 1162, 1164, 1170, 1171, 1231, 1278, 1284, 1332, 1387, 1393, 1400, 1419] }, { color: "140602", frames: [24, 33, 36, 38, 42, 55, 92, 125, 191, 198, 201, 208, 266, 311, 314, 328, 362, 387, 388, 390, 429, 433, 460, 473, 483, 576, 598, 602, 629, 643, 648, 652, 660, 666, 708, 715, 724, 730, 743, 748, 757, 758, 760, 764, 825, 840, 846, 847, 880, 906, 924, 931, 977, 978, 995, 1030, 1031, 1064, 1081, 1085, 1117, 1135, 1146, 1174, 1188, 1226, 1232, 1233, 1235, 1246, 1299, 1300, 1325, 1343, 1365, 1374, 1377, 1379, 1383, 1403, 1404, 1413] }, { color: "140807", frames: [1, 4, 6, 8, 10, 20, 23, 27, 31, 33, 37, 43, 49, 50, 77, 88, 92, 101, 116, 119, 121, 122, 125, 146, 167, 169, 172, 173, 174, 175, 184, 187, 191, 207, 242, 245, 258, 278, 282, 286, 290, 295, 296, 297, 317, 319, 327, 359, 365, 373, 378, 395, 399, 402, 415, 426, 433, 439, 442, 446, 451, 455, 500, 506, 509, 515, 517, 518, 526, 527, 532, 548, 554, 555, 570, 576, 578, 588, 600, 604, 606, 618, 655, 656, 660, 662, 663, 666, 667, 671, 679, 703, 707, 709, 712, 724, 728, 731, 739, 748, 754, 759, 766, 768, 771, 782, 788, 797, 811, 819, 820, 829, 842, 849, 853, 857, 864, 871, 887, 898, 907, 920, 923, 933, 938, 950, 953, 970, 971, 972, 976, 982, 985, 990, 994, 999, 1006, 1011, 1017, 1040, 1050, 1054, 1062, 1075, 1080, 1098, 1099, 1126, 1147, 1149, 1159, 1162, 1164, 1172, 1174, 1177, 1178, 1192, 1193, 1194, 1196, 1197, 1198, 1199, 1200, 1202, 1207, 1208, 1210, 1223, 1226, 1229, 1231, 1232, 1246, 1248, 1265, 1281, 1282, 1286, 1291, 1292, 1323, 1332, 1333, 1334, 1335, 1342, 1350, 1363, 1368, 1372, 1374, 1378, 1379, 1391, 1395, 1402, 1408, 1410, 1413, 1416, 1418, 1419, 1420] }, { color: "140917", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "140b02", frames: [171, 466, 532, 845, 1234] }, { color: "140e02", frames: [203, 336, 409, 466, 480, 505, 575, 705, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "141607", frames: [172, 174, 175, 182, 184, 188, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 719, 771, 839, 842, 859, 860, 872, 878, 884, 889, 938, 996, 1082, 1083, 1112, 1142, 1162, 1163, 1164, 1170, 1171, 1231, 1284, 1332, 1333, 1348, 1349, 1384, 1386, 1393] }, { color: "141721", frames: [744, 848, 849, 867, 1003] }, { color: "14243f", frames: [632, 653, 672, 761, 781, 827, 857, 863, 873, 881, 943, 956, 959, 961, 986, 1052, 1071, 1091, 1161, 1168, 1180, 1204, 1206, 1207, 1208, 1214, 1251, 1254, 1263, 1283, 1387] }, { color: "150501", frames: [37, 92, 201, 317, 349, 354, 357, 434, 470, 502, 522, 532, 533, 587, 660, 664, 676, 679, 751, 889, 914, 947, 948, 1014, 1021, 1024, 1043, 1052, 1053, 1054, 1102, 1112, 1162, 1175, 1187, 1228, 1251, 1257, 1317, 1351, 1378, 1384, 1399, 1403, 1420] }, { color: "150504", frames: [244, 245, 247, 447, 448, 449, 517, 581, 660, 664, 754, 891, 1071, 1215, 1322] }, { color: "150702", frames: [174, 192, 349, 549, 644, 948, 974, 1091, 1387, 1400, 1418] }, { color: "150801", frames: [11, 15, 188, 193, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 957, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1256, 1259, 1271, 1320, 1342, 1355, 1358, 1397, 1398] }, { color: "150d09", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "150e02", frames: [174, 192, 1288, 1387, 1400] }, { color: "151107", frames: [142, 660] }, { color: "151115", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "151617", frames: [660] }, { color: "15180a", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "151814", frames: [125, 182, 183, 225, 250, 290, 356, 399, 451, 460, 505, 526, 528, 547, 560, 563, 606, 678, 695, 707, 708, 735, 757, 771, 853, 859, 872, 884, 915, 938, 996, 1053, 1061, 1080, 1084, 1163, 1231, 1265, 1281, 1321, 1333, 1348, 1349, 1384, 1386] }, { color: "152840", frames: [1312, 1385] }, { color: "160501", frames: [11, 12, 15, 18, 20, 66, 112, 151, 160, 178, 185, 188, 197, 222, 237, 259, 269, 300, 302, 307, 308, 310, 322, 329, 330, 334, 337, 339, 341, 359, 369, 392, 394, 395, 400, 421, 428, 468, 488, 501, 503, 504, 505, 514, 519, 534, 555, 564, 579, 580, 581, 582, 584, 585, 602, 609, 629, 633, 634, 637, 641, 646, 649, 664, 670, 674, 678, 714, 719, 733, 747, 767, 768, 771, 772, 775, 787, 791, 816, 819, 821, 830, 834, 836, 866, 868, 888, 890, 897, 914, 916, 964, 973, 975, 979, 981, 987, 1000, 1026, 1033, 1042, 1051, 1054, 1068, 1069, 1070, 1085, 1087, 1100, 1102, 1104, 1122, 1135, 1141, 1148, 1158, 1160, 1170, 1171, 1177, 1197, 1201, 1212, 1213, 1221, 1230, 1232, 1238, 1241, 1242, 1244, 1248, 1251, 1252, 1258, 1265, 1267, 1271, 1277, 1286, 1287, 1313, 1320, 1326, 1333, 1355, 1358, 1360, 1380, 1387, 1393, 1398, 1410, 1412] }, { color: "160601", frames: [271, 273, 317, 319, 331, 334, 337, 347, 348, 356, 357, 361, 379, 395, 444, 445, 457, 464, 485, 509, 526, 536, 608, 611, 633, 660, 730, 766, 770, 773, 801, 803, 832, 868, 923, 925, 926, 1001, 1009, 1013, 1015, 1018, 1025, 1032, 1034, 1054, 1111, 1154, 1186, 1200, 1234, 1251, 1253, 1257, 1301, 1344, 1386, 1387, 1410] }, { color: "160804", frames: [660] }, { color: "160c06", frames: [660, 664, 751, 769, 1190, 1192, 1193, 1197, 1322] }, { color: "160e0a", frames: [174, 192, 636, 1387, 1400] }, { color: "161101", frames: [438, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 773, 887, 996, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "16171e", frames: [660] }, { color: "161910", frames: [566, 660, 1135] }, { color: "161b07", frames: [182, 183, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "161e18", frames: [963, 966] }, { color: "170903", frames: [923, 925, 926, 963, 966] }, { color: "170a03", frames: [11, 12, 15, 18, 20, 66, 112, 151, 160, 178, 185, 188, 197, 222, 259, 269, 302, 307, 308, 310, 329, 334, 369, 394, 421, 424, 425, 426, 428, 468, 488, 503, 514, 519, 530, 536, 541, 585, 609, 629, 634, 637, 645, 646, 649, 664, 670, 678, 721, 723, 730, 791, 816, 819, 821, 834, 836, 888, 890, 897, 916, 936, 953, 954, 955, 964, 975, 977, 987, 1000, 1026, 1042, 1044, 1051, 1069, 1085, 1087, 1102, 1104, 1158, 1160, 1170, 1171, 1221, 1230, 1232, 1241, 1242, 1244, 1252, 1254, 1257, 1258, 1266, 1267, 1270, 1271, 1286, 1287, 1313, 1320, 1326, 1355, 1358, 1360, 1380, 1387, 1404] }, { color: "170d01", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "170d08", frames: [963, 966, 975, 1297, 1362] }, { color: "171715", frames: [951, 963, 966] }, { color: "171902", frames: [182, 183, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 920, 938, 996, 1009, 1010, 1013, 1018, 1163, 1199, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "171d14", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "180401", frames: [302, 307, 310, 319, 334, 346, 515, 520, 533, 537, 609, 642, 643, 644, 647, 670, 874, 877, 964, 968, 1000, 1011, 1062, 1121, 1240, 1256, 1281, 1283, 1294, 1312, 1385] }, { color: "181008", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "181509", frames: [963, 966] }, { color: "18160c", frames: [244, 245, 247, 447, 448, 449, 573, 581, 660, 664, 850, 891, 960, 1071, 1215, 1322] }, { color: "181a14", frames: [174, 192, 1387, 1400] }, { color: "181b05", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "182213", frames: [1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "182215", frames: [171, 466, 532, 845] }, { color: "190804", frames: [312, 660] }, { color: "190905", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "190c03", frames: [660] }, { color: "190c16", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "190f05", frames: [660, 968, 998, 1163] }, { color: "190f07", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "190f0b", frames: [171, 466, 532, 845] }, { color: "191003", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 877, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "191102", frames: [182, 356, 399, 451, 460, 505, 528, 547, 553, 563, 569, 606, 623, 625, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1075, 1163, 1231, 1333, 1348, 1349, 1384, 1386, 1392, 1398] }, { color: "191621", frames: [679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1159, 1179, 1190, 1251, 1255, 1289, 1302, 1303, 1360, 1392] }, { color: "191e15", frames: [221, 228, 273, 338, 385, 465, 473, 494, 503, 510, 514, 518, 534, 543, 567, 577, 589, 624, 628, 657, 728, 729, 732, 744, 753, 825, 826, 834, 835, 838, 840, 861, 866, 877, 879, 885, 896, 897, 927, 944, 964, 966, 975, 978, 998, 999, 1001, 1021, 1029, 1047, 1055, 1057, 1069, 1075, 1078, 1114, 1125, 1141, 1148, 1151, 1170, 1171, 1175, 1187, 1189, 1197, 1209, 1231, 1240, 1247, 1263, 1267, 1274, 1280, 1309, 1319, 1326, 1353, 1355, 1357, 1360, 1380, 1386, 1393, 1398, 1413, 1419] }, { color: "192108", frames: [170, 171, 172, 180, 206, 298, 466, 523, 532, 542, 547, 549, 578, 634, 751, 845, 847, 950, 1101, 1333] }, { color: "192208", frames: [174, 192, 1387, 1400] }, { color: "192322", frames: [218, 221, 228, 273, 307, 317, 323, 329, 338, 344, 385, 389, 401, 465, 473, 477, 483, 494, 503, 510, 514, 518, 523, 534, 543, 565, 567, 577, 589, 624, 628, 657, 672, 682, 728, 729, 732, 744, 753, 778, 825, 826, 834, 835, 838, 840, 859, 861, 866, 877, 879, 885, 889, 896, 897, 919, 927, 944, 964, 966, 975, 978, 998, 999, 1001, 1004, 1021, 1029, 1047, 1054, 1055, 1057, 1067, 1069, 1075, 1078, 1087, 1114, 1125, 1141, 1148, 1151, 1170, 1171, 1175, 1187, 1189, 1190, 1196, 1197, 1209, 1231, 1240, 1247, 1263, 1267, 1274, 1280, 1309, 1319, 1326, 1351, 1353, 1355, 1357, 1360, 1380, 1386, 1393, 1398, 1413, 1419] }, { color: "1a0a02", frames: [171, 172, 174, 175, 184, 188, 466, 532, 665, 719, 839, 842, 845, 860, 878, 884, 889, 993, 1082, 1083, 1112, 1142, 1162, 1164, 1170, 1171, 1231, 1284, 1332, 1333, 1393] }, { color: "1a0c02", frames: [18, 74, 94, 115, 123, 183, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 664, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 926, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "1a0d01", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1092, 1174, 1175] }, { color: "1a0e06", frames: [9, 18, 20, 27, 36, 55, 74, 77, 79, 80, 82, 92, 94, 97, 115, 119, 123, 132, 135, 136, 149, 165, 180, 188, 221, 251, 260, 265, 267, 269, 273, 276, 290, 296, 307, 312, 313, 314, 328, 334, 341, 344, 357, 363, 364, 367, 371, 372, 379, 387, 393, 395, 419, 420, 438, 440, 443, 446, 449, 450, 451, 452, 456, 465, 470, 477, 499, 501, 502, 510, 519, 526, 541, 543, 549, 554, 562, 565, 566, 583, 584, 587, 598, 604, 628, 634, 636, 642, 645, 647, 648, 671, 676, 679, 696, 721, 731, 733, 751, 754, 761, 765, 781, 786, 803, 815, 816, 819, 826, 834, 836, 838, 847, 861, 872, 873, 882, 884, 897, 899, 915, 918, 938, 948, 951, 954, 956, 957, 964, 980, 982, 987, 992, 993, 997, 998, 999, 1001, 1010, 1015, 1016, 1017, 1026, 1027, 1031, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1078, 1079, 1081, 1082, 1083, 1084, 1092, 1096, 1097, 1101, 1104, 1108, 1112, 1113, 1115, 1117, 1120, 1125, 1127, 1135, 1142, 1143, 1144, 1150, 1152, 1155, 1160, 1170, 1177, 1179, 1184, 1185, 1187, 1190, 1191, 1198, 1215, 1220, 1221, 1239, 1246, 1252, 1253, 1255, 1258, 1267, 1273, 1276, 1287, 1300, 1301, 1302, 1303, 1308, 1309, 1311, 1324, 1330, 1332, 1342, 1348, 1360, 1362, 1363, 1376, 1382, 1392, 1397, 1412, 1421] }, { color: "1a0f04", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "1a1205", frames: [660] }, { color: "1a190b", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 613, 964, 1000, 1062, 1309, 1312, 1385] }, { color: "1a2021", frames: [963, 966] }, { color: "1a2e04", frames: [1049, 1058, 1060, 1070, 1109, 1113, 1115, 1117, 1139, 1142, 1145, 1155, 1179, 1190, 1207, 1252, 1283, 1286, 1293, 1302, 1303, 1318, 1320, 1322, 1326, 1344, 1360, 1362, 1364, 1377, 1379, 1392, 1396, 1398, 1410] }, { color: "1b0309", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "1b0702", frames: [169, 182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386, 1390] }, { color: "1b070e", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "1b0902", frames: [174, 192, 1387, 1400] }, { color: "1b0a09", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "1b0d02", frames: [170, 172, 180, 182, 206, 298, 311, 356, 399, 451, 460, 473, 505, 523, 528, 547, 549, 563, 606, 607, 678, 695, 707, 708, 771, 847, 859, 872, 884, 920, 938, 977, 996, 1009, 1010, 1013, 1018, 1112, 1163, 1199, 1231, 1234, 1333, 1348, 1349, 1384, 1386] }, { color: "1b0f06", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "1b1410", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "1b1624", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "1b1a12", frames: [238, 242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "1b1b23", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1075, 1096, 1143, 1170, 1184, 1215, 1322, 1348, 1392, 1398] }, { color: "1b1f22", frames: [708, 760, 840, 1005, 1031, 1081, 1188, 1232] }, { color: "1b2018", frames: [269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "1b2408", frames: [182, 183, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 920, 938, 996, 1009, 1010, 1013, 1018, 1163, 1199, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "1b2b38", frames: [848, 849, 867, 1003] }, { color: "1c0f02", frames: [174, 192, 206, 641, 670, 680, 771, 934, 1384, 1387, 1400] }, { color: "1c1819", frames: [238, 242, 327, 329, 395, 439, 443, 450, 471, 474, 530, 533, 546, 569, 572, 583, 594, 639, 642, 712, 722, 724, 730, 739, 887, 895, 919, 920, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1354] }, { color: "1c1a0a", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "1c210a", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "1c2524", frames: [897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "1c2620", frames: [964, 1000, 1062, 1312, 1385] }, { color: "1d0f03", frames: [640, 660, 1249] }, { color: "1d1403", frames: [171, 405, 466, 532, 845, 1384] }, { color: "1d1509", frames: [660] }, { color: "1d1f03", frames: [171, 193, 466, 532, 845] }, { color: "1d2b2c", frames: [964, 1000, 1062, 1312, 1385] }, { color: "1d2f14", frames: [269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "1e0c03", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 338, 350, 353, 369, 468, 531, 587, 689, 796, 897, 916, 932, 937, 941, 951, 964, 1000, 1026, 1063, 1066, 1087, 1158, 1168, 1221, 1227, 1230, 1232, 1271, 1320, 1329, 1355, 1358, 1390, 1420] }, { color: "1e0e06", frames: [171, 466, 532, 845, 884] }, { color: "1e1917", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 573, 581, 603, 634, 660, 664, 681, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1245, 1322, 1348] }, { color: "1e1c23", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 653, 669, 672, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1251, 1254, 1260, 1278, 1280, 1283, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "1e2102", frames: [174, 192, 1387, 1400] }, { color: "1e2513", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 692, 696, 700, 718, 723, 845, 884, 893, 918, 921, 943, 964, 1000, 1062, 1105, 1208, 1250, 1296, 1308, 1312, 1353, 1385] }, { color: "1e2b08", frames: [867, 1003] }, { color: "1e2c13", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "1e2f35", frames: [897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "1f0908", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "1f0c02", frames: [171, 234, 235, 240, 396, 466, 521, 532, 633, 652, 762, 772, 845, 985, 993, 1037, 1077, 1294, 1323, 1333, 1397] }, { color: "1f1505", frames: [11, 12, 15, 18, 20, 31, 47, 50, 66, 73, 75, 76, 79, 92, 100, 106, 112, 122, 125, 126, 136, 151, 153, 160, 162, 178, 185, 188, 189, 191, 193, 197, 198, 199, 214, 221, 222, 241, 249, 250, 251, 254, 255, 259, 265, 269, 272, 289, 299, 302, 304, 307, 308, 310, 317, 319, 328, 329, 333, 334, 365, 367, 369, 375, 392, 394, 395, 400, 421, 428, 443, 452, 460, 463, 468, 473, 475, 476, 488, 490, 502, 503, 509, 514, 517, 519, 532, 537, 541, 544, 552, 585, 586, 590, 601, 609, 610, 617, 629, 632, 637, 649, 664, 670, 676, 677, 678, 691, 692, 698, 726, 734, 735, 755, 768, 780, 791, 796, 816, 817, 819, 821, 825, 834, 836, 840, 847, 858, 859, 873, 876, 878, 885, 888, 890, 893, 897, 898, 903, 907, 916, 919, 924, 941, 948, 964, 969, 975, 978, 987, 999, 1000, 1026, 1037, 1042, 1043, 1051, 1055, 1069, 1085, 1087, 1102, 1104, 1118, 1125, 1127, 1128, 1137, 1139, 1141, 1144, 1148, 1158, 1160, 1170, 1171, 1172, 1187, 1189, 1200, 1209, 1214, 1218, 1221, 1230, 1232, 1242, 1244, 1252, 1258, 1259, 1262, 1267, 1271, 1273, 1279, 1284, 1286, 1287, 1290, 1298, 1299, 1313, 1320, 1326, 1332, 1355, 1358, 1360, 1372, 1380, 1386, 1387, 1390, 1402, 1408] }, { color: "1f1507", frames: [18, 74, 94, 115, 123, 206, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 515, 541, 553, 569, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 940, 954, 964, 985, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360, 1410] }, { color: "1f1509", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "1f1602", frames: [174, 192, 1387, 1400] }, { color: "1f1e0a", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "1f2509", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "200e06", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "200f06", frames: [170, 172, 174, 180, 192, 206, 298, 523, 547, 549, 769, 847, 1333, 1387, 1400] }, { color: "201207", frames: [314, 864, 963, 966] }, { color: "201416", frames: [466, 512, 951, 965, 1361] }, { color: "201508", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "201c18", frames: [660] }, { color: "201f24", frames: [660] }, { color: "202128", frames: [466, 512, 744, 848, 849, 867, 951, 1003] }, { color: "20283c", frames: [1278, 1280, 1288, 1301, 1330, 1337] }, { color: "202925", frames: [963, 966] }, { color: "210b04", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "210c02", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "210c09", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "211115", frames: [744, 756, 771, 797, 813, 838, 842, 843, 844, 848, 849, 855, 859, 867, 871, 873, 878, 923, 995, 1003, 1035, 1051, 1113, 1126, 1200, 1244, 1276, 1282, 1286, 1287, 1323, 1337, 1343, 1411, 1417] }, { color: "21171f", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "212f14", frames: [174, 192, 1387, 1400] }, { color: "21301e", frames: [1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "213d5c", frames: [1312, 1385] }, { color: "22100d", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "221308", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "221608", frames: [171, 408, 409, 415, 416, 417, 420, 466, 518, 532, 637, 660, 728, 729, 730, 845, 873, 1301, 1348, 1399] }, { color: "221e16", frames: [242, 243, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 643, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "222217", frames: [963, 966] }, { color: "222e2a", frames: [221, 228, 273, 307, 317, 323, 329, 344, 385, 389, 401, 465, 477, 483, 523, 565, 628, 672, 682, 778, 859, 879, 885, 889, 919, 964, 966, 998, 999, 1001, 1004, 1054, 1057, 1067, 1087, 1148, 1190, 1196, 1209, 1231, 1351, 1360, 1419] }, { color: "223e1d", frames: [867, 1003, 1062, 1156, 1157] }, { color: "230d12", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "231003", frames: [203, 336, 338, 350, 353, 361, 372, 386, 466, 480, 531, 575, 587, 601, 604, 636, 689, 731, 744, 755, 796, 848, 849, 867, 891, 907, 951, 1003, 1025, 1034, 1063, 1064, 1066, 1092, 1146, 1168, 1174, 1175, 1227, 1329, 1390, 1402, 1410, 1411] }, { color: "231203", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "231405", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 338, 350, 353, 369, 468, 531, 587, 689, 796, 897, 916, 932, 937, 951, 964, 1000, 1026, 1063, 1066, 1087, 1158, 1168, 1221, 1227, 1230, 1232, 1271, 1320, 1329, 1355, 1358, 1390, 1420] }, { color: "231508", frames: [173, 182, 356, 399, 451, 460, 472, 474, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1016, 1163, 1231, 1255, 1333, 1348, 1349, 1384, 1386] }, { color: "231608", frames: [3, 6, 8, 12, 13, 15, 18, 19, 22, 24, 25, 29, 33, 34, 35, 40, 47, 49, 52, 54, 57, 61, 71, 82, 88, 89, 92, 93, 94, 103, 113, 114, 115, 118, 122, 123, 124, 125, 126, 136, 139, 143, 153, 154, 170, 172, 174, 175, 177, 180, 181, 189, 192, 194, 198, 201, 202, 203, 205, 206, 209, 224, 229, 235, 237, 238, 241, 245, 248, 256, 264, 270, 272, 274, 277, 279, 282, 283, 286, 288, 291, 293, 294, 298, 299, 315, 317, 326, 334, 341, 345, 349, 351, 357, 359, 362, 367, 368, 372, 376, 379, 386, 392, 395, 400, 404, 407, 415, 417, 419, 420, 421, 422, 430, 431, 444, 450, 451, 466, 468, 471, 475, 479, 486, 491, 497, 499, 505, 514, 518, 519, 523, 535, 536, 543, 545, 547, 549, 557, 558, 561, 567, 569, 570, 573, 575, 577, 578, 579, 580, 581, 582, 584, 587, 588, 589, 592, 593, 595, 601, 603, 604, 607, 609, 614, 617, 618, 623, 624, 628, 630, 631, 636, 640, 659, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 738, 739, 741, 753, 763, 764, 768, 769, 773, 775, 786, 788, 795, 796, 804, 805, 808, 809, 819, 824, 826, 827, 832, 836, 838, 840, 841, 842, 843, 844, 846, 847, 849, 850, 855, 857, 859, 862, 865, 867, 875, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 918, 921, 927, 928, 931, 951, 952, 965, 970, 972, 988, 996, 1004, 1006, 1022, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1059, 1061, 1066, 1068, 1070, 1074, 1075, 1080, 1081, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1162, 1163, 1165, 1170, 1172, 1175, 1180, 1182, 1183, 1207, 1209, 1217, 1223, 1229, 1236, 1261, 1263, 1264, 1283, 1284, 1298, 1299, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1333, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "23170a", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 504, 505, 830, 897, 916, 964, 1000, 1087, 1158, 1177, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "232027", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "23211b", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "23211f", frames: [465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "232331", frames: [368, 369, 373, 385, 407, 468, 470, 514, 540, 548, 549, 567, 602, 621, 623, 624, 631, 633, 642, 645, 675, 684, 689, 709, 715, 721, 733, 741, 747, 752, 775, 808, 821, 836, 838, 868, 874, 878, 880, 888, 893, 895, 897, 914, 916, 941, 964, 973, 1000, 1023, 1043, 1052, 1068, 1070, 1084, 1087, 1112, 1141, 1145, 1158, 1165, 1171, 1210, 1219, 1221, 1222, 1230, 1231, 1232, 1243, 1244, 1249, 1255, 1261, 1270, 1271, 1276, 1288, 1290, 1294, 1320, 1350, 1355, 1358, 1385, 1391, 1403, 1404, 1412, 1415] }, { color: "232421", frames: [466, 512, 951, 965, 1361] }, { color: "233135", frames: [963, 966] }, { color: "240e02", frames: [174, 192, 312, 359, 1387, 1400] }, { color: "240e04", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "241607", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 343, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "241b0a", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "241c09", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175, 1412] }, { color: "24272b", frames: [465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "242817", frames: [244, 245, 247, 447, 448, 449, 565, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "242a16", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "243232", frames: [1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "251916", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "251c05", frames: [439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "25242e", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "253a45", frames: [836, 848, 849, 867, 924, 1003, 1106, 1175, 1232, 1235, 1279, 1281, 1369] }, { color: "260a04", frames: [327, 329, 439, 441, 443, 449, 450, 505, 530, 533, 546, 572, 583, 588, 593, 594, 639, 642, 716, 743, 887, 888, 962, 1006, 1010, 1051, 1117, 1118, 1181, 1190, 1252, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "260d02", frames: [171, 466, 532, 845, 1011, 1292] }, { color: "261b0c", frames: [72, 199, 207, 222, 259, 261, 262, 269, 302, 310, 334, 442, 539, 609, 717, 811, 816, 826, 964, 1000, 1030, 1032, 1062, 1080, 1151, 1186, 1245, 1309, 1312, 1332, 1383, 1385] }, { color: "26231e", frames: [221, 228, 273, 307, 317, 323, 329, 344, 385, 389, 401, 465, 477, 483, 523, 565, 628, 672, 682, 778, 859, 879, 885, 889, 919, 964, 966, 998, 999, 1001, 1004, 1054, 1057, 1067, 1087, 1148, 1190, 1196, 1209, 1231, 1351, 1360, 1419] }, { color: "262430", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "262c3d", frames: [1254, 1283] }, { color: "263348", frames: [1312, 1385] }, { color: "263742", frames: [897, 916, 964, 1000, 1044, 1045, 1046, 1047, 1049, 1060, 1087, 1113, 1115, 1117, 1155, 1158, 1179, 1190, 1221, 1230, 1232, 1271, 1302, 1303, 1320, 1355, 1358, 1360] }, { color: "264056", frames: [897, 898, 908, 911, 914, 916, 918, 921, 927, 928, 931, 951, 952, 964, 965, 970, 972, 975, 987, 988, 996, 1000, 1004, 1006, 1023, 1026, 1033, 1035, 1042, 1044, 1045, 1046, 1047, 1049, 1050, 1051, 1052, 1053, 1059, 1060, 1061, 1066, 1068, 1069, 1070, 1074, 1075, 1080, 1081, 1085, 1086, 1087, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1102, 1104, 1109, 1110, 1111, 1112, 1113, 1115, 1117, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1155, 1156, 1157, 1158, 1159, 1160, 1162, 1163, 1165, 1170, 1171, 1172, 1175, 1179, 1180, 1182, 1183, 1190, 1207, 1209, 1217, 1221, 1223, 1229, 1230, 1232, 1236, 1242, 1244, 1252, 1258, 1261, 1263, 1264, 1267, 1271, 1283, 1284, 1286, 1287, 1298, 1299, 1302, 1303, 1306, 1307, 1313, 1316, 1318, 1320, 1321, 1323, 1324, 1326, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1380, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "270f05", frames: [302, 307, 310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "271107", frames: [171, 466, 532, 845] }, { color: "27120d", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "271517", frames: [679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1159, 1179, 1190, 1251, 1255, 1289, 1302, 1303, 1360, 1392] }, { color: "271d0d", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1284, 1320, 1355, 1358] }, { color: "272516", frames: [203, 336, 466, 480, 575, 691, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "272520", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "272a0b", frames: [533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "272a16", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "272d36", frames: [708, 757, 758, 760, 840, 1005, 1031, 1081, 1135, 1188, 1232, 1379, 1383, 1404, 1413] }, { color: "281107", frames: [170, 172, 174, 180, 192, 206, 298, 523, 547, 549, 847, 1333, 1387, 1400] }, { color: "281515", frames: [708, 760, 840, 1005, 1031, 1081, 1188, 1232] }, { color: "281609", frames: [171, 294, 386, 466, 519, 532, 845, 1215, 1270, 1293, 1385] }, { color: "281709", frames: [4, 9, 22, 36, 38, 41, 65, 81, 82, 83, 95, 106, 107, 118, 122, 126, 139, 141, 146, 147, 152, 156, 170, 182, 201, 203, 205, 222, 226, 254, 258, 277, 278, 288, 289, 309, 322, 343, 349, 356, 366, 367, 378, 379, 381, 394, 395, 399, 400, 402, 415, 420, 422, 425, 438, 441, 445, 451, 460, 461, 505, 510, 511, 517, 528, 532, 533, 536, 538, 547, 557, 562, 563, 574, 581, 603, 606, 624, 633, 644, 646, 647, 651, 653, 673, 676, 678, 684, 695, 697, 698, 700, 706, 707, 708, 716, 718, 734, 744, 756, 765, 769, 771, 782, 797, 813, 819, 821, 825, 826, 838, 842, 843, 844, 847, 855, 859, 861, 865, 871, 872, 873, 878, 879, 883, 884, 900, 916, 923, 925, 938, 953, 980, 984, 986, 988, 995, 996, 1004, 1015, 1032, 1035, 1044, 1051, 1056, 1058, 1087, 1106, 1113, 1126, 1149, 1163, 1164, 1173, 1188, 1193, 1200, 1201, 1205, 1231, 1241, 1244, 1259, 1269, 1273, 1276, 1282, 1284, 1286, 1287, 1301, 1310, 1323, 1331, 1332, 1333, 1334, 1337, 1343, 1348, 1349, 1364, 1377, 1384, 1386, 1394, 1411, 1415, 1417] }, { color: "281b0d", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "282216", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "282c10", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "283535", frames: [221, 222, 228, 236, 254, 269, 273, 302, 329, 363, 367, 370, 394, 421, 428, 465, 488, 503, 514, 519, 539, 549, 585, 609, 628, 629, 637, 649, 664, 670, 678, 753, 784, 791, 816, 819, 821, 834, 836, 842, 885, 888, 890, 897, 964, 966, 975, 986, 987, 998, 999, 1001, 1026, 1042, 1051, 1057, 1069, 1085, 1102, 1104, 1148, 1160, 1170, 1171, 1174, 1191, 1209, 1226, 1231, 1242, 1244, 1252, 1258, 1267, 1286, 1287, 1311, 1313, 1326, 1355, 1360, 1380, 1387, 1390, 1419] }, { color: "28363b", frames: [964, 1000, 1062, 1312, 1385] }, { color: "291709", frames: [151, 677, 963, 966] }, { color: "291d0c", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "292024", frames: [334, 337, 356, 369, 395, 444, 445, 468, 773, 832, 897, 916, 964, 1000, 1013, 1015, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1344, 1355, 1358] }, { color: "292e27", frames: [708, 760, 840, 1005, 1031, 1081, 1188, 1232] }, { color: "293017", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "29310a", frames: [867, 1003] }, { color: "294466", frames: [897, 898, 908, 911, 914, 916, 918, 921, 927, 928, 931, 951, 952, 964, 965, 970, 972, 975, 987, 988, 996, 1000, 1004, 1006, 1023, 1026, 1033, 1035, 1042, 1044, 1045, 1046, 1047, 1049, 1050, 1051, 1052, 1053, 1059, 1060, 1061, 1066, 1068, 1069, 1070, 1074, 1075, 1080, 1081, 1085, 1086, 1087, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1102, 1104, 1109, 1110, 1111, 1112, 1113, 1115, 1117, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1155, 1156, 1157, 1158, 1159, 1160, 1162, 1163, 1165, 1170, 1171, 1172, 1175, 1179, 1180, 1182, 1183, 1190, 1207, 1209, 1217, 1221, 1223, 1229, 1230, 1232, 1236, 1242, 1244, 1252, 1258, 1261, 1263, 1264, 1267, 1271, 1283, 1284, 1286, 1287, 1298, 1299, 1302, 1303, 1306, 1307, 1313, 1316, 1318, 1320, 1321, 1323, 1324, 1326, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1380, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "2a200a", frames: [28, 75, 117, 165, 171, 172, 185, 205, 209, 250, 279, 286, 364, 366, 394, 406, 421, 429, 458, 466, 493, 506, 509, 532, 599, 601, 603, 604, 697, 768, 822, 836, 845, 869, 924, 948, 1106, 1111, 1160, 1162, 1169, 1175, 1232, 1235, 1279, 1281, 1369] }, { color: "2a210c", frames: [963, 966] }, { color: "2a2310", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 438, 468, 773, 897, 916, 964, 996, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "2b180a", frames: [174, 192, 321, 329, 642, 643, 644, 647, 670, 1054, 1240, 1248, 1281, 1387, 1400] }, { color: "2b1915", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "2b1f0e", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "2b2c33", frames: [56, 57, 58, 59, 60, 114, 457, 466, 472, 475, 499, 512, 516, 536, 543, 601, 622, 637, 735, 744, 768, 824, 825, 848, 849, 867, 951, 965, 974, 986, 1003, 1111, 1139, 1171, 1175, 1215, 1279, 1280, 1347, 1351, 1361, 1408] }, { color: "2b2e19", frames: [199, 207, 244, 245, 247, 447, 448, 449, 581, 660, 664, 816, 891, 1071, 1151, 1215, 1322, 1332] }, { color: "2b3c10", frames: [1049, 1058, 1060, 1070, 1109, 1113, 1115, 1117, 1139, 1142, 1145, 1155, 1179, 1190, 1207, 1252, 1283, 1286, 1293, 1302, 1303, 1318, 1320, 1322, 1326, 1344, 1360, 1362, 1364, 1377, 1379, 1392, 1396, 1398, 1410] }, { color: "2b4150", frames: [848, 849, 867, 1003] }, { color: "2c211f", frames: [708, 760, 840, 1005, 1031, 1081, 1188, 1232] }, { color: "2d1115", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "2d1201", frames: [874, 877, 890, 891, 892, 975, 1042, 1071, 1215, 1256, 1283, 1322, 1394] }, { color: "2d1408", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "2d1d0a", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 932, 937, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360, 1420] }, { color: "2d2111", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "2d2323", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "2d2c2d", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "2d2e1a", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "2d3323", frames: [203, 336, 466, 480, 575, 691, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "2d3414", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "2d455f", frames: [1312, 1385] }, { color: "2e1402", frames: [182, 205, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 712, 771, 859, 872, 884, 889, 938, 996, 1017, 1075, 1163, 1231, 1333, 1348, 1349, 1384, 1386, 1399] }, { color: "2e1d03", frames: [171, 466, 532, 845] }, { color: "2e1e07", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "2e2309", frames: [174, 192, 606, 1387, 1400] }, { color: "2e2411", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "2e2611", frames: [11, 15, 188, 201, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "2e2923", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "2e3602", frames: [1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "2e3d4b", frames: [632, 637, 649, 653, 672, 676, 677, 691, 692, 698, 726, 734, 735, 755, 768, 780, 791, 796, 817, 840, 858, 859, 873, 890, 893, 903, 948, 969, 1043, 1052, 1118, 1125, 1127, 1128, 1137, 1139, 1144, 1171, 1200, 1207, 1251, 1254, 1263, 1273, 1279, 1283, 1287, 1298, 1299, 1332, 1372, 1380, 1386] }, { color: "2e4427", frames: [867, 1003] }, { color: "2e5627", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "2f2018", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 920, 980, 1071, 1096, 1141, 1186, 1215, 1322, 1348] }, { color: "2f2613", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "2f2b33", frames: [1302, 1303, 1360] }, { color: "2f3028", frames: [660] }, { color: "2f342a", frames: [221, 228, 273, 465, 628, 885, 964, 966, 998, 999, 1001, 1057, 1148, 1209, 1231, 1360, 1419] }, { color: "2f431b", frames: [867, 1003] }, { color: "301a09", frames: [182, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 771, 859, 872, 884, 938, 996, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "301e0d", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "302319", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "302515", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "302717", frames: [386, 672, 765, 1251, 1254, 1283] }, { color: "302828", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "302b24", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "304523", frames: [269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "305069", frames: [848, 849, 867, 1003] }, { color: "310e02", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "312b17", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "312c28", frames: [466, 512, 951] }, { color: "312d1a", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "313036", frames: [468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358, 1400] }, { color: "31373a", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "313805", frames: [1057, 1360] }, { color: "31382d", frames: [262, 269, 302, 310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "31412b", frames: [1117, 1118, 1121, 1124, 1155, 1179, 1190, 1226, 1302, 1303, 1360] }, { color: "314449", frames: [221, 228, 273, 338, 385, 465, 473, 494, 503, 510, 514, 518, 534, 543, 567, 577, 589, 624, 628, 657, 728, 729, 732, 744, 753, 825, 826, 834, 835, 838, 840, 861, 866, 877, 879, 885, 896, 897, 927, 944, 964, 966, 975, 978, 998, 999, 1001, 1021, 1029, 1047, 1055, 1057, 1069, 1075, 1078, 1114, 1125, 1141, 1148, 1151, 1170, 1171, 1175, 1187, 1189, 1197, 1209, 1231, 1240, 1247, 1263, 1267, 1274, 1280, 1309, 1319, 1326, 1353, 1355, 1357, 1360, 1380, 1386, 1393, 1398, 1413, 1419] }, { color: "314751", frames: [1312, 1385] }, { color: "314f68", frames: [897, 916, 964, 1000, 1044, 1045, 1046, 1047, 1049, 1060, 1087, 1113, 1115, 1117, 1155, 1158, 1179, 1190, 1221, 1230, 1232, 1271, 1302, 1303, 1320, 1355, 1358, 1360] }, { color: "321508", frames: [327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 588, 594, 639, 642, 743, 887, 888, 1010, 1051, 1117, 1118, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "321f02", frames: [174, 192, 1387, 1400] }, { color: "322202", frames: [182, 200, 201, 205, 223, 237, 249, 266, 274, 276, 284, 295, 297, 298, 319, 356, 362, 379, 384, 399, 421, 444, 451, 457, 460, 474, 477, 491, 493, 495, 496, 503, 504, 505, 521, 528, 536, 542, 547, 555, 557, 563, 578, 582, 585, 604, 606, 607, 631, 633, 641, 646, 647, 654, 657, 670, 671, 678, 680, 695, 707, 708, 718, 719, 731, 734, 771, 788, 792, 845, 850, 859, 871, 872, 884, 894, 900, 918, 921, 923, 925, 926, 938, 947, 953, 955, 968, 976, 977, 980, 996, 1016, 1018, 1030, 1031, 1033, 1036, 1041, 1043, 1050, 1054, 1068, 1069, 1073, 1111, 1152, 1163, 1177, 1184, 1231, 1234, 1238, 1239, 1240, 1243, 1245, 1250, 1251, 1257, 1258, 1259, 1267, 1268, 1276, 1296, 1306, 1308, 1313, 1330, 1333, 1339, 1341, 1348, 1349, 1377, 1383, 1384, 1385, 1386, 1411, 1413] }, { color: "322224", frames: [660] }, { color: "322225", frames: [653, 672, 697, 698, 716, 765, 819, 859, 861, 900, 980, 1044, 1056, 1251, 1254, 1259, 1283, 1331, 1334, 1377] }, { color: "32270c", frames: [439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "322902", frames: [1155, 1179, 1190, 1302, 1303, 1360] }, { color: "322b1d", frames: [11, 14, 15, 42, 53, 88, 98, 107, 123, 161, 164, 167, 188, 259, 264, 269, 287, 294, 307, 308, 310, 317, 320, 321, 332, 334, 347, 359, 369, 381, 382, 398, 445, 454, 468, 498, 506, 512, 538, 541, 566, 572, 574, 597, 605, 610, 624, 642, 669, 684, 719, 738, 739, 744, 745, 747, 750, 754, 767, 789, 797, 822, 830, 853, 894, 897, 906, 916, 957, 961, 964, 975, 1000, 1005, 1015, 1016, 1062, 1076, 1078, 1087, 1158, 1173, 1189, 1221, 1230, 1232, 1245, 1267, 1271, 1285, 1292, 1295, 1310, 1320, 1333, 1348, 1355, 1357, 1358, 1393, 1417] }, { color: "323029", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "32302a", frames: [653, 672, 1251, 1254, 1283] }, { color: "323044", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "323131", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "32331b", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175, 1268] }, { color: "323821", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "323837", frames: [465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "323a17", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "324442", frames: [1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "32546d", frames: [182, 183, 191, 205, 289, 309, 321, 338, 356, 399, 403, 432, 451, 460, 487, 489, 505, 528, 547, 559, 563, 568, 606, 678, 688, 695, 707, 708, 712, 720, 725, 737, 740, 771, 793, 857, 859, 868, 872, 882, 884, 920, 938, 971, 996, 1008, 1009, 1010, 1013, 1017, 1018, 1023, 1065, 1075, 1080, 1081, 1095, 1103, 1134, 1140, 1148, 1163, 1199, 1224, 1225, 1230, 1231, 1236, 1245, 1282, 1285, 1286, 1311, 1321, 1323, 1327, 1331, 1333, 1347, 1348, 1349, 1367, 1384, 1386, 1412, 1414] }, { color: "330b04", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "330f08", frames: [336, 356, 448, 463, 466, 557, 606, 689, 734, 744, 848, 849, 867, 976, 1003, 1066, 1164, 1227, 1414] }, { color: "332213", frames: [171, 466, 532, 845] }, { color: "332815", frames: [16, 17, 18, 46, 74, 94, 115, 123, 201, 221, 245, 250, 251, 260, 267, 269, 273, 313, 314, 319, 328, 357, 363, 366, 372, 387, 393, 410, 440, 452, 456, 465, 477, 501, 508, 523, 541, 548, 584, 587, 628, 634, 645, 648, 676, 679, 698, 703, 709, 712, 721, 724, 733, 751, 754, 761, 765, 781, 786, 816, 819, 831, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1032, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1054, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1199, 1200, 1202, 1215, 1220, 1226, 1252, 1258, 1302, 1303, 1308, 1311, 1359, 1360, 1386, 1404] }, { color: "332917", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 778, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "33291e", frames: [963, 966, 1322] }, { color: "332a18", frames: [1387, 1400] }, { color: "333623", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "333a4c", frames: [1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "333b51", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "33547b", frames: [897, 900, 916, 927, 944, 964, 975, 978, 980, 987, 1000, 1021, 1026, 1029, 1042, 1043, 1044, 1045, 1046, 1047, 1049, 1051, 1055, 1056, 1060, 1069, 1075, 1078, 1085, 1087, 1102, 1104, 1113, 1114, 1115, 1117, 1125, 1141, 1151, 1155, 1158, 1160, 1170, 1171, 1175, 1179, 1187, 1189, 1190, 1197, 1221, 1230, 1232, 1240, 1242, 1244, 1247, 1252, 1258, 1259, 1263, 1267, 1271, 1274, 1280, 1286, 1287, 1302, 1303, 1309, 1313, 1319, 1320, 1326, 1331, 1334, 1353, 1355, 1357, 1358, 1360, 1377, 1380, 1386, 1387, 1393, 1398, 1413] }, { color: "33556e", frames: [171, 186, 192, 199, 221, 229, 238, 247, 252, 273, 307, 317, 323, 329, 338, 340, 344, 352, 363, 365, 374, 377, 385, 389, 401, 402, 427, 437, 463, 466, 469, 472, 477, 483, 484, 490, 498, 507, 513, 523, 532, 533, 550, 565, 598, 602, 618, 628, 632, 668, 672, 675, 682, 686, 692, 696, 700, 718, 723, 761, 778, 781, 826, 827, 831, 844, 845, 857, 859, 863, 879, 880, 881, 883, 884, 889, 891, 892, 893, 918, 919, 921, 943, 951, 956, 959, 961, 967, 986, 1004, 1010, 1017, 1021, 1023, 1030, 1032, 1053, 1054, 1067, 1071, 1080, 1081, 1087, 1091, 1100, 1105, 1112, 1151, 1161, 1168, 1180, 1186, 1190, 1196, 1204, 1206, 1208, 1214, 1228, 1245, 1250, 1255, 1296, 1308, 1309, 1318, 1337, 1351, 1353, 1358, 1383, 1387, 1392, 1400] }, { color: "340e04", frames: [1360] }, { color: "341e0d", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "342104", frames: [581, 591, 660, 664, 833, 891, 930, 951, 1017, 1071, 1099, 1215, 1226, 1322] }, { color: "343233", frames: [234, 235, 240, 396, 708, 760, 840, 1005, 1031, 1081, 1188, 1232] }, { color: "34362e", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "343d38", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "34596f", frames: [174, 192, 1387, 1400] }, { color: "35250f", frames: [966, 1419] }, { color: "352c16", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "352c1c", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 635, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1032, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "352d18", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "35363f", frames: [245, 247, 353, 447, 448, 449, 505, 525, 581, 660, 664, 719, 726, 868, 881, 888, 891, 1071, 1073, 1110, 1190, 1205, 1215, 1322, 1325] }, { color: "353b3e", frames: [468, 782, 897, 916, 923, 953, 964, 1000, 1087, 1158, 1192, 1195, 1201, 1221, 1230, 1232, 1271, 1320, 1324, 1355, 1358, 1400] }, { color: "356136", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "362e18", frames: [11, 15, 22, 72, 107, 111, 188, 231, 259, 269, 278, 307, 308, 310, 334, 355, 369, 379, 384, 395, 400, 422, 468, 555, 571, 638, 775, 815, 820, 825, 826, 829, 876, 897, 913, 916, 917, 964, 1000, 1022, 1049, 1058, 1087, 1142, 1158, 1221, 1230, 1232, 1252, 1271, 1320, 1322, 1355, 1358, 1364, 1396, 1398, 1399, 1410] }, { color: "363a0c", frames: [533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "364458", frames: [1115, 1117, 1120, 1121, 1155, 1179, 1190, 1302, 1303, 1330, 1333, 1360] }, { color: "371c29", frames: [744, 747, 750, 767, 782, 789, 797, 821, 822, 830, 848, 849, 852, 865, 867, 879, 883, 884, 894, 906, 916, 925, 953, 957, 961, 975, 984, 1003, 1005, 1015, 1016, 1032, 1058, 1062, 1076, 1078, 1087, 1113, 1173, 1188, 1189, 1193, 1241, 1273, 1284, 1285, 1295, 1301, 1310, 1332, 1333, 1348, 1357, 1393, 1403, 1417] }, { color: "372b36", frames: [744, 848, 849, 852, 867, 1003, 1403] }, { color: "373427", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "373d42", frames: [963, 966] }, { color: "374122", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "383c4b", frames: [369, 372, 468, 802, 897, 916, 964, 1000, 1067, 1087, 1158, 1189, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "384420", frames: [1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "384644", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "385976", frames: [849, 867, 1003, 1202, 1358, 1372, 1381, 1408] }, { color: "385a86", frames: [897, 898, 899, 908, 911, 914, 916, 918, 921, 927, 928, 931, 951, 952, 964, 965, 970, 972, 975, 987, 988, 996, 1000, 1004, 1006, 1023, 1026, 1033, 1035, 1042, 1044, 1045, 1046, 1047, 1049, 1050, 1051, 1052, 1053, 1059, 1060, 1061, 1066, 1068, 1069, 1070, 1074, 1075, 1080, 1081, 1085, 1086, 1087, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1102, 1104, 1109, 1110, 1111, 1112, 1113, 1115, 1117, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1155, 1156, 1157, 1158, 1159, 1160, 1162, 1163, 1165, 1170, 1171, 1172, 1175, 1179, 1180, 1182, 1183, 1190, 1207, 1209, 1217, 1221, 1223, 1229, 1230, 1232, 1236, 1242, 1244, 1252, 1258, 1261, 1263, 1264, 1267, 1271, 1283, 1284, 1286, 1287, 1298, 1299, 1302, 1303, 1306, 1307, 1313, 1316, 1318, 1320, 1321, 1323, 1324, 1326, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1380, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "390a06", frames: [327, 329, 337, 339, 354, 357, 359, 363, 365, 368, 377, 378, 383, 387, 390, 399, 426, 438, 439, 442, 443, 449, 450, 477, 480, 505, 509, 515, 523, 526, 527, 529, 530, 532, 533, 534, 546, 548, 554, 572, 576, 578, 583, 588, 593, 594, 600, 602, 606, 614, 618, 625, 630, 632, 639, 642, 655, 656, 662, 663, 666, 671, 673, 676, 679, 680, 689, 703, 707, 715, 716, 724, 731, 739, 742, 743, 747, 754, 759, 766, 768, 771, 775, 778, 797, 800, 804, 811, 819, 820, 829, 832, 841, 842, 843, 847, 849, 853, 864, 871, 874, 881, 884, 887, 888, 898, 899, 907, 912, 914, 920, 923, 938, 942, 962, 971, 972, 976, 985, 990, 999, 1006, 1010, 1011, 1017, 1020, 1040, 1049, 1050, 1051, 1062, 1070, 1075, 1109, 1113, 1117, 1118, 1126, 1139, 1145, 1147, 1162, 1164, 1178, 1181, 1190, 1192, 1193, 1194, 1196, 1197, 1200, 1202, 1207, 1208, 1226, 1248, 1252, 1260, 1278, 1280, 1281, 1282, 1283, 1286, 1288, 1291, 1293, 1301, 1303, 1318, 1320, 1322, 1326, 1330, 1332, 1333, 1334, 1337, 1342, 1344, 1362, 1363, 1368, 1372, 1374, 1377, 1378, 1379, 1392, 1395, 1398, 1402, 1408, 1413, 1416, 1418] }, { color: "39150c", frames: [448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "392609", frames: [171, 466, 532, 845] }, { color: "392712", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "392e18", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "39321f", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "393624", frames: [31, 47, 50, 73, 75, 76, 79, 92, 100, 106, 122, 125, 126, 136, 153, 162, 189, 191, 193, 198, 199, 203, 214, 221, 241, 249, 250, 251, 254, 255, 265, 272, 289, 299, 304, 317, 319, 328, 333, 336, 365, 367, 375, 392, 394, 395, 400, 443, 452, 460, 463, 466, 473, 475, 476, 480, 488, 490, 502, 509, 514, 517, 532, 537, 541, 544, 552, 575, 586, 590, 601, 609, 610, 617, 632, 637, 649, 676, 677, 691, 692, 698, 726, 734, 735, 744, 755, 768, 780, 791, 796, 817, 825, 836, 840, 847, 848, 849, 858, 859, 867, 873, 876, 878, 885, 890, 891, 893, 898, 903, 907, 919, 924, 941, 948, 969, 978, 999, 1003, 1037, 1043, 1055, 1118, 1125, 1127, 1128, 1137, 1139, 1141, 1144, 1148, 1171, 1172, 1174, 1175, 1187, 1189, 1200, 1209, 1214, 1218, 1259, 1262, 1273, 1279, 1284, 1287, 1290, 1298, 1299, 1332, 1372, 1380, 1386, 1390, 1402, 1408] }, { color: "39392a", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "393b27", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "393b3c", frames: [964, 1000, 1062, 1312, 1385] }, { color: "394834", frames: [203, 336, 361, 372, 386, 466, 480, 575, 601, 604, 691, 731, 744, 755, 848, 849, 867, 891, 907, 1003, 1025, 1034, 1064, 1092, 1146, 1174, 1175, 1402, 1410, 1411] }, { color: "39505a", frames: [221, 228, 273, 465, 628, 885, 964, 966, 998, 999, 1001, 1057, 1148, 1209, 1231, 1360, 1419] }, { color: "3a1004", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "3a1e0b", frames: [336, 356, 448, 463, 466, 557, 606, 689, 734, 744, 848, 849, 867, 976, 1003, 1066, 1164, 1227, 1414] }, { color: "3a3f3f", frames: [708, 760, 840, 1005, 1031, 1081, 1188, 1232, 1417] }, { color: "3a4249", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "3a4509", frames: [1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "3a4608", frames: [1056, 1057, 1360] }, { color: "3a5558", frames: [1115, 1116, 1117, 1155, 1165, 1167, 1179, 1187, 1190, 1243, 1245, 1271, 1288, 1293, 1302, 1303, 1337, 1344, 1360] }, { color: "3b2305", frames: [188, 259, 269, 307, 308, 310, 334, 369, 468, 571, 574, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "3b3317", frames: [18, 74, 94, 115, 123, 140, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "3b382f", frames: [466, 512, 951] }, { color: "3b3932", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "3b3c33", frames: [242, 243, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 643, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "3b3d27", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "3b6095", frames: [897, 898, 908, 911, 914, 916, 918, 921, 927, 928, 931, 944, 951, 952, 964, 965, 970, 972, 975, 978, 987, 988, 996, 1000, 1004, 1006, 1021, 1023, 1026, 1029, 1033, 1035, 1042, 1044, 1045, 1046, 1047, 1049, 1050, 1051, 1052, 1053, 1055, 1059, 1060, 1061, 1066, 1068, 1069, 1070, 1074, 1075, 1078, 1080, 1081, 1085, 1086, 1087, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1102, 1104, 1109, 1110, 1111, 1112, 1113, 1114, 1115, 1117, 1125, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1155, 1156, 1157, 1158, 1159, 1160, 1162, 1163, 1165, 1170, 1171, 1172, 1175, 1179, 1180, 1182, 1183, 1187, 1189, 1190, 1197, 1207, 1209, 1217, 1221, 1223, 1229, 1230, 1232, 1236, 1240, 1242, 1244, 1247, 1252, 1258, 1261, 1263, 1264, 1267, 1271, 1274, 1280, 1283, 1284, 1286, 1287, 1298, 1299, 1302, 1303, 1306, 1307, 1309, 1313, 1316, 1318, 1319, 1320, 1321, 1323, 1324, 1326, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1353, 1354, 1355, 1356, 1357, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1380, 1382, 1386, 1387, 1391, 1392, 1393, 1394, 1396, 1398, 1400, 1401, 1413, 1415, 1416, 1418] }, { color: "3c2717", frames: [329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1054, 1190, 1248, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "3c2e14", frames: [182, 183, 205, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 712, 771, 859, 872, 884, 938, 996, 1017, 1075, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "3c3221", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1195, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1331, 1333, 1334, 1360] }, { color: "3c331c", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360, 1362] }, { color: "3c3c3b", frames: [236, 242, 264, 274, 275, 294, 318, 320, 327, 329, 332, 382, 431, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 777, 850, 887, 934, 961, 1010, 1038, 1051, 1068, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "3c3e3a", frames: [466, 512, 951, 965, 1361] }, { color: "3c4222", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "3c423f", frames: [221, 228, 273, 307, 317, 323, 329, 338, 344, 385, 389, 401, 465, 473, 477, 483, 494, 503, 510, 514, 518, 523, 534, 543, 565, 567, 577, 589, 624, 628, 657, 672, 682, 728, 729, 732, 744, 753, 778, 825, 826, 834, 835, 838, 840, 859, 861, 866, 877, 879, 885, 889, 896, 897, 919, 927, 944, 964, 966, 975, 978, 998, 999, 1001, 1004, 1021, 1029, 1047, 1054, 1055, 1057, 1067, 1069, 1075, 1078, 1087, 1114, 1125, 1141, 1148, 1151, 1170, 1171, 1175, 1187, 1189, 1190, 1196, 1197, 1209, 1231, 1240, 1247, 1263, 1267, 1274, 1280, 1309, 1319, 1326, 1351, 1353, 1355, 1357, 1360, 1380, 1386, 1393, 1398, 1413, 1419] }, { color: "3c430a", frames: [1062, 1312, 1385] }, { color: "3c434c", frames: [708, 760, 840, 1005, 1031, 1081, 1188, 1232] }, { color: "3c4856", frames: [744, 848, 849, 852, 867, 1003, 1403] }, { color: "3c4d4d", frames: [221, 228, 273, 338, 385, 465, 473, 494, 503, 510, 514, 518, 534, 543, 567, 577, 589, 624, 628, 657, 728, 729, 732, 744, 753, 825, 826, 834, 835, 838, 840, 861, 866, 877, 879, 885, 896, 897, 927, 944, 964, 966, 975, 978, 998, 999, 1001, 1021, 1029, 1047, 1055, 1057, 1069, 1075, 1078, 1114, 1125, 1141, 1148, 1151, 1170, 1171, 1175, 1187, 1189, 1197, 1209, 1231, 1240, 1247, 1263, 1267, 1274, 1280, 1309, 1319, 1326, 1353, 1355, 1357, 1360, 1380, 1386, 1393, 1398, 1413, 1419] }, { color: "3c5b69", frames: [1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "3d2921", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "3d2b0a", frames: [583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "3d3007", frames: [188, 197, 208, 228, 238, 241, 243, 250, 259, 266, 269, 279, 281, 283, 286, 294, 307, 308, 310, 322, 327, 334, 337, 339, 341, 343, 354, 355, 357, 368, 369, 373, 390, 395, 420, 433, 441, 450, 466, 468, 477, 508, 514, 526, 532, 536, 564, 566, 571, 574, 581, 598, 602, 604, 607, 621, 623, 630, 631, 632, 633, 635, 640, 655, 671, 673, 680, 736, 741, 742, 748, 754, 768, 796, 804, 809, 822, 825, 826, 836, 837, 838, 843, 846, 847, 853, 873, 874, 876, 878, 897, 915, 916, 917, 941, 946, 948, 951, 958, 964, 965, 968, 969, 985, 1000, 1004, 1012, 1020, 1023, 1054, 1072, 1081, 1085, 1087, 1099, 1110, 1112, 1122, 1139, 1145, 1149, 1151, 1158, 1162, 1163, 1169, 1170, 1172, 1188, 1210, 1220, 1221, 1226, 1230, 1232, 1241, 1249, 1255, 1262, 1270, 1271, 1276, 1284, 1290, 1293, 1294, 1295, 1299, 1300, 1318, 1320, 1344, 1350, 1355, 1357, 1358, 1361, 1363, 1365, 1368, 1372, 1403, 1404, 1410, 1412] }, { color: "3d301b", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "3d3225", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "3d3324", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "3d3424", frames: [11, 15, 16, 17, 46, 188, 201, 245, 250, 251, 259, 269, 307, 308, 310, 319, 328, 334, 369, 468, 508, 703, 709, 712, 724, 754, 831, 897, 916, 964, 1000, 1032, 1054, 1087, 1158, 1190, 1199, 1200, 1202, 1221, 1226, 1230, 1232, 1271, 1320, 1355, 1358, 1359, 1386, 1404] }, { color: "3d351f", frames: [1387, 1400] }, { color: "3d3a16", frames: [609, 964, 1000, 1062, 1312, 1385] }, { color: "3d474d", frames: [467, 468, 782, 897, 916, 923, 953, 964, 1000, 1087, 1158, 1192, 1195, 1201, 1221, 1230, 1232, 1271, 1320, 1324, 1355, 1358, 1361, 1400] }, { color: "3d4f55", frames: [632, 653, 672, 873, 1052, 1207, 1251, 1254, 1263, 1283] }, { color: "3d5531", frames: [1057, 1360] }, { color: "3d6036", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "3e2a21", frames: [1254, 1283] }, { color: "3e3417", frames: [439, 443, 450, 530, 533, 546, 572, 583, 594, 595, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "3e3826", frames: [11, 12, 15, 18, 20, 66, 112, 151, 160, 178, 185, 188, 197, 222, 259, 269, 302, 307, 308, 310, 329, 334, 369, 394, 421, 428, 468, 488, 503, 514, 519, 567, 585, 609, 629, 637, 649, 664, 670, 677, 678, 791, 816, 819, 821, 834, 836, 888, 890, 897, 916, 964, 975, 987, 1000, 1026, 1042, 1051, 1069, 1085, 1087, 1102, 1104, 1158, 1160, 1170, 1171, 1221, 1230, 1232, 1242, 1244, 1252, 1258, 1267, 1271, 1286, 1287, 1313, 1320, 1326, 1355, 1358, 1360, 1380, 1387] }, { color: "3e3d3d", frames: [239, 243, 368, 465, 470, 541, 548, 549, 554, 565, 584, 587, 632, 672, 675, 679, 684, 752, 761, 781, 808, 821, 873, 874, 878, 880, 888, 893, 895, 897, 941, 964, 1044, 1045, 1046, 1047, 1049, 1052, 1060, 1113, 1115, 1117, 1155, 1165, 1179, 1190, 1207, 1219, 1222, 1231, 1243, 1244, 1249, 1263, 1270, 1286, 1287, 1288, 1294, 1302, 1303, 1360, 1391, 1403, 1404] }, { color: "3e412b", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "3e480d", frames: [1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "3e4a26", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "3e4b2e", frames: [72, 107, 111, 222, 231, 259, 261, 262, 269, 278, 302, 310, 334, 355, 379, 384, 395, 400, 422, 539, 555, 571, 609, 638, 775, 815, 820, 825, 826, 829, 876, 913, 917, 964, 1000, 1022, 1049, 1058, 1062, 1142, 1252, 1312, 1322, 1364, 1385, 1396, 1410] }, { color: "3e4f4d", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "3f040d", frames: [1062, 1156, 1157, 1312, 1385] }, { color: "3f1a06", frames: [1010, 1013, 1021, 1051, 1081, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "3f210f", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "3f2122", frames: [242, 247, 249, 266, 275, 279, 281, 284, 285, 289, 290, 318, 322, 327, 329, 335, 339, 340, 343, 356, 363, 364, 366, 373, 380, 393, 395, 397, 398, 402, 403, 409, 429, 433, 435, 436, 439, 443, 444, 446, 449, 450, 453, 457, 458, 472, 474, 486, 487, 506, 509, 516, 517, 522, 525, 527, 530, 533, 535, 536, 546, 547, 548, 549, 551, 556, 560, 569, 572, 577, 583, 587, 594, 599, 603, 612, 615, 616, 621, 622, 623, 631, 633, 639, 642, 649, 659, 667, 675, 686, 701, 717, 722, 728, 729, 730, 732, 737, 741, 745, 748, 751, 755, 762, 765, 770, 772, 773, 776, 777, 783, 784, 791, 794, 795, 803, 807, 811, 816, 817, 821, 822, 824, 825, 827, 828, 835, 836, 840, 842, 843, 844, 846, 853, 859, 860, 864, 868, 877, 880, 887, 895, 896, 912, 914, 915, 926, 927, 936, 957, 958, 967, 968, 971, 973, 974, 982, 985, 1010, 1013, 1017, 1021, 1023, 1040, 1043, 1051, 1053, 1058, 1072, 1073, 1075, 1077, 1078, 1081, 1083, 1084, 1085, 1086, 1092, 1093, 1096, 1110, 1112, 1117, 1140, 1141, 1145, 1149, 1151, 1152, 1153, 1156, 1157, 1170, 1186, 1190, 1201, 1215, 1216, 1218, 1228, 1232, 1235, 1237, 1255, 1256, 1257, 1260, 1261, 1263, 1264, 1265, 1272, 1273, 1274, 1275, 1276, 1278, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1294, 1297, 1301, 1310, 1311, 1317, 1321, 1323, 1330, 1337, 1344, 1345, 1347, 1351, 1354, 1357, 1365, 1368, 1369, 1379, 1391, 1397, 1398, 1400, 1408, 1418] }, { color: "3f2a0d", frames: [1022, 1384, 1385] }, { color: "3f2d04", frames: [1155, 1179, 1190, 1302, 1303, 1360] }, { color: "3f2d08", frames: [182, 205, 356, 399, 451, 460, 505, 528, 547, 563, 606, 678, 695, 707, 708, 712, 771, 859, 872, 884, 938, 996, 1017, 1075, 1163, 1231, 1333, 1348, 1349, 1384, 1386] }, { color: "3f5660", frames: [632, 633, 635, 640, 653, 655, 671, 672, 730, 735, 736, 741, 742, 745, 748, 754, 768, 796, 804, 809, 817, 821, 822, 825, 826, 836, 837, 838, 843, 846, 847, 853, 866, 873, 874, 876, 878, 906, 915, 917, 941, 946, 948, 951, 958, 962, 965, 968, 969, 985, 999, 1004, 1012, 1020, 1023, 1052, 1054, 1072, 1081, 1083, 1085, 1099, 1110, 1112, 1122, 1139, 1145, 1149, 1151, 1161, 1162, 1163, 1169, 1170, 1172, 1188, 1207, 1210, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1276, 1281, 1283, 1284, 1290, 1293, 1294, 1295, 1299, 1300, 1318, 1344, 1350, 1357, 1358, 1361, 1363, 1365, 1368, 1372, 1379, 1380, 1403, 1404, 1410, 1412] }, { color: "3f5d76", frames: [897, 916, 964, 1000, 1044, 1045, 1046, 1047, 1049, 1060, 1087, 1113, 1115, 1117, 1155, 1158, 1179, 1190, 1221, 1230, 1232, 1271, 1302, 1303, 1320, 1355, 1358, 1360] }, { color: "40342c", frames: [302, 307, 310, 334, 609, 941, 964, 1000, 1062, 1312, 1385] }, { color: "403517", frames: [171, 466, 532, 845] }, { color: "403909", frames: [897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "403a34", frames: [244, 245, 247, 447, 448, 449, 565, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "403c0f", frames: [897, 916, 964, 975, 987, 1000, 1026, 1042, 1051, 1069, 1085, 1087, 1102, 1104, 1158, 1160, 1170, 1171, 1221, 1230, 1232, 1242, 1244, 1252, 1258, 1267, 1271, 1286, 1287, 1313, 1320, 1326, 1355, 1358, 1360, 1380, 1387] }, { color: "403e4c", frames: [679, 702, 738, 739, 761, 767, 781, 833, 847, 872, 875, 897, 964, 968, 996, 1004, 1044, 1045, 1046, 1047, 1049, 1060, 1074, 1090, 1113, 1115, 1117, 1134, 1155, 1159, 1179, 1182, 1185, 1190, 1251, 1255, 1269, 1276, 1278, 1289, 1302, 1303, 1330, 1360, 1363, 1370, 1392, 1394] }, { color: "404b1e", frames: [867, 1003] }, { color: "404d4d", frames: [963, 966] }, { color: "404e3b", frames: [1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "405924", frames: [867, 1003] }, { color: "406143", frames: [867, 877, 911, 915, 923, 968, 970, 971, 1003, 1058, 1066, 1075, 1079, 1085, 1109, 1149, 1151, 1152, 1201, 1237, 1275, 1287, 1320, 1356, 1416] }, { color: "406c40", frames: [273, 465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "411206", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "412005", frames: [192, 194, 197, 206, 246, 247, 248, 254, 256, 272, 277, 279, 283, 291, 293, 294, 296, 299, 302, 315, 317, 322, 326, 337, 345, 367, 377, 387, 391, 401, 404, 409, 470, 479, 480, 505, 516, 522, 534, 540, 558, 575, 581, 582, 589, 595, 628, 637, 659, 661, 671, 693, 704, 709, 717, 724, 730, 735, 739, 741, 742, 773, 788, 796, 800, 804, 836, 862, 878, 884, 885, 893, 896, 912, 918, 921, 922, 925, 927, 928, 929, 930, 938, 941, 988, 1020, 1047, 1083, 1089, 1090, 1093, 1097, 1115, 1118, 1130, 1138, 1139, 1152, 1165, 1180, 1182, 1183, 1187, 1190, 1241, 1243, 1244, 1245, 1269, 1271, 1279, 1281, 1288, 1293, 1296, 1298, 1316, 1331, 1337, 1344, 1347, 1387, 1400] }, { color: "412028", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "412e32", frames: [660, 664, 891, 1071, 1215, 1322] }, { color: "413214", frames: [174, 192, 1387, 1400] }, { color: "41371d", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "413b22", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "413b2a", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "413d31", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "41433e", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "414655", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "41552b", frames: [269, 302, 307, 308, 310, 329, 334, 369, 394, 421, 428, 468, 488, 503, 514, 519, 585, 609, 629, 637, 649, 664, 670, 678, 791, 816, 819, 821, 834, 836, 888, 890, 897, 916, 964, 975, 987, 1000, 1026, 1042, 1051, 1069, 1085, 1087, 1102, 1104, 1158, 1160, 1170, 1171, 1221, 1230, 1232, 1242, 1244, 1252, 1258, 1267, 1271, 1286, 1287, 1313, 1320, 1326, 1355, 1358, 1360, 1380, 1387] }, { color: "42302e", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "423421", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 349, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "423822", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 863, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "423824", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "423828", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "423b28", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "424155", frames: [1301, 1330, 1337, 1348, 1399] }, { color: "424332", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "424b4b", frames: [465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "424d3d", frames: [221, 228, 273, 338, 385, 465, 473, 494, 503, 510, 514, 518, 534, 543, 567, 577, 589, 624, 628, 657, 728, 729, 732, 744, 753, 825, 826, 834, 835, 838, 840, 861, 866, 877, 879, 885, 896, 897, 927, 944, 964, 966, 975, 978, 998, 999, 1001, 1021, 1029, 1047, 1055, 1057, 1069, 1075, 1078, 1114, 1125, 1141, 1148, 1151, 1170, 1171, 1175, 1187, 1189, 1197, 1209, 1231, 1240, 1247, 1263, 1267, 1274, 1280, 1309, 1319, 1326, 1353, 1355, 1357, 1360, 1380, 1386, 1393, 1398, 1413, 1419] }, { color: "424f28", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "431508", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "432d09", frames: [174, 175, 177, 180, 181, 189, 192, 194, 198, 201, 202, 203, 205, 209, 224, 229, 235, 237, 238, 241, 245, 248, 256, 264, 270, 272, 274, 277, 279, 282, 283, 286, 288, 291, 293, 294, 299, 315, 317, 326, 334, 341, 345, 349, 351, 357, 359, 362, 367, 368, 372, 376, 379, 386, 392, 395, 400, 404, 407, 415, 417, 419, 420, 421, 422, 430, 431, 444, 450, 451, 466, 468, 471, 475, 479, 486, 491, 497, 499, 505, 514, 518, 519, 523, 535, 536, 543, 545, 557, 558, 561, 567, 569, 570, 573, 575, 577, 578, 579, 580, 581, 582, 584, 587, 588, 589, 592, 593, 595, 601, 603, 604, 607, 609, 614, 617, 618, 623, 624, 628, 630, 631, 636, 640, 659, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 738, 739, 741, 753, 763, 764, 768, 769, 773, 775, 786, 788, 795, 796, 804, 805, 808, 809, 819, 824, 826, 827, 832, 836, 838, 840, 841, 842, 843, 844, 846, 847, 849, 850, 855, 857, 859, 862, 865, 867, 875, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 918, 921, 927, 928, 931, 951, 952, 965, 970, 972, 988, 996, 1004, 1006, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1059, 1061, 1066, 1068, 1070, 1074, 1075, 1080, 1081, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1162, 1163, 1165, 1170, 1172, 1175, 1180, 1182, 1183, 1207, 1209, 1217, 1223, 1229, 1236, 1261, 1263, 1264, 1283, 1284, 1298, 1299, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "43331c", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "433e23", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "434338", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "442310", frames: [18, 34, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1358, 1360, 1375] }, { color: "443c34", frames: [466, 512, 744, 848, 849, 867, 951, 1003] }, { color: "443f34", frames: [660] }, { color: "44472d", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "44617c", frames: [848, 849, 867, 1003] }, { color: "451f11", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "452011", frames: [336, 356, 448, 463, 466, 557, 606, 689, 734, 744, 848, 849, 867, 976, 1003, 1066, 1164, 1227, 1414] }, { color: "452e24", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "45300b", frames: [581, 591, 660, 664, 833, 891, 930, 951, 1017, 1071, 1099, 1215, 1226, 1322] }, { color: "453c26", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "45465c", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "45472a", frames: [192, 1387, 1400] }, { color: "455961", frames: [963, 966] }, { color: "45596a", frames: [848, 849, 867, 1003] }, { color: "456e3c", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "461c13", frames: [327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 588, 594, 639, 642, 743, 887, 888, 1010, 1051, 1117, 1118, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "463c3e", frames: [334, 337, 356, 369, 395, 444, 445, 468, 773, 832, 897, 916, 964, 1000, 1013, 1015, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1344, 1355, 1358] }, { color: "463d21", frames: [72, 145, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "463f48", frames: [653, 672, 1251, 1254, 1283] }, { color: "464213", frames: [533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "464617", frames: [1400, 1401] }, { color: "464c3f", frames: [1003] }, { color: "464e13", frames: [1062, 1312, 1385] }, { color: "465457", frames: [465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "465f65", frames: [221, 228, 241, 250, 265, 273, 333, 365, 367, 395, 452, 465, 473, 509, 514, 532, 541, 552, 628, 677, 825, 836, 847, 873, 876, 878, 885, 898, 907, 919, 924, 941, 948, 964, 966, 978, 998, 999, 1001, 1037, 1055, 1057, 1137, 1141, 1148, 1172, 1187, 1189, 1209, 1214, 1231, 1259, 1262, 1284, 1290, 1360, 1372, 1390, 1402, 1408, 1419] }, { color: "472a22", frames: [963, 966] }, { color: "472f34", frames: [653, 672, 697, 698, 716, 765, 819, 859, 861, 900, 980, 1044, 1056, 1251, 1254, 1259, 1283, 1331, 1334, 1377] }, { color: "473a2f", frames: [963, 966] }, { color: "473e2d", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "47433e", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "474e2e", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "475518", frames: [1010, 1012, 1013, 1051, 1123, 1162, 1175, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "481005", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "483b45", frames: [660] }, { color: "483f26", frames: [18, 19, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 466, 467, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 965, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1323, 1360, 1361] }, { color: "484030", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "485252", frames: [632, 653, 672, 681, 1245, 1251, 1254, 1283] }, { color: "485657", frames: [964, 998, 999, 1000, 1001, 1057, 1062, 1312, 1360, 1385] }, { color: "485f70", frames: [998, 999, 1000, 1001, 1057, 1062, 1312, 1360, 1385] }, { color: "49321b", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "49402a", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "494138", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "494740", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "495156", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "496381", frames: [1087, 1104, 1129, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "4a2d26", frames: [247, 284, 296, 322, 337, 363, 377, 387, 447, 448, 449, 480, 494, 502, 519, 534, 540, 551, 558, 575, 577, 581, 582, 589, 648, 659, 660, 661, 664, 671, 675, 717, 724, 730, 739, 741, 742, 784, 796, 804, 809, 822, 836, 878, 884, 885, 891, 893, 896, 912, 922, 927, 947, 973, 974, 980, 1047, 1066, 1071, 1115, 1152, 1165, 1187, 1190, 1194, 1207, 1215, 1242, 1243, 1245, 1271, 1288, 1293, 1322, 1337, 1344, 1391, 1400, 1401] }, { color: "4a403e", frames: [926, 963, 966] }, { color: "4a4126", frames: [18, 19, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 466, 467, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 965, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1323, 1360, 1361] }, { color: "4a412f", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "4a4739", frames: [25, 42, 199, 244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1102, 1190, 1191, 1215, 1322, 1366] }, { color: "4a4c4e", frames: [708, 760, 840, 1005, 1031, 1040, 1081, 1188, 1232] }, { color: "4a4e16", frames: [1057, 1360] }, { color: "4a5140", frames: [1000, 1062, 1312, 1385] }, { color: "4b0913", frames: [1062, 1075, 1076, 1078, 1126, 1147, 1156, 1157, 1162, 1164, 1173, 1178, 1189, 1192, 1193, 1194, 1196, 1197, 1200, 1202, 1207, 1208, 1226, 1248, 1281, 1282, 1285, 1291, 1295, 1310, 1312, 1332, 1333, 1334, 1342, 1348, 1357, 1363, 1368, 1372, 1374, 1378, 1379, 1385, 1393, 1395, 1402, 1408, 1413, 1416, 1417, 1418] }, { color: "4b2f12", frames: [1360] }, { color: "4b3503", frames: [1155, 1179, 1190, 1302, 1303, 1360] }, { color: "4b3b11", frames: [998, 999, 1001, 1057, 1360] }, { color: "4b3e1c", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "4b412a", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "4b431b", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "4b4329", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "4b432a", frames: [18, 34, 35, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 325, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 696, 721, 733, 751, 761, 765, 781, 786, 816, 819, 823, 834, 836, 847, 873, 897, 948, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1318, 1342, 1360, 1375] }, { color: "4b442e", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "4b4441", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "4b452b", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "4b464a", frames: [302, 307, 310, 329, 334, 394, 421, 428, 488, 503, 514, 519, 585, 609, 629, 637, 649, 664, 670, 678, 791, 816, 819, 821, 834, 836, 888, 890, 897, 941, 964, 975, 987, 1000, 1026, 1042, 1051, 1062, 1069, 1085, 1102, 1104, 1160, 1170, 1171, 1242, 1244, 1252, 1258, 1267, 1286, 1287, 1312, 1313, 1326, 1355, 1360, 1380, 1385, 1387] }, { color: "4b483a", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "4b5d38", frames: [72, 107, 111, 222, 231, 259, 261, 262, 269, 278, 302, 310, 334, 355, 379, 384, 395, 400, 422, 539, 555, 571, 609, 638, 775, 815, 820, 825, 826, 829, 876, 913, 917, 964, 1000, 1022, 1049, 1058, 1062, 1142, 1252, 1312, 1322, 1364, 1385, 1396, 1410] }, { color: "4b5f56", frames: [1115, 1117, 1155, 1167, 1179, 1190, 1271, 1302, 1303, 1360] }, { color: "4b6f8e", frames: [46, 100, 162, 201, 240, 245, 250, 251, 319, 328, 508, 543, 703, 709, 712, 724, 754, 810, 831, 848, 849, 867, 1003, 1032, 1054, 1111, 1117, 1190, 1199, 1200, 1202, 1226, 1331, 1359, 1386, 1404] }, { color: "4b7c48", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "4c2f1a", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "4c3004", frames: [1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "4c3a0d", frames: [1400] }, { color: "4c3a36", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 565, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "4c4130", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "4c4255", frames: [744, 848, 849, 852, 867, 1003, 1403] }, { color: "4c4429", frames: [18, 19, 32, 45, 74, 94, 115, 123, 204, 210, 211, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 413, 425, 440, 452, 456, 465, 466, 467, 477, 491, 494, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 695, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 850, 873, 886, 897, 906, 949, 954, 964, 965, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1166, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1323, 1360, 1361, 1373, 1381, 1383, 1422] }, { color: "4c442b", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1322, 1360] }, { color: "4c4432", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "4c4546", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "4c463d", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "4c516d", frames: [1301, 1330, 1337] }, { color: "4c5356", frames: [468, 782, 897, 916, 923, 953, 964, 1000, 1087, 1158, 1192, 1195, 1201, 1221, 1230, 1232, 1271, 1320, 1324, 1355, 1358, 1400] }, { color: "4c5431", frames: [203, 287, 336, 434, 466, 480, 575, 618, 744, 848, 849, 867, 891, 1003, 1069, 1095, 1174, 1175] }, { color: "4c5929", frames: [259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "4c5b57", frames: [632, 653, 672, 730, 735, 745, 817, 821, 866, 873, 906, 962, 999, 1052, 1083, 1161, 1207, 1251, 1254, 1263, 1281, 1283, 1290, 1365, 1379, 1380] }, { color: "4c5d64", frames: [632, 653, 672, 873, 1052, 1207, 1251, 1254, 1263, 1283] }, { color: "4c674f", frames: [1360] }, { color: "4d412a", frames: [18, 19, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 466, 467, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 965, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1323, 1360, 1361] }, { color: "4d4224", frames: [30, 130, 133, 265, 280, 286, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 727, 887, 984, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1315, 1330, 1337, 1371, 1412] }, { color: "4d432a", frames: [18, 27, 65, 74, 76, 94, 115, 123, 137, 188, 205, 221, 251, 260, 267, 269, 273, 313, 314, 327, 357, 363, 372, 387, 393, 399, 440, 450, 452, 456, 465, 477, 501, 541, 564, 584, 587, 628, 634, 645, 648, 673, 676, 679, 680, 721, 733, 751, 761, 765, 771, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 995, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1340, 1350, 1360, 1368, 1383] }, { color: "4d472e", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "4d480f", frames: [897, 927, 944, 964, 975, 978, 1021, 1029, 1044, 1045, 1046, 1047, 1049, 1055, 1060, 1069, 1075, 1078, 1113, 1114, 1115, 1117, 1125, 1141, 1151, 1155, 1170, 1171, 1175, 1179, 1187, 1189, 1190, 1197, 1240, 1247, 1263, 1267, 1274, 1280, 1302, 1303, 1309, 1319, 1326, 1353, 1355, 1357, 1360, 1380, 1386, 1393, 1398, 1413] }, { color: "4d4b42", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1205, 1215, 1322, 1324] }, { color: "4d4c4b", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "4e3c02", frames: [1400] }, { color: "4e3d1f", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "4e4429", frames: [18, 19, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 466, 467, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 965, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1323, 1360, 1361] }, { color: "4e583b", frames: [273, 465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "4e593e", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "4e5c64", frames: [468, 477, 505, 601, 604, 643, 662, 663, 674, 696, 698, 703, 704, 726, 727, 728, 731, 752, 766, 782, 809, 819, 822, 826, 839, 869, 879, 888, 893, 897, 913, 916, 923, 953, 964, 1000, 1025, 1036, 1050, 1064, 1087, 1139, 1146, 1158, 1172, 1178, 1184, 1192, 1195, 1201, 1221, 1230, 1232, 1238, 1239, 1240, 1243, 1244, 1248, 1253, 1257, 1268, 1271, 1277, 1281, 1315, 1318, 1320, 1324, 1326, 1355, 1358, 1363, 1371, 1392, 1400, 1412] }, { color: "4e6647", frames: [203, 205, 254, 258, 278, 336, 343, 367, 378, 399, 415, 438, 441, 451, 466, 480, 517, 532, 536, 557, 562, 575, 603, 647, 684, 691, 695, 700, 706, 734, 744, 756, 771, 797, 813, 838, 842, 843, 844, 848, 849, 855, 859, 867, 871, 873, 878, 891, 923, 995, 1003, 1035, 1051, 1113, 1126, 1174, 1175, 1200, 1244, 1276, 1282, 1286, 1287, 1323, 1337, 1343, 1411, 1417] }, { color: "4e6f40", frames: [273, 465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "4e6f79", frames: [1312, 1385] }, { color: "4f2a21", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "4f361c", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "4f462c", frames: [6, 10, 12, 14, 18, 19, 27, 31, 36, 73, 74, 88, 89, 92, 94, 115, 123, 127, 135, 165, 175, 176, 188, 202, 203, 204, 210, 221, 249, 251, 260, 264, 267, 269, 273, 279, 281, 313, 314, 338, 341, 357, 363, 372, 385, 387, 393, 395, 440, 452, 456, 465, 466, 467, 473, 477, 494, 501, 503, 510, 514, 518, 534, 541, 543, 565, 567, 573, 577, 584, 587, 589, 618, 624, 628, 634, 645, 648, 657, 671, 676, 679, 721, 728, 729, 731, 732, 733, 744, 745, 751, 753, 761, 765, 781, 786, 805, 807, 816, 819, 825, 826, 834, 835, 836, 837, 838, 840, 847, 861, 866, 873, 877, 878, 879, 896, 897, 898, 927, 941, 944, 948, 954, 964, 965, 974, 975, 978, 987, 992, 993, 998, 999, 1001, 1015, 1021, 1026, 1027, 1029, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1052, 1055, 1057, 1060, 1069, 1072, 1075, 1078, 1079, 1081, 1085, 1092, 1101, 1104, 1113, 1114, 1115, 1117, 1125, 1139, 1141, 1143, 1151, 1155, 1160, 1163, 1170, 1171, 1175, 1179, 1184, 1185, 1187, 1189, 1190, 1197, 1215, 1220, 1240, 1247, 1252, 1258, 1263, 1267, 1274, 1276, 1280, 1292, 1302, 1303, 1308, 1309, 1311, 1319, 1323, 1326, 1346, 1353, 1355, 1357, 1360, 1361, 1368, 1372, 1377, 1380, 1386, 1393, 1398, 1413, 1415] }, { color: "4f4737", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "4f4822", frames: [259, 261, 262, 269, 302, 310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "4f4b46", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "4f4c42", frames: [466, 512, 951] }, { color: "4f5837", frames: [203, 336, 466, 480, 575, 691, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "4f676a", frames: [632, 633, 635, 640, 653, 655, 666, 671, 672, 676, 689, 715, 730, 735, 736, 741, 742, 745, 747, 748, 754, 761, 768, 775, 778, 781, 796, 800, 804, 809, 817, 821, 822, 825, 826, 827, 832, 836, 837, 838, 841, 843, 846, 847, 853, 857, 863, 866, 873, 874, 876, 878, 881, 884, 899, 906, 912, 914, 915, 917, 941, 942, 943, 946, 948, 951, 956, 958, 959, 961, 962, 965, 968, 969, 985, 986, 999, 1004, 1012, 1020, 1023, 1049, 1054, 1070, 1071, 1072, 1081, 1083, 1085, 1091, 1099, 1109, 1110, 1112, 1113, 1122, 1139, 1145, 1149, 1151, 1161, 1162, 1163, 1168, 1169, 1170, 1172, 1180, 1188, 1204, 1206, 1207, 1208, 1210, 1214, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1270, 1276, 1281, 1283, 1284, 1286, 1290, 1293, 1294, 1295, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1387, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "4f6c2a", frames: [867, 877, 911, 915, 923, 968, 970, 971, 1003, 1058, 1062, 1066, 1075, 1079, 1085, 1109, 1149, 1151, 1152, 1156, 1157, 1201, 1237, 1275, 1287, 1320, 1356, 1416] }, { color: "4f794d", frames: [273, 465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "503420", frames: [327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 588, 594, 639, 642, 743, 887, 888, 1010, 1051, 1117, 1118, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "504758", frames: [1087, 1104, 1129, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "504f55", frames: [242, 327, 329, 439, 443, 450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "50514a", frames: [20, 27, 30, 31, 34, 35, 36, 41, 52, 55, 62, 63, 66, 68, 69, 77, 79, 80, 82, 92, 94, 97, 98, 101, 104, 108, 109, 110, 112, 119, 121, 123, 127, 130, 132, 133, 135, 136, 151, 160, 165, 168, 169, 178, 180, 185, 188, 195, 197, 202, 203, 222, 230, 239, 245, 249, 250, 260, 263, 264, 265, 267, 269, 276, 280, 281, 283, 285, 286, 290, 296, 299, 302, 306, 307, 312, 314, 327, 328, 329, 331, 334, 336, 337, 339, 341, 342, 344, 354, 357, 361, 363, 364, 367, 368, 371, 372, 377, 379, 383, 387, 390, 394, 395, 404, 409, 410, 412, 414, 415, 419, 420, 421, 426, 428, 437, 438, 444, 446, 449, 450, 451, 468, 469, 470, 477, 480, 488, 499, 502, 503, 505, 509, 510, 511, 514, 519, 523, 529, 532, 534, 543, 549, 550, 554, 558, 562, 564, 565, 575, 581, 585, 588, 589, 598, 601, 602, 604, 609, 614, 618, 625, 629, 630, 631, 632, 636, 637, 642, 643, 647, 649, 662, 663, 664, 666, 670, 671, 674, 676, 678, 689, 691, 696, 698, 703, 704, 715, 721, 726, 727, 728, 731, 742, 747, 752, 754, 766, 773, 775, 778, 791, 800, 803, 804, 809, 815, 816, 819, 821, 822, 826, 832, 834, 836, 839, 841, 843, 847, 861, 869, 871, 872, 874, 875, 877, 879, 880, 881, 882, 883, 884, 888, 890, 893, 897, 899, 902, 912, 913, 914, 915, 918, 942, 956, 957, 962, 963, 966, 968, 975, 980, 982, 987, 993, 996, 997, 1005, 1010, 1016, 1017, 1020, 1025, 1026, 1031, 1032, 1036, 1042, 1049, 1050, 1051, 1064, 1069, 1070, 1078, 1081, 1082, 1083, 1084, 1085, 1096, 1097, 1102, 1104, 1109, 1112, 1113, 1115, 1125, 1127, 1132, 1135, 1139, 1142, 1144, 1145, 1146, 1148, 1150, 1152, 1160, 1170, 1171, 1172, 1177, 1178, 1182, 1184, 1185, 1187, 1189, 1190, 1191, 1193, 1195, 1198, 1207, 1221, 1238, 1239, 1240, 1242, 1243, 1244, 1246, 1248, 1252, 1253, 1255, 1257, 1258, 1259, 1267, 1268, 1273, 1276, 1277, 1281, 1283, 1286, 1287, 1293, 1295, 1300, 1301, 1302, 1303, 1304, 1306, 1313, 1315, 1318, 1320, 1322, 1324, 1326, 1330, 1332, 1344, 1348, 1352, 1355, 1360, 1362, 1363, 1371, 1372, 1375, 1376, 1377, 1379, 1380, 1382, 1384, 1385, 1387, 1392, 1394, 1397, 1398, 1399, 1400, 1410, 1412, 1421] }, { color: "505156", frames: [660] }, { color: "50551a", frames: [1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "505f62", frames: [465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "508780", frames: [1051, 1058, 1061, 1072, 1075, 1080, 1084, 1090, 1113, 1126, 1149, 1190, 1200, 1201, 1205, 1216, 1244, 1252, 1260, 1269, 1276, 1278, 1280, 1282, 1286, 1287, 1288, 1301, 1321, 1323, 1330, 1337, 1343, 1398, 1411, 1415, 1417] }, { color: "514732", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "514a3c", frames: [336, 466, 744, 848, 849, 867, 1003] }, { color: "514b42", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "515010", frames: [609, 621, 629, 633, 637, 641, 648, 649, 651, 653, 657, 664, 668, 670, 678, 687, 694, 701, 704, 711, 732, 738, 741, 746, 753, 754, 759, 768, 772, 773, 775, 784, 788, 791, 796, 808, 816, 818, 819, 821, 824, 827, 834, 836, 865, 867, 873, 875, 877, 880, 887, 888, 890, 893, 897, 911, 915, 923, 964, 968, 970, 971, 975, 987, 1000, 1007, 1026, 1042, 1047, 1048, 1051, 1058, 1062, 1066, 1068, 1069, 1070, 1072, 1074, 1075, 1077, 1079, 1083, 1084, 1085, 1086, 1091, 1102, 1104, 1109, 1115, 1131, 1149, 1151, 1152, 1159, 1160, 1167, 1170, 1171, 1200, 1201, 1217, 1220, 1222, 1237, 1242, 1244, 1252, 1258, 1267, 1269, 1271, 1275, 1286, 1287, 1291, 1294, 1310, 1312, 1313, 1320, 1324, 1326, 1328, 1355, 1356, 1357, 1360, 1380, 1382, 1385, 1387, 1389, 1391, 1413, 1415, 1416] }, { color: "515846", frames: [221, 228, 273, 465, 628, 885, 964, 966, 998, 999, 1001, 1057, 1148, 1209, 1231, 1360, 1419] }, { color: "516f7e", frames: [848, 849, 867, 1003] }, { color: "51799a", frames: [848, 849, 867, 1003] }, { color: "52430e", frames: [188, 193, 197, 199, 202, 204, 206, 207, 208, 214, 224, 225, 228, 238, 241, 242, 243, 247, 249, 250, 259, 266, 269, 275, 279, 281, 282, 283, 284, 285, 286, 289, 290, 294, 307, 308, 310, 318, 322, 327, 334, 335, 337, 339, 340, 341, 343, 354, 355, 356, 357, 363, 364, 366, 368, 369, 372, 373, 380, 390, 393, 395, 397, 398, 402, 403, 409, 420, 429, 433, 435, 436, 441, 444, 446, 449, 450, 453, 457, 458, 466, 468, 470, 472, 474, 477, 483, 486, 487, 506, 508, 509, 514, 516, 517, 522, 525, 526, 527, 532, 535, 536, 547, 548, 549, 551, 556, 560, 564, 566, 569, 571, 574, 577, 578, 581, 587, 589, 598, 599, 601, 602, 603, 604, 607, 612, 615, 616, 621, 622, 623, 630, 631, 632, 633, 635, 636, 640, 647, 649, 655, 659, 667, 671, 673, 675, 680, 686, 701, 717, 722, 728, 729, 730, 731, 732, 736, 737, 741, 742, 743, 745, 748, 751, 754, 755, 762, 765, 768, 770, 772, 773, 776, 777, 783, 784, 791, 794, 795, 796, 803, 804, 807, 809, 811, 816, 817, 821, 822, 824, 825, 826, 827, 828, 835, 836, 837, 838, 840, 842, 843, 844, 846, 847, 850, 853, 859, 860, 861, 864, 868, 873, 874, 876, 877, 878, 880, 895, 896, 897, 899, 912, 914, 915, 916, 917, 926, 927, 936, 941, 942, 946, 947, 948, 951, 952, 956, 957, 958, 964, 965, 967, 968, 969, 971, 973, 974, 980, 982, 985, 997, 1000, 1004, 1010, 1012, 1013, 1017, 1020, 1021, 1023, 1040, 1043, 1053, 1054, 1058, 1064, 1072, 1073, 1075, 1077, 1078, 1081, 1083, 1084, 1085, 1086, 1087, 1092, 1093, 1096, 1099, 1106, 1110, 1112, 1117, 1122, 1139, 1140, 1141, 1145, 1149, 1151, 1152, 1153, 1156, 1157, 1158, 1162, 1163, 1169, 1170, 1172, 1186, 1188, 1191, 1201, 1210, 1215, 1216, 1218, 1220, 1221, 1226, 1228, 1230, 1232, 1235, 1237, 1241, 1249, 1255, 1256, 1257, 1261, 1262, 1263, 1264, 1265, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1293, 1294, 1295, 1297, 1299, 1300, 1310, 1311, 1317, 1318, 1319, 1320, 1321, 1323, 1330, 1344, 1345, 1347, 1348, 1350, 1351, 1354, 1355, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1369, 1372, 1376, 1379, 1382, 1386, 1388, 1391, 1393, 1397, 1398, 1400, 1403, 1404, 1408, 1410, 1412, 1415, 1418, 1421] }, { color: "52592f", frames: [1047, 1048, 1049, 1060, 1068, 1070, 1074, 1077, 1084, 1086, 1090, 1113, 1115, 1117, 1131, 1134, 1155, 1159, 1167, 1179, 1182, 1185, 1190, 1220, 1222, 1269, 1271, 1276, 1278, 1286, 1287, 1294, 1302, 1303, 1326, 1328, 1330, 1356, 1360, 1363, 1370, 1389, 1394] }, { color: "52736c", frames: [1113, 1115, 1116, 1117, 1126, 1155, 1169, 1179, 1190, 1200, 1244, 1276, 1282, 1286, 1287, 1302, 1303, 1318, 1323, 1337, 1338, 1343, 1358, 1359, 1360, 1385, 1411, 1417] }, { color: "53464b", frames: [307, 308, 310, 317, 323, 329, 334, 344, 369, 385, 389, 401, 468, 477, 483, 493, 523, 565, 672, 682, 778, 859, 879, 889, 897, 916, 919, 964, 1000, 1004, 1054, 1067, 1087, 1158, 1190, 1196, 1221, 1230, 1232, 1254, 1271, 1320, 1351, 1355, 1358] }, { color: "534c4b", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1067, 1113, 1115, 1117, 1155, 1179, 1190, 1259, 1302, 1303, 1325, 1334, 1360, 1409] }, { color: "535d4b", frames: [1000, 1062, 1312, 1385] }, { color: "53848d", frames: [1312, 1385] }, { color: "540908", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "540a08", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "542e0d", frames: [329, 344, 385, 389, 394, 401, 421, 428, 439, 443, 450, 477, 483, 488, 503, 514, 519, 523, 530, 533, 546, 565, 572, 583, 585, 594, 609, 629, 637, 639, 642, 649, 664, 670, 672, 678, 682, 778, 791, 816, 819, 821, 834, 836, 859, 879, 887, 888, 889, 890, 897, 919, 975, 987, 1004, 1010, 1026, 1042, 1051, 1054, 1067, 1069, 1085, 1087, 1102, 1104, 1160, 1170, 1171, 1190, 1196, 1242, 1244, 1248, 1252, 1258, 1260, 1267, 1278, 1280, 1286, 1287, 1288, 1301, 1313, 1326, 1330, 1337, 1351, 1355, 1360, 1380, 1387] }, { color: "54492d", frames: [18, 20, 66, 74, 94, 112, 115, 123, 151, 160, 178, 185, 197, 221, 222, 251, 260, 267, 269, 273, 302, 313, 314, 329, 357, 363, 372, 387, 393, 394, 421, 428, 440, 452, 456, 465, 477, 488, 501, 503, 514, 519, 541, 584, 585, 587, 609, 628, 629, 634, 637, 645, 648, 649, 664, 670, 676, 678, 679, 721, 733, 751, 761, 765, 781, 786, 791, 816, 819, 821, 834, 836, 847, 873, 888, 890, 897, 954, 964, 975, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1042, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1069, 1072, 1079, 1085, 1092, 1101, 1102, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1171, 1179, 1184, 1185, 1190, 1215, 1220, 1242, 1244, 1252, 1258, 1267, 1286, 1287, 1302, 1303, 1308, 1311, 1313, 1326, 1355, 1360, 1380, 1387] }, { color: "544940", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "544b32", frames: [450, 530, 533, 546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "54534a", frames: [1283] }, { color: "545b3b", frames: [781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "54626d", frames: [1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "551409", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "55170a", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "552a18", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "552d0b", frames: [891, 1071, 1174, 1175, 1215, 1322] }, { color: "554b32", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "554e22", frames: [188, 259, 269, 307, 308, 310, 334, 369, 468, 571, 574, 860, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358, 1393] }, { color: "554e45", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "55544b", frames: [963, 966] }, { color: "555521", frames: [1010, 1013, 1051, 1123, 1162, 1175, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "555561", frames: [302, 307, 310, 329, 334, 343, 349, 351, 359, 394, 401, 403, 404, 407, 421, 428, 486, 488, 499, 503, 514, 519, 520, 535, 540, 579, 580, 584, 585, 590, 609, 629, 633, 637, 641, 649, 651, 653, 657, 664, 668, 670, 678, 694, 711, 738, 746, 759, 768, 772, 775, 791, 816, 818, 819, 821, 824, 834, 836, 873, 875, 888, 890, 897, 941, 964, 968, 975, 987, 1000, 1007, 1026, 1042, 1047, 1048, 1051, 1062, 1068, 1069, 1070, 1074, 1077, 1084, 1085, 1086, 1102, 1104, 1115, 1131, 1160, 1167, 1170, 1171, 1220, 1222, 1242, 1244, 1252, 1258, 1267, 1271, 1286, 1287, 1294, 1312, 1313, 1326, 1328, 1355, 1356, 1360, 1380, 1385, 1387, 1389] }, { color: "555f58", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "555f6a", frames: [466, 512, 951, 965, 1361] }, { color: "556464", frames: [1062, 1312, 1385] }, { color: "558280", frames: [1312, 1385] }, { color: "558341", frames: [867, 877, 911, 915, 923, 968, 970, 971, 1003, 1058, 1062, 1066, 1075, 1079, 1085, 1109, 1149, 1151, 1152, 1156, 1157, 1201, 1237, 1275, 1287, 1320, 1356, 1416] }, { color: "5588af", frames: [1113, 1115, 1116, 1117, 1155, 1169, 1173, 1179, 1188, 1190, 1193, 1241, 1273, 1284, 1301, 1302, 1303, 1310, 1318, 1332, 1338, 1343, 1358, 1359, 1360, 1385] }, { color: "563521", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "563d37", frames: [242, 258, 264, 286, 294, 295, 297, 320, 327, 329, 332, 373, 382, 395, 415, 433, 439, 443, 446, 450, 451, 506, 509, 517, 518, 527, 530, 533, 541, 546, 555, 572, 583, 594, 604, 610, 639, 642, 666, 667, 669, 709, 712, 724, 728, 747, 748, 750, 788, 849, 857, 887, 923, 934, 961, 970, 971, 982, 1010, 1051, 1054, 1076, 1080, 1099, 1149, 1172, 1174, 1177, 1190, 1198, 1199, 1210, 1223, 1229, 1231, 1232, 1246, 1260, 1265, 1278, 1280, 1281, 1286, 1288, 1292, 1301, 1323, 1330, 1335, 1337, 1350, 1368, 1374, 1387, 1391, 1402, 1410, 1416, 1417] }, { color: "564329", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "56544a", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "565b3f", frames: [259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "565e64", frames: [336, 356, 448, 463, 466, 557, 606, 689, 734, 744, 848, 849, 867, 976, 1003, 1066, 1164, 1227, 1414] }, { color: "566058", frames: [468, 782, 897, 916, 923, 953, 964, 1000, 1087, 1158, 1192, 1195, 1201, 1221, 1230, 1232, 1271, 1320, 1324, 1355, 1358, 1400] }, { color: "566070", frames: [664, 751, 891, 1071, 1215, 1322] }, { color: "56698a", frames: [1044, 1045, 1046, 1047, 1049, 1056, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1259, 1302, 1303, 1331, 1334, 1360, 1377] }, { color: "566e36", frames: [867, 1003] }, { color: "567f4d", frames: [259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "570d08", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "573018", frames: [336, 356, 448, 463, 466, 557, 606, 689, 734, 744, 848, 849, 867, 976, 1003, 1066, 1164, 1227, 1414] }, { color: "573729", frames: [336, 356, 448, 463, 466, 557, 606, 689, 734, 744, 848, 849, 867, 976, 1003, 1066, 1164, 1227, 1414] }, { color: "573a1e", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "57403f", frames: [963, 966] }, { color: "57490c", frames: [1400, 1401, 1412] }, { color: "574c3f", frames: [964, 1000, 1062, 1312, 1385] }, { color: "574f4e", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "575049", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "57504d", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "57686d", frames: [465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "583809", frames: [1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "584719", frames: [203, 205, 254, 258, 264, 278, 283, 327, 336, 337, 339, 343, 354, 357, 363, 367, 368, 377, 378, 383, 387, 390, 399, 415, 438, 441, 451, 466, 477, 480, 505, 509, 517, 523, 529, 532, 534, 536, 554, 557, 562, 575, 588, 602, 603, 614, 618, 625, 630, 632, 647, 666, 676, 684, 689, 691, 695, 700, 706, 715, 734, 742, 744, 747, 754, 756, 771, 775, 778, 797, 800, 804, 813, 832, 838, 841, 842, 843, 844, 847, 848, 849, 855, 859, 867, 871, 873, 874, 878, 881, 884, 891, 899, 912, 914, 923, 942, 962, 995, 1003, 1020, 1035, 1049, 1051, 1070, 1109, 1113, 1126, 1139, 1145, 1174, 1175, 1200, 1207, 1244, 1276, 1282, 1283, 1286, 1287, 1293, 1303, 1318, 1320, 1322, 1323, 1326, 1337, 1343, 1344, 1362, 1377, 1379, 1392, 1398, 1411, 1417] }, { color: "584d37", frames: [18, 74, 94, 115, 123, 221, 251, 260, 267, 269, 273, 313, 314, 357, 363, 372, 387, 393, 440, 452, 456, 465, 477, 501, 541, 584, 587, 628, 634, 645, 648, 676, 679, 721, 733, 751, 761, 765, 781, 786, 816, 819, 834, 836, 847, 873, 897, 954, 964, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1072, 1079, 1092, 1101, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1179, 1184, 1185, 1190, 1215, 1220, 1252, 1258, 1302, 1303, 1308, 1311, 1360] }, { color: "58607b", frames: [916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "586082", frames: [1301, 1330, 1337] }, { color: "586d41", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "590808", frames: [327, 329, 331, 359, 365, 378, 399, 415, 416, 426, 439, 442, 443, 450, 493, 494, 501, 502, 509, 515, 526, 527, 530, 532, 533, 534, 546, 548, 554, 572, 576, 578, 583, 588, 594, 600, 606, 639, 642, 655, 656, 662, 663, 671, 673, 679, 680, 703, 707, 719, 724, 731, 739, 743, 754, 759, 766, 768, 771, 797, 811, 819, 820, 829, 833, 842, 849, 853, 864, 871, 887, 888, 898, 907, 920, 923, 938, 947, 962, 971, 972, 974, 976, 980, 985, 990, 999, 1006, 1010, 1011, 1017, 1040, 1050, 1051, 1062, 1065, 1067, 1075, 1106, 1117, 1118, 1122, 1126, 1147, 1162, 1164, 1174, 1177, 1178, 1185, 1190, 1192, 1193, 1194, 1196, 1197, 1200, 1202, 1207, 1208, 1226, 1238, 1246, 1248, 1260, 1265, 1266, 1269, 1276, 1278, 1279, 1280, 1281, 1282, 1288, 1291, 1299, 1300, 1301, 1309, 1330, 1332, 1333, 1334, 1337, 1342, 1363, 1368, 1372, 1374, 1378, 1379, 1395, 1402, 1408, 1413, 1416, 1418] }, { color: "59382f", frames: [302, 307, 310, 329, 334, 361, 372, 394, 404, 409, 410, 412, 415, 421, 426, 428, 444, 468, 477, 488, 503, 505, 514, 519, 585, 601, 604, 609, 629, 637, 643, 649, 662, 663, 664, 670, 674, 678, 696, 698, 703, 704, 726, 727, 728, 731, 752, 766, 791, 809, 816, 819, 821, 822, 826, 834, 836, 839, 869, 879, 888, 890, 893, 897, 913, 964, 975, 987, 1000, 1025, 1026, 1036, 1042, 1050, 1051, 1062, 1064, 1069, 1085, 1102, 1104, 1139, 1146, 1160, 1170, 1171, 1172, 1178, 1184, 1238, 1239, 1240, 1242, 1243, 1244, 1248, 1252, 1253, 1257, 1258, 1267, 1268, 1277, 1281, 1286, 1287, 1312, 1313, 1315, 1318, 1326, 1355, 1360, 1363, 1371, 1380, 1385, 1387, 1392, 1400, 1412] }, { color: "59411b", frames: [1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "594f39", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "595523", frames: [1400] }, { color: "595544", frames: [1003] }, { color: "595b1a", frames: [1062, 1312, 1385] }, { color: "596241", frames: [203, 336, 466, 480, 575, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "596b38", frames: [268, 269, 271, 273, 307, 308, 310, 334, 369, 464, 468, 485, 608, 611, 897, 916, 964, 1000, 1001, 1087, 1154, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358, 1386, 1387] }, { color: "596f83", frames: [1087, 1104, 1129, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "5a4115", frames: [533, 546, 550, 572, 583, 594, 639, 642, 668, 692, 696, 700, 718, 723, 845, 884, 887, 893, 918, 921, 943, 1010, 1051, 1105, 1190, 1208, 1250, 1260, 1278, 1280, 1288, 1296, 1301, 1308, 1330, 1337, 1353] }, { color: "5a454b", frames: [653, 657, 668, 672, 694, 711, 738, 746, 759, 768, 772, 775, 818, 819, 824, 834, 873, 875, 968, 1007, 1026, 1047, 1048, 1068, 1070, 1074, 1077, 1084, 1086, 1115, 1131, 1167, 1220, 1222, 1251, 1254, 1271, 1283, 1286, 1287, 1294, 1326, 1328, 1356, 1389] }, { color: "5a5a4f", frames: [1280, 1288, 1301, 1330, 1337] }, { color: "5a5b5c", frames: [242, 264, 294, 320, 327, 329, 332, 382, 439, 443, 450, 506, 530, 533, 541, 546, 572, 583, 594, 610, 639, 642, 669, 747, 750, 887, 934, 961, 1010, 1051, 1076, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1387, 1402, 1417] }, { color: "5a605c", frames: [465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "5a6b6a", frames: [632, 653, 666, 672, 676, 689, 715, 730, 735, 742, 745, 747, 754, 775, 778, 800, 804, 817, 821, 832, 841, 843, 847, 866, 873, 874, 881, 884, 899, 906, 912, 914, 942, 962, 999, 1020, 1049, 1052, 1070, 1083, 1109, 1113, 1139, 1145, 1161, 1207, 1251, 1254, 1263, 1281, 1283, 1286, 1290, 1293, 1303, 1318, 1320, 1322, 1326, 1344, 1362, 1365, 1377, 1379, 1380, 1392, 1398] }, { color: "5a724b", frames: [72, 107, 111, 222, 231, 259, 261, 262, 269, 278, 302, 310, 334, 355, 379, 384, 395, 400, 422, 539, 555, 571, 609, 638, 775, 815, 820, 825, 826, 829, 876, 913, 917, 964, 1000, 1022, 1049, 1058, 1062, 1142, 1252, 1312, 1322, 1364, 1385, 1396, 1410] }, { color: "5a7d92", frames: [1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "5b1b10", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "5b3c0d", frames: [891, 1071, 1174, 1175, 1215, 1322] }, { color: "5b5546", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "5b5f52", frames: [963, 966] }, { color: "5b5f6b", frames: [1280, 1285, 1288, 1291, 1301, 1330, 1337] }, { color: "5b631f", frames: [1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "5b6b61", frames: [221, 228, 241, 250, 265, 268, 271, 273, 307, 317, 323, 329, 333, 338, 344, 365, 367, 385, 389, 395, 401, 452, 464, 465, 473, 477, 483, 485, 494, 503, 509, 510, 514, 518, 523, 532, 534, 541, 543, 552, 565, 567, 577, 589, 608, 611, 624, 628, 657, 672, 677, 682, 728, 729, 732, 744, 753, 778, 825, 826, 834, 835, 836, 838, 840, 847, 859, 861, 866, 873, 876, 877, 878, 879, 885, 889, 896, 897, 898, 907, 919, 924, 927, 941, 944, 948, 964, 966, 975, 978, 998, 999, 1001, 1004, 1021, 1029, 1037, 1047, 1054, 1055, 1057, 1067, 1069, 1075, 1078, 1087, 1114, 1125, 1137, 1141, 1148, 1151, 1154, 1170, 1171, 1172, 1175, 1187, 1189, 1190, 1196, 1197, 1209, 1214, 1231, 1240, 1247, 1259, 1262, 1263, 1267, 1274, 1280, 1284, 1290, 1309, 1319, 1326, 1351, 1353, 1355, 1357, 1360, 1372, 1380, 1386, 1387, 1390, 1393, 1398, 1402, 1408, 1413, 1419] }, { color: "5b6f73", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "5c3521", frames: [327, 329, 439, 443, 449, 450, 505, 530, 533, 546, 572, 583, 588, 593, 594, 639, 642, 673, 680, 716, 743, 887, 888, 962, 1006, 1010, 1051, 1117, 1118, 1181, 1190, 1252, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1368] }, { color: "5c3c28", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "5c4114", frames: [998, 999, 1001, 1057, 1360] }, { color: "5c4522", frames: [262, 269, 302, 310, 334, 609, 867, 964, 1000, 1062, 1156, 1157, 1312, 1385] }, { color: "5c4f45", frames: [244, 245, 247, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "5c5738", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "5c614c", frames: [964, 998, 999, 1001, 1057, 1360] }, { color: "5c6166", frames: [708, 760, 840, 1005, 1031, 1081, 1188, 1232] }, { color: "5c6366", frames: [468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358, 1400] }, { color: "5c757c", frames: [632, 637, 649, 653, 666, 672, 676, 677, 689, 691, 692, 698, 715, 726, 734, 735, 742, 747, 754, 755, 768, 775, 778, 780, 791, 796, 800, 804, 817, 832, 840, 841, 843, 847, 858, 859, 873, 874, 881, 884, 890, 893, 899, 903, 912, 914, 942, 948, 962, 969, 1020, 1043, 1049, 1052, 1070, 1109, 1113, 1118, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1171, 1200, 1207, 1251, 1254, 1263, 1273, 1279, 1283, 1286, 1287, 1293, 1298, 1299, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1362, 1372, 1377, 1379, 1380, 1386, 1392, 1398] }, { color: "5c87a9", frames: [848, 849, 867, 1003] }, { color: "5ca0a7", frames: [1057, 1360] }, { color: "5d4e36", frames: [141, 402, 447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "5d5047", frames: [963, 966] }, { color: "5d575b", frames: [245, 247, 250, 265, 280, 286, 299, 302, 353, 361, 372, 404, 409, 410, 412, 415, 426, 444, 447, 448, 449, 468, 477, 505, 525, 581, 601, 604, 643, 660, 662, 663, 664, 674, 696, 698, 703, 704, 719, 726, 727, 728, 731, 752, 766, 809, 819, 822, 826, 839, 868, 869, 879, 881, 888, 891, 893, 913, 1025, 1036, 1050, 1064, 1071, 1073, 1110, 1139, 1146, 1172, 1178, 1184, 1190, 1205, 1215, 1238, 1239, 1240, 1243, 1244, 1248, 1253, 1257, 1268, 1277, 1281, 1315, 1318, 1322, 1325, 1326, 1363, 1371, 1392, 1400, 1412] }, { color: "5d5a49", frames: [393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "5d5a5d", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "5d774d", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "5d784f", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "5d8d5b", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "5e3c32", frames: [307, 308, 310, 317, 323, 329, 334, 344, 369, 385, 389, 401, 468, 477, 483, 493, 523, 565, 672, 682, 778, 859, 879, 889, 897, 916, 919, 964, 1000, 1004, 1054, 1067, 1087, 1158, 1190, 1196, 1221, 1230, 1232, 1254, 1271, 1320, 1351, 1355, 1358] }, { color: "5e5451", frames: [963, 966] }, { color: "5e5a28", frames: [897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "5e674a", frames: [781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "5e7221", frames: [1010, 1013, 1016, 1017, 1018, 1021, 1023, 1031, 1040, 1043, 1051, 1053, 1058, 1072, 1073, 1075, 1077, 1078, 1081, 1082, 1083, 1084, 1085, 1086, 1092, 1093, 1096, 1097, 1110, 1112, 1115, 1117, 1123, 1125, 1127, 1135, 1140, 1141, 1142, 1144, 1145, 1149, 1150, 1151, 1152, 1153, 1156, 1157, 1162, 1170, 1175, 1177, 1185, 1186, 1187, 1190, 1191, 1198, 1199, 1201, 1215, 1216, 1218, 1221, 1228, 1232, 1235, 1237, 1239, 1246, 1253, 1255, 1256, 1257, 1260, 1261, 1263, 1264, 1265, 1267, 1272, 1273, 1274, 1275, 1276, 1278, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1294, 1297, 1300, 1301, 1310, 1311, 1317, 1321, 1323, 1324, 1330, 1332, 1337, 1344, 1345, 1347, 1351, 1354, 1357, 1363, 1365, 1368, 1369, 1379, 1391, 1397, 1398, 1400, 1408, 1418] }, { color: "5e7777", frames: [221, 228, 241, 250, 265, 273, 333, 338, 365, 367, 385, 395, 452, 465, 473, 494, 503, 509, 510, 514, 518, 532, 534, 541, 543, 552, 567, 577, 589, 624, 628, 657, 677, 728, 729, 732, 744, 753, 825, 826, 834, 835, 836, 838, 840, 847, 861, 866, 873, 876, 877, 878, 879, 885, 896, 897, 898, 907, 919, 924, 927, 941, 944, 948, 964, 966, 975, 978, 998, 999, 1001, 1021, 1029, 1037, 1047, 1055, 1057, 1069, 1075, 1078, 1114, 1125, 1137, 1141, 1148, 1151, 1170, 1171, 1172, 1175, 1187, 1189, 1197, 1209, 1214, 1231, 1240, 1247, 1259, 1262, 1263, 1267, 1274, 1280, 1284, 1290, 1309, 1319, 1326, 1353, 1355, 1357, 1360, 1372, 1380, 1386, 1390, 1393, 1398, 1402, 1408, 1413, 1419] }, { color: "5e7896", frames: [1087, 1104, 1113, 1116, 1129, 1158, 1169, 1173, 1188, 1193, 1221, 1230, 1232, 1241, 1271, 1273, 1284, 1301, 1310, 1318, 1320, 1332, 1338, 1343, 1355, 1358, 1359, 1385] }, { color: "5e7950", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "5e7b89", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 730, 734, 735, 736, 741, 742, 745, 747, 748, 754, 755, 761, 768, 775, 778, 780, 781, 791, 796, 800, 804, 809, 817, 821, 822, 825, 826, 827, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 857, 858, 859, 863, 866, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 906, 912, 914, 915, 917, 941, 942, 943, 946, 948, 951, 956, 958, 959, 961, 962, 965, 968, 969, 985, 986, 999, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1071, 1072, 1081, 1083, 1085, 1091, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1161, 1162, 1163, 1168, 1169, 1170, 1171, 1172, 1180, 1188, 1200, 1204, 1206, 1207, 1208, 1210, 1214, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1281, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1387, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "5e8159", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "5f553f", frames: [443, 444, 445, 450, 530, 533, 537, 546, 572, 583, 594, 612, 639, 642, 773, 783, 786, 832, 887, 915, 1010, 1013, 1015, 1032, 1041, 1051, 1080, 1117, 1118, 1125, 1137, 1190, 1260, 1278, 1280, 1288, 1291, 1301, 1323, 1330, 1337, 1344, 1380, 1383, 1408] }, { color: "5f5923", frames: [203, 205, 210, 221, 254, 258, 278, 336, 338, 343, 367, 378, 385, 399, 415, 438, 441, 451, 466, 473, 480, 494, 503, 510, 514, 517, 518, 532, 534, 536, 543, 557, 562, 567, 575, 577, 589, 603, 624, 647, 657, 684, 691, 695, 700, 706, 728, 729, 732, 734, 744, 753, 756, 771, 797, 813, 825, 826, 834, 835, 838, 840, 842, 843, 844, 848, 849, 855, 859, 861, 866, 867, 871, 873, 877, 878, 879, 891, 896, 897, 923, 927, 944, 975, 978, 995, 1003, 1021, 1029, 1035, 1047, 1051, 1055, 1069, 1075, 1078, 1113, 1114, 1125, 1126, 1141, 1151, 1170, 1171, 1174, 1175, 1187, 1189, 1197, 1200, 1240, 1244, 1247, 1263, 1267, 1274, 1276, 1280, 1282, 1286, 1287, 1309, 1319, 1323, 1326, 1337, 1343, 1353, 1355, 1357, 1380, 1386, 1393, 1398, 1411, 1413, 1417] }, { color: "5f5b5c", frames: [1254, 1258, 1283] }, { color: "5f6428", frames: [1400] }, { color: "5f6823", frames: [1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "5f6d67", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "5f7953", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "5f7a51", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "5f8a5a", frames: [262, 269, 302, 310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "605415", frames: [1155, 1179, 1190, 1302, 1303, 1360] }, { color: "60615a", frames: [963, 966] }, { color: "606171", frames: [314, 393, 440, 465, 541, 584, 587, 679, 715, 730, 761, 781, 825, 846, 897, 924, 964, 977, 978, 995, 1030, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1246, 1302, 1303, 1343, 1360, 1365, 1374] }, { color: "606262", frames: [963, 966] }, { color: "606c60", frames: [963, 966] }, { color: "607374", frames: [468, 477, 505, 601, 604, 643, 662, 663, 674, 696, 698, 703, 704, 726, 727, 728, 731, 752, 766, 782, 809, 819, 822, 826, 839, 869, 879, 888, 893, 897, 913, 916, 923, 953, 964, 1000, 1025, 1036, 1050, 1064, 1087, 1139, 1146, 1158, 1172, 1178, 1184, 1192, 1195, 1201, 1221, 1230, 1232, 1238, 1239, 1240, 1243, 1244, 1248, 1253, 1257, 1268, 1271, 1277, 1281, 1315, 1318, 1320, 1324, 1326, 1355, 1358, 1363, 1371, 1392, 1400, 1412] }, { color: "607b52", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "609045", frames: [867, 877, 911, 915, 923, 968, 970, 971, 1003, 1058, 1062, 1066, 1075, 1079, 1085, 1109, 1149, 1151, 1152, 1156, 1157, 1201, 1237, 1275, 1287, 1320, 1356, 1416] }, { color: "615128", frames: [998, 999, 1001, 1057, 1360] }, { color: "616d6f", frames: [464, 639, 642, 644, 678, 792, 796, 887, 893, 974, 1010, 1051, 1190, 1200, 1249, 1260, 1278, 1280, 1288, 1301, 1330, 1331, 1337] }, { color: "616e65", frames: [1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "617780", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "618b90", frames: [1312, 1385] }, { color: "623a20", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "62554c", frames: [244, 245, 247, 356, 410, 420, 428, 447, 448, 449, 573, 581, 603, 634, 660, 664, 734, 756, 839, 881, 891, 893, 980, 1071, 1096, 1215, 1322, 1348] }, { color: "626257", frames: [27, 33, 36, 65, 73, 76, 92, 101, 122, 125, 137, 172, 174, 188, 205, 242, 258, 286, 295, 297, 327, 373, 395, 399, 415, 433, 446, 450, 451, 506, 509, 517, 518, 527, 555, 564, 565, 573, 604, 636, 647, 666, 667, 673, 680, 709, 712, 724, 728, 745, 748, 765, 771, 788, 849, 857, 861, 887, 899, 923, 956, 957, 964, 970, 971, 974, 982, 995, 997, 1000, 1054, 1062, 1080, 1099, 1149, 1172, 1174, 1177, 1197, 1198, 1199, 1210, 1223, 1229, 1231, 1232, 1246, 1265, 1276, 1281, 1286, 1292, 1312, 1323, 1335, 1340, 1348, 1350, 1362, 1368, 1374, 1376, 1377, 1382, 1383, 1385, 1391, 1410, 1416, 1421] }, { color: "626557", frames: [393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "626c6d", frames: [679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1159, 1179, 1190, 1251, 1255, 1289, 1302, 1303, 1360, 1392] }, { color: "627040", frames: [273, 465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "627b50", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "627d53", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "634b34", frames: [761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "636253", frames: [963, 966] }, { color: "636874", frames: [307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "637d55", frames: [72, 107, 111, 222, 231, 259, 261, 262, 269, 278, 302, 310, 334, 355, 379, 384, 395, 400, 422, 539, 555, 571, 609, 638, 775, 815, 820, 825, 826, 829, 876, 913, 917, 964, 1000, 1022, 1049, 1058, 1062, 1142, 1252, 1312, 1322, 1364, 1385, 1396, 1410] }, { color: "637f55", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "638891", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 730, 734, 735, 736, 741, 742, 745, 747, 748, 754, 755, 761, 768, 775, 778, 780, 781, 791, 796, 800, 804, 809, 817, 821, 822, 825, 826, 827, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 857, 858, 859, 863, 866, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 906, 912, 914, 915, 917, 941, 942, 943, 946, 948, 951, 956, 958, 959, 961, 962, 965, 968, 969, 985, 986, 999, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1071, 1072, 1081, 1083, 1085, 1091, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1161, 1162, 1163, 1168, 1169, 1170, 1171, 1172, 1180, 1188, 1200, 1204, 1206, 1207, 1208, 1210, 1214, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1281, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1387, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "639862", frames: [273, 274, 275, 276, 284, 292, 295, 297, 298, 299, 318, 319, 323, 338, 352, 362, 365, 374, 377, 379, 384, 402, 415, 417, 421, 427, 431, 437, 444, 457, 463, 464, 465, 474, 477, 484, 485, 490, 491, 493, 495, 496, 502, 503, 504, 505, 507, 519, 520, 521, 528, 536, 537, 542, 547, 555, 557, 563, 578, 582, 585, 589, 602, 604, 606, 607, 608, 611, 619, 628, 631, 632, 633, 641, 645, 646, 647, 649, 650, 654, 657, 670, 671, 678, 680, 695, 718, 719, 721, 731, 734, 761, 771, 777, 781, 788, 792, 821, 827, 836, 845, 850, 851, 857, 863, 868, 871, 872, 881, 894, 900, 905, 907, 918, 921, 923, 925, 926, 943, 947, 953, 955, 956, 959, 961, 964, 968, 976, 977, 980, 986, 987, 996, 998, 999, 1001, 1003, 1016, 1018, 1030, 1031, 1033, 1036, 1038, 1041, 1043, 1050, 1054, 1055, 1057, 1068, 1069, 1071, 1073, 1085, 1088, 1091, 1104, 1111, 1152, 1154, 1161, 1163, 1165, 1168, 1177, 1180, 1184, 1204, 1206, 1208, 1214, 1231, 1234, 1238, 1239, 1240, 1243, 1245, 1250, 1251, 1254, 1257, 1258, 1259, 1267, 1268, 1276, 1279, 1296, 1304, 1306, 1308, 1313, 1330, 1339, 1341, 1348, 1360, 1376, 1377, 1380, 1383, 1384, 1385, 1386, 1387, 1411, 1413, 1414] }, { color: "643c33", frames: [327, 329, 439, 443, 449, 450, 505, 530, 533, 546, 572, 583, 588, 593, 594, 639, 642, 673, 680, 716, 743, 887, 888, 962, 1006, 1010, 1051, 1117, 1118, 1181, 1190, 1252, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1368] }, { color: "644627", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "64675a", frames: [386, 546, 572, 583, 594, 639, 642, 765, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "64774f", frames: [203, 336, 466, 480, 575, 691, 744, 848, 849, 867, 891, 1003, 1174, 1175] }, { color: "64787b", frames: [465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "648459", frames: [259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "653e2f", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "65501c", frames: [1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "65502b", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "655944", frames: [1003, 1230, 1243, 1246, 1270, 1326] }, { color: "656455", frames: [15, 16, 31, 40, 59, 71, 120, 121, 151, 159, 171, 184, 188, 190, 201, 238, 247, 256, 259, 269, 284, 303, 304, 305, 307, 308, 310, 311, 325, 334, 338, 340, 363, 369, 410, 423, 429, 461, 468, 472, 489, 490, 511, 591, 598, 618, 650, 671, 675, 686, 782, 785, 849, 871, 879, 897, 900, 916, 929, 930, 951, 954, 964, 967, 997, 1000, 1017, 1023, 1063, 1082, 1087, 1112, 1113, 1116, 1151, 1158, 1169, 1202, 1221, 1230, 1232, 1255, 1271, 1318, 1320, 1338, 1343, 1355, 1358, 1359, 1372, 1381, 1385, 1400, 1408] }, { color: "656642", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "657683", frames: [1301, 1330, 1337, 1348, 1399] }, { color: "65819a", frames: [1303, 1360] }, { color: "66301e", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "66563d", frames: [259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "665c3f", frames: [84, 119, 265, 273, 279, 363, 366, 367, 378, 464, 465, 478, 485, 508, 552, 562, 587, 601, 608, 610, 611, 628, 631, 632, 730, 735, 745, 817, 821, 866, 906, 962, 964, 998, 999, 1001, 1057, 1083, 1154, 1161, 1281, 1290, 1360, 1365, 1379, 1380, 1386, 1387] }, { color: "665d2b", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "667648", frames: [259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "669855", frames: [867, 1003, 1062, 1156, 1157] }, { color: "669b5f", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "674123", frames: [761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "67442b", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "676368", frames: [302, 307, 310, 329, 334, 343, 349, 351, 359, 394, 401, 403, 404, 407, 421, 428, 486, 488, 499, 503, 514, 519, 520, 535, 540, 579, 580, 584, 585, 590, 609, 629, 633, 637, 641, 649, 651, 653, 657, 664, 668, 670, 678, 694, 711, 738, 746, 759, 768, 772, 775, 791, 816, 818, 819, 821, 824, 834, 836, 873, 875, 888, 890, 897, 941, 964, 968, 975, 987, 1000, 1007, 1026, 1042, 1047, 1048, 1051, 1062, 1068, 1069, 1070, 1074, 1077, 1084, 1085, 1086, 1102, 1104, 1115, 1131, 1160, 1167, 1170, 1171, 1220, 1222, 1242, 1244, 1252, 1258, 1267, 1271, 1286, 1287, 1294, 1312, 1313, 1326, 1328, 1355, 1356, 1360, 1380, 1385, 1387, 1389] }, { color: "684c34", frames: [449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "686067", frames: [660, 664, 891, 1071, 1215, 1322] }, { color: "687b6d", frames: [1000, 1062, 1312, 1385] }, { color: "6892a9", frames: [1117, 1118, 1124, 1125, 1137, 1140, 1141, 1145, 1149, 1151, 1152, 1153, 1155, 1156, 1157, 1170, 1179, 1186, 1190, 1201, 1215, 1216, 1218, 1226, 1228, 1232, 1235, 1237, 1255, 1256, 1257, 1261, 1263, 1264, 1265, 1272, 1273, 1274, 1275, 1276, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1291, 1292, 1294, 1297, 1302, 1303, 1310, 1311, 1317, 1321, 1323, 1330, 1331, 1344, 1345, 1347, 1351, 1354, 1357, 1360, 1365, 1368, 1369, 1379, 1380, 1391, 1397, 1398, 1400, 1408, 1418] }, { color: "694e3f", frames: [1215, 1322] }, { color: "695038", frames: [336, 466, 744, 848, 849, 867, 1003] }, { color: "696f61", frames: [963, 966] }, { color: "69a099", frames: [1312, 1385] }, { color: "6a5446", frames: [302, 307, 310, 317, 329, 334, 361, 367, 372, 391, 394, 404, 409, 410, 412, 415, 421, 426, 428, 444, 468, 470, 477, 488, 503, 505, 514, 516, 519, 522, 585, 601, 604, 609, 629, 637, 643, 649, 662, 663, 664, 670, 674, 678, 696, 698, 703, 704, 726, 727, 728, 731, 735, 752, 766, 773, 791, 809, 816, 819, 821, 822, 826, 834, 836, 839, 869, 879, 885, 888, 890, 893, 897, 913, 929, 930, 941, 964, 975, 987, 988, 1000, 1025, 1026, 1036, 1042, 1050, 1051, 1062, 1064, 1069, 1085, 1090, 1093, 1102, 1104, 1118, 1130, 1139, 1146, 1152, 1160, 1170, 1171, 1172, 1178, 1184, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1248, 1252, 1253, 1257, 1258, 1267, 1268, 1269, 1277, 1279, 1281, 1286, 1287, 1296, 1312, 1313, 1315, 1318, 1326, 1347, 1355, 1360, 1363, 1371, 1380, 1385, 1387, 1392, 1400, 1412] }, { color: "6a5941", frames: [449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "6a6363", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "6a645b", frames: [1071, 1091, 1161, 1168, 1180, 1204, 1206, 1208, 1214, 1215, 1322, 1387] }, { color: "6a6a26", frames: [1062, 1075, 1126, 1147, 1156, 1157, 1162, 1164, 1178, 1192, 1193, 1194, 1196, 1197, 1200, 1202, 1207, 1208, 1226, 1248, 1281, 1282, 1291, 1312, 1332, 1333, 1334, 1342, 1363, 1368, 1372, 1374, 1378, 1379, 1385, 1395, 1402, 1408, 1413, 1416, 1418] }, { color: "6a8552", frames: [72, 222, 259, 261, 262, 269, 302, 310, 334, 539, 609, 964, 1000, 1062, 1312, 1385] }, { color: "6b453a", frames: [334, 335, 337, 349, 351, 356, 362, 369, 388, 395, 404, 407, 444, 445, 468, 493, 494, 499, 519, 535, 536, 543, 545, 551, 577, 579, 580, 584, 609, 648, 687, 772, 773, 784, 788, 796, 821, 827, 832, 836, 865, 867, 877, 897, 911, 915, 916, 923, 964, 968, 970, 971, 1000, 1013, 1015, 1058, 1062, 1066, 1075, 1079, 1085, 1087, 1109, 1149, 1151, 1152, 1158, 1201, 1221, 1230, 1232, 1237, 1271, 1275, 1287, 1312, 1320, 1344, 1355, 1356, 1358, 1385, 1416] }, { color: "6b4727", frames: [1330, 1337] }, { color: "6b5335", frames: [443, 450, 455, 460, 530, 533, 546, 572, 583, 594, 639, 642, 887, 933, 1010, 1031, 1035, 1051, 1098, 1120, 1190, 1218, 1260, 1278, 1280, 1288, 1301, 1330, 1337, 1374, 1419, 1420] }, { color: "6b672c", frames: [1400, 1401] }, { color: "6c4836", frames: [327, 329, 331, 415, 416, 439, 442, 443, 449, 450, 493, 494, 501, 502, 505, 530, 533, 534, 546, 572, 583, 588, 593, 594, 639, 642, 673, 680, 716, 719, 743, 833, 887, 888, 923, 947, 962, 974, 980, 1006, 1010, 1051, 1065, 1067, 1106, 1117, 1118, 1122, 1174, 1177, 1181, 1185, 1190, 1238, 1246, 1252, 1260, 1265, 1266, 1269, 1276, 1278, 1279, 1280, 1281, 1288, 1299, 1300, 1301, 1309, 1330, 1337, 1368] }, { color: "6c6c6f", frames: [653, 672, 1251, 1254, 1283] }, { color: "6c6d8a", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "6d5c57", frames: [242, 258, 264, 286, 294, 295, 297, 320, 327, 329, 332, 373, 382, 395, 415, 433, 439, 443, 446, 450, 451, 506, 509, 517, 518, 527, 530, 533, 541, 546, 555, 572, 583, 594, 604, 610, 639, 642, 666, 667, 669, 709, 712, 724, 728, 747, 748, 750, 788, 849, 857, 887, 923, 934, 961, 970, 971, 982, 1010, 1051, 1054, 1076, 1080, 1099, 1149, 1172, 1174, 1177, 1190, 1198, 1199, 1210, 1223, 1229, 1231, 1232, 1246, 1260, 1265, 1278, 1280, 1281, 1286, 1288, 1292, 1301, 1323, 1330, 1335, 1337, 1350, 1368, 1374, 1387, 1391, 1402, 1410, 1416, 1417] }, { color: "6d6f67", frames: [336, 466, 744, 848, 849, 867, 1003] }, { color: "6d892d", frames: [1010, 1013, 1016, 1017, 1021, 1023, 1031, 1040, 1043, 1051, 1053, 1058, 1072, 1073, 1075, 1077, 1078, 1081, 1082, 1083, 1084, 1085, 1086, 1092, 1093, 1096, 1097, 1110, 1112, 1115, 1117, 1123, 1125, 1127, 1135, 1140, 1141, 1142, 1144, 1145, 1149, 1150, 1151, 1152, 1153, 1156, 1157, 1162, 1170, 1175, 1177, 1185, 1186, 1187, 1190, 1191, 1198, 1201, 1215, 1216, 1218, 1221, 1228, 1232, 1235, 1237, 1239, 1246, 1253, 1255, 1256, 1257, 1260, 1261, 1263, 1264, 1265, 1267, 1272, 1273, 1274, 1275, 1276, 1278, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1294, 1297, 1300, 1301, 1310, 1311, 1317, 1321, 1323, 1324, 1330, 1332, 1337, 1344, 1345, 1347, 1351, 1354, 1357, 1363, 1365, 1368, 1369, 1379, 1391, 1397, 1398, 1400, 1408, 1418] }, { color: "6d8b8f", frames: [1302, 1303, 1360, 1362, 1385] }, { color: "6da863", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "6e8572", frames: [1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "6f631b", frames: [1155, 1179, 1190, 1302, 1303, 1360] }, { color: "6f6958", frames: [393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "6f7733", frames: [1400] }, { color: "6f7e76", frames: [639, 642, 644, 678, 792, 796, 887, 893, 974, 1010, 1051, 1190, 1200, 1249, 1260, 1278, 1280, 1288, 1301, 1330, 1331, 1337] }, { color: "6f8289", frames: [465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "6f8381", frames: [642, 643, 644, 647, 670, 796, 872, 887, 953, 1010, 1032, 1051, 1172, 1173, 1190, 1200, 1240, 1260, 1278, 1280, 1281, 1288, 1301, 1330, 1337, 1351, 1377, 1382] }, { color: "6f8684", frames: [632, 633, 635, 640, 653, 655, 666, 671, 672, 676, 689, 715, 730, 735, 736, 741, 742, 745, 747, 748, 754, 768, 775, 778, 796, 800, 804, 809, 817, 821, 822, 825, 826, 832, 836, 837, 838, 841, 843, 846, 847, 853, 866, 873, 874, 876, 878, 881, 884, 899, 906, 912, 914, 915, 917, 941, 942, 946, 948, 951, 958, 962, 965, 968, 969, 985, 999, 1004, 1012, 1020, 1023, 1049, 1052, 1054, 1070, 1072, 1081, 1083, 1085, 1099, 1109, 1110, 1112, 1113, 1122, 1139, 1145, 1149, 1151, 1161, 1162, 1163, 1169, 1170, 1172, 1188, 1207, 1210, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1276, 1281, 1283, 1284, 1286, 1290, 1293, 1294, 1295, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "706f7b", frames: [1254, 1258, 1279, 1283, 1304, 1339, 1376, 1380, 1383, 1384, 1414] }, { color: "70887c", frames: [1000, 1062, 1312, 1385] }, { color: "708a8e", frames: [639, 642, 644, 678, 792, 796, 887, 893, 974, 1010, 1051, 1190, 1200, 1249, 1260, 1278, 1280, 1288, 1301, 1330, 1331, 1337] }, { color: "715638", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "715d4c", frames: [1071, 1215, 1322] }, { color: "71633f", frames: [314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "718f93", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 730, 734, 735, 736, 741, 742, 745, 747, 748, 754, 755, 768, 775, 778, 780, 791, 796, 800, 804, 809, 817, 821, 822, 825, 826, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 858, 859, 866, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 906, 912, 914, 915, 917, 941, 942, 946, 948, 951, 958, 962, 965, 968, 969, 985, 999, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1072, 1081, 1083, 1085, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1161, 1162, 1163, 1169, 1170, 1171, 1172, 1188, 1200, 1207, 1210, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1281, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "724c43", frames: [327, 329, 331, 359, 365, 378, 399, 415, 416, 426, 439, 442, 443, 449, 450, 493, 494, 501, 502, 505, 509, 515, 526, 527, 530, 532, 533, 534, 546, 548, 554, 572, 576, 578, 583, 588, 593, 594, 600, 606, 639, 642, 655, 656, 662, 663, 671, 673, 679, 680, 703, 707, 716, 719, 724, 731, 739, 743, 754, 759, 766, 768, 771, 797, 811, 819, 820, 829, 833, 842, 849, 853, 864, 871, 887, 888, 898, 907, 920, 923, 938, 947, 962, 971, 972, 974, 976, 980, 985, 990, 999, 1006, 1010, 1011, 1017, 1040, 1050, 1051, 1062, 1065, 1067, 1075, 1106, 1117, 1118, 1122, 1126, 1147, 1162, 1164, 1174, 1177, 1178, 1181, 1185, 1190, 1192, 1193, 1194, 1196, 1197, 1200, 1202, 1207, 1208, 1226, 1238, 1246, 1248, 1252, 1260, 1265, 1266, 1269, 1276, 1278, 1279, 1280, 1281, 1282, 1288, 1291, 1299, 1300, 1301, 1309, 1330, 1332, 1333, 1334, 1337, 1342, 1363, 1368, 1372, 1374, 1378, 1379, 1395, 1402, 1408, 1413, 1416, 1418] }, { color: "72623f", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "72727c", frames: [1087, 1104, 1113, 1129, 1158, 1173, 1188, 1193, 1221, 1230, 1232, 1241, 1271, 1273, 1284, 1301, 1310, 1320, 1332, 1355, 1358] }, { color: "727948", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "72848a", frames: [664, 751, 891, 1071, 1215, 1322] }, { color: "734328", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "735133", frames: [314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "737571", frames: [275, 285, 301, 313, 314, 318, 324, 358, 393, 431, 440, 465, 481, 541, 577, 584, 587, 596, 615, 620, 679, 692, 761, 777, 781, 806, 807, 850, 871, 897, 898, 928, 964, 997, 1038, 1044, 1045, 1046, 1047, 1049, 1060, 1068, 1085, 1113, 1115, 1117, 1155, 1179, 1180, 1190, 1197, 1211, 1302, 1303, 1360, 1365, 1384, 1397, 1407] }, { color: "737e74", frames: [672, 1251, 1254, 1283, 1286, 1287, 1345] }, { color: "7390a4", frames: [1113, 1115, 1117, 1126, 1155, 1179, 1190, 1200, 1244, 1276, 1282, 1286, 1287, 1302, 1303, 1323, 1337, 1343, 1360, 1411, 1417] }, { color: "7394b2", frames: [1303, 1360] }, { color: "739883", frames: [1049, 1058, 1060, 1070, 1109, 1113, 1115, 1117, 1139, 1142, 1145, 1155, 1179, 1190, 1207, 1252, 1283, 1286, 1293, 1302, 1303, 1318, 1320, 1322, 1326, 1344, 1360, 1362, 1364, 1377, 1379, 1392, 1396, 1398, 1410] }, { color: "745626", frames: [533, 546, 550, 572, 583, 594, 639, 642, 668, 692, 696, 700, 718, 723, 845, 884, 887, 893, 918, 921, 943, 1010, 1051, 1105, 1190, 1208, 1250, 1260, 1278, 1280, 1288, 1296, 1301, 1308, 1330, 1337, 1353] }, { color: "747263", frames: [546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "74875c", frames: [273, 465, 628, 964, 998, 999, 1001, 1057, 1360] }, { color: "7497a2", frames: [632, 633, 635, 640, 653, 655, 666, 671, 672, 676, 689, 715, 730, 735, 736, 741, 742, 745, 747, 748, 754, 761, 768, 775, 778, 781, 796, 800, 804, 809, 817, 821, 822, 825, 826, 827, 832, 836, 837, 838, 841, 843, 846, 847, 853, 857, 863, 866, 873, 874, 876, 878, 881, 884, 899, 906, 912, 914, 915, 917, 941, 942, 943, 946, 948, 951, 956, 958, 959, 961, 962, 965, 968, 969, 985, 986, 999, 1004, 1012, 1020, 1023, 1049, 1052, 1054, 1070, 1071, 1072, 1081, 1083, 1085, 1091, 1099, 1109, 1110, 1112, 1113, 1122, 1139, 1145, 1149, 1151, 1161, 1162, 1163, 1168, 1169, 1170, 1172, 1180, 1188, 1204, 1206, 1207, 1208, 1210, 1214, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1276, 1281, 1283, 1284, 1286, 1290, 1293, 1294, 1295, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1387, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "757071", frames: [242, 247, 249, 258, 264, 266, 275, 279, 281, 284, 285, 286, 289, 290, 294, 295, 297, 318, 320, 322, 327, 329, 332, 335, 339, 340, 343, 356, 363, 364, 366, 373, 380, 382, 393, 395, 397, 398, 402, 403, 409, 415, 429, 433, 435, 436, 439, 443, 444, 446, 449, 450, 451, 453, 457, 458, 472, 474, 486, 487, 506, 509, 516, 517, 518, 522, 525, 527, 530, 533, 535, 536, 541, 546, 547, 548, 549, 551, 555, 556, 560, 569, 572, 577, 583, 587, 594, 599, 603, 604, 610, 612, 615, 616, 621, 622, 623, 631, 633, 639, 642, 649, 659, 666, 667, 669, 675, 686, 701, 709, 712, 717, 722, 724, 728, 729, 730, 732, 737, 741, 745, 747, 748, 750, 751, 755, 762, 765, 770, 772, 773, 776, 777, 783, 784, 788, 791, 794, 795, 803, 807, 811, 816, 817, 821, 822, 824, 825, 827, 828, 835, 836, 840, 842, 843, 844, 846, 849, 853, 857, 859, 860, 864, 868, 877, 880, 887, 895, 896, 912, 914, 915, 923, 926, 927, 934, 936, 957, 958, 961, 967, 968, 970, 971, 973, 974, 982, 985, 1010, 1013, 1017, 1021, 1023, 1040, 1043, 1051, 1053, 1054, 1058, 1072, 1073, 1075, 1076, 1077, 1078, 1080, 1081, 1083, 1084, 1085, 1086, 1092, 1093, 1096, 1099, 1110, 1112, 1117, 1140, 1141, 1145, 1149, 1151, 1152, 1153, 1156, 1157, 1170, 1172, 1174, 1177, 1186, 1190, 1198, 1199, 1201, 1210, 1215, 1216, 1218, 1223, 1228, 1229, 1231, 1232, 1235, 1237, 1246, 1255, 1256, 1257, 1260, 1261, 1263, 1264, 1265, 1272, 1273, 1274, 1275, 1276, 1278, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1294, 1297, 1301, 1310, 1311, 1317, 1321, 1323, 1330, 1335, 1337, 1344, 1345, 1347, 1350, 1351, 1354, 1357, 1365, 1368, 1369, 1374, 1379, 1387, 1391, 1397, 1398, 1400, 1402, 1408, 1410, 1416, 1417, 1418] }, { color: "766d3b", frames: [1062, 1156, 1157, 1312, 1385] }, { color: "767564", frames: [1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "767d81", frames: [314, 393, 440, 465, 541, 584, 587, 679, 715, 730, 761, 781, 825, 846, 897, 924, 964, 977, 978, 995, 1030, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1246, 1302, 1303, 1343, 1360, 1365, 1374] }, { color: "767e8a", frames: [307, 308, 310, 317, 323, 329, 334, 344, 369, 385, 389, 401, 468, 477, 483, 493, 523, 565, 672, 682, 778, 859, 879, 889, 897, 916, 919, 964, 1000, 1004, 1054, 1067, 1087, 1158, 1190, 1196, 1221, 1230, 1232, 1254, 1271, 1320, 1351, 1355, 1358] }, { color: "769662", frames: [72, 107, 111, 222, 231, 259, 261, 262, 269, 278, 302, 310, 334, 355, 379, 384, 395, 400, 422, 539, 555, 571, 609, 638, 775, 815, 820, 825, 826, 829, 876, 913, 917, 964, 1000, 1022, 1049, 1058, 1062, 1142, 1252, 1312, 1322, 1364, 1385, 1396, 1410] }, { color: "76afc5", frames: [1117, 1118, 1124, 1125, 1137, 1155, 1179, 1190, 1226, 1291, 1302, 1303, 1344, 1360, 1380] }, { color: "777466", frames: [1071, 1215, 1322] }, { color: "77a9ba", frames: [1113, 1115, 1116, 1117, 1155, 1169, 1173, 1179, 1188, 1190, 1193, 1241, 1273, 1284, 1301, 1302, 1303, 1310, 1318, 1332, 1338, 1343, 1358, 1359, 1360, 1385] }, { color: "786a39", frames: [1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "787871", frames: [247, 265, 284, 295, 296, 297, 322, 337, 340, 354, 363, 367, 372, 377, 387, 395, 400, 447, 448, 449, 451, 472, 476, 480, 494, 502, 517, 519, 534, 540, 551, 558, 573, 575, 577, 581, 582, 589, 598, 603, 607, 618, 638, 648, 650, 659, 660, 661, 664, 666, 671, 675, 686, 717, 724, 730, 733, 739, 741, 742, 762, 784, 796, 804, 809, 822, 836, 878, 884, 885, 891, 893, 896, 912, 914, 922, 926, 927, 947, 951, 967, 973, 974, 980, 1017, 1023, 1047, 1052, 1066, 1071, 1112, 1115, 1151, 1152, 1163, 1165, 1171, 1187, 1190, 1207, 1215, 1243, 1245, 1252, 1255, 1271, 1284, 1288, 1289, 1293, 1295, 1299, 1300, 1318, 1322, 1325, 1337, 1344, 1350, 1351, 1358, 1391, 1392, 1400, 1401, 1402] }, { color: "788f2b", frames: [1010, 1013, 1016, 1017, 1018, 1021, 1023, 1031, 1040, 1043, 1051, 1053, 1058, 1072, 1073, 1075, 1077, 1078, 1081, 1082, 1083, 1084, 1085, 1086, 1092, 1093, 1096, 1097, 1110, 1112, 1115, 1117, 1123, 1125, 1127, 1135, 1140, 1141, 1142, 1144, 1145, 1149, 1150, 1151, 1152, 1153, 1156, 1157, 1162, 1170, 1175, 1177, 1185, 1186, 1187, 1190, 1191, 1198, 1199, 1201, 1215, 1216, 1218, 1221, 1228, 1232, 1235, 1237, 1239, 1246, 1253, 1255, 1256, 1257, 1260, 1261, 1263, 1264, 1265, 1267, 1272, 1273, 1274, 1275, 1276, 1278, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1294, 1297, 1300, 1301, 1310, 1311, 1317, 1321, 1323, 1324, 1330, 1332, 1337, 1344, 1345, 1347, 1351, 1354, 1357, 1363, 1365, 1368, 1369, 1379, 1391, 1397, 1398, 1400, 1408, 1418] }, { color: "78bcdd", frames: [1113, 1115, 1116, 1117, 1126, 1139, 1145, 1155, 1169, 1173, 1179, 1188, 1190, 1193, 1200, 1207, 1241, 1244, 1273, 1276, 1282, 1283, 1284, 1286, 1287, 1293, 1301, 1302, 1303, 1310, 1318, 1320, 1322, 1323, 1326, 1332, 1337, 1338, 1343, 1344, 1358, 1359, 1360, 1362, 1377, 1379, 1385, 1392, 1398, 1411, 1417] }, { color: "79561d", frames: [891, 892, 899, 930, 1024, 1042, 1043, 1056, 1071, 1100, 1104, 1120, 1121, 1124, 1150, 1163, 1174, 1175, 1203, 1215, 1234, 1241, 1242, 1245, 1248, 1287, 1295, 1322, 1337, 1392] }, { color: "796e24", frames: [1155, 1179, 1190, 1302, 1303, 1360] }, { color: "798490", frames: [314, 393, 440, 465, 541, 584, 587, 679, 715, 730, 761, 781, 825, 846, 897, 924, 964, 977, 978, 995, 1030, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1246, 1302, 1303, 1343, 1360, 1365, 1374] }, { color: "79b0b2", frames: [1312, 1385] }, { color: "79c0b9", frames: [1057, 1360] }, { color: "7a6c57", frames: [307, 308, 310, 312, 314, 317, 323, 328, 329, 334, 341, 344, 364, 367, 369, 371, 372, 385, 389, 395, 401, 419, 420, 438, 446, 449, 450, 451, 468, 470, 477, 483, 493, 499, 502, 510, 519, 523, 543, 549, 562, 565, 598, 604, 642, 671, 672, 682, 731, 754, 778, 803, 815, 826, 859, 872, 879, 882, 884, 889, 897, 899, 915, 916, 918, 919, 964, 980, 982, 993, 1000, 1004, 1010, 1016, 1017, 1031, 1054, 1067, 1078, 1081, 1082, 1083, 1084, 1087, 1096, 1097, 1112, 1115, 1125, 1127, 1135, 1142, 1144, 1150, 1152, 1158, 1177, 1185, 1187, 1190, 1191, 1196, 1198, 1221, 1230, 1232, 1239, 1246, 1253, 1254, 1255, 1267, 1271, 1273, 1276, 1287, 1300, 1301, 1320, 1324, 1330, 1332, 1351, 1355, 1358, 1363, 1397] }, { color: "7a7970", frames: [1320, 1321, 1355, 1358] }, { color: "7a7a86", frames: [1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "7b7e73", frames: [546, 572, 583, 594, 639, 642, 887, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "7b9863", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "7c5f3d", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "7c7156", frames: [1385, 1415] }, { color: "7c7356", frames: [1387, 1388, 1390, 1400] }, { color: "7c8442", frames: [1400] }, { color: "7cc6e8", frames: [1117, 1118, 1124, 1125, 1137, 1140, 1141, 1145, 1149, 1151, 1152, 1153, 1155, 1156, 1157, 1170, 1179, 1186, 1190, 1201, 1215, 1216, 1218, 1226, 1228, 1232, 1235, 1237, 1255, 1256, 1257, 1261, 1263, 1264, 1265, 1272, 1273, 1274, 1275, 1276, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1291, 1292, 1294, 1297, 1302, 1303, 1310, 1311, 1317, 1321, 1323, 1330, 1331, 1344, 1345, 1347, 1351, 1354, 1357, 1360, 1365, 1368, 1369, 1379, 1380, 1391, 1397, 1398, 1400, 1408, 1418] }, { color: "7d6448", frames: [443, 450, 530, 533, 537, 546, 572, 583, 594, 612, 639, 642, 783, 786, 887, 915, 1010, 1032, 1041, 1051, 1117, 1118, 1125, 1137, 1190, 1260, 1278, 1280, 1288, 1291, 1301, 1330, 1337, 1344, 1380] }, { color: "7d6a50", frames: [448, 449, 463, 557, 581, 606, 660, 664, 689, 734, 891, 976, 1011, 1012, 1013, 1066, 1071, 1164, 1215, 1227, 1322, 1414] }, { color: "7d7c9a", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "7d8d91", frames: [466, 512, 744, 848, 849, 867, 951, 965, 1003, 1361] }, { color: "7d91ab", frames: [1087, 1104, 1113, 1116, 1129, 1158, 1169, 1221, 1230, 1232, 1271, 1318, 1320, 1338, 1343, 1355, 1358, 1359, 1385] }, { color: "7d9381", frames: [1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "7e7f7d", frames: [310, 334, 609, 964, 1000, 1062, 1312, 1385] }, { color: "7e8f60", frames: [259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "7f784b", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "7fa1a4", frames: [963, 966] }, { color: "7fa7ab", frames: [632, 637, 649, 653, 666, 672, 676, 677, 689, 691, 692, 698, 715, 726, 734, 735, 742, 747, 754, 755, 761, 768, 775, 778, 780, 781, 791, 796, 800, 804, 817, 827, 832, 840, 841, 843, 847, 857, 858, 859, 863, 873, 874, 881, 884, 890, 893, 899, 903, 912, 914, 942, 943, 948, 956, 959, 961, 962, 969, 986, 1020, 1043, 1049, 1052, 1070, 1071, 1091, 1109, 1113, 1118, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1161, 1168, 1171, 1180, 1200, 1204, 1206, 1207, 1208, 1214, 1251, 1254, 1263, 1273, 1279, 1283, 1286, 1287, 1293, 1298, 1299, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1362, 1372, 1377, 1379, 1380, 1386, 1387, 1392, 1398] }, { color: "7fa7b1", frames: [966, 968, 1419] }, { color: "805945", frames: [334, 337, 341, 344, 356, 364, 367, 369, 371, 372, 395, 419, 420, 438, 444, 445, 446, 449, 450, 451, 468, 470, 499, 502, 510, 519, 543, 549, 562, 565, 598, 604, 609, 642, 671, 731, 754, 773, 803, 815, 826, 832, 872, 882, 884, 897, 899, 915, 916, 918, 964, 980, 982, 993, 1000, 1010, 1013, 1015, 1016, 1017, 1031, 1062, 1078, 1081, 1082, 1083, 1084, 1087, 1096, 1097, 1112, 1115, 1125, 1127, 1135, 1142, 1144, 1150, 1152, 1158, 1177, 1185, 1187, 1191, 1198, 1221, 1230, 1232, 1239, 1246, 1253, 1255, 1267, 1271, 1273, 1276, 1287, 1300, 1301, 1312, 1320, 1324, 1330, 1332, 1344, 1355, 1358, 1363, 1385, 1397] }, { color: "80807b", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "816c4f", frames: [1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1257, 1302, 1303, 1360, 1404] }, { color: "81817a", frames: [1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "819ba3", frames: [465, 541, 584, 587, 628, 679, 761, 781, 897, 964, 998, 999, 1001, 1044, 1045, 1046, 1047, 1049, 1057, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "82a2a0", frames: [964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "837960", frames: [18, 20, 66, 74, 94, 112, 115, 123, 151, 160, 178, 185, 197, 221, 222, 251, 260, 267, 269, 273, 302, 313, 314, 329, 357, 363, 372, 387, 393, 394, 421, 428, 440, 452, 456, 465, 477, 488, 501, 503, 514, 519, 541, 584, 585, 587, 609, 628, 629, 634, 637, 645, 648, 649, 664, 670, 676, 678, 679, 721, 733, 751, 761, 765, 781, 786, 791, 816, 819, 821, 834, 836, 847, 873, 888, 890, 897, 954, 964, 975, 987, 992, 993, 998, 999, 1001, 1015, 1026, 1027, 1038, 1042, 1044, 1045, 1046, 1047, 1049, 1051, 1057, 1060, 1069, 1072, 1079, 1085, 1092, 1101, 1102, 1104, 1113, 1115, 1117, 1143, 1155, 1160, 1170, 1171, 1179, 1184, 1185, 1190, 1215, 1220, 1242, 1244, 1252, 1258, 1267, 1286, 1287, 1302, 1303, 1308, 1311, 1313, 1326, 1355, 1360, 1380, 1387] }, { color: "83a8c7", frames: [1303, 1360] }, { color: "83b0bc", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 730, 734, 735, 736, 741, 742, 745, 747, 748, 754, 755, 768, 775, 778, 780, 791, 796, 800, 804, 809, 817, 821, 822, 825, 826, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 858, 859, 866, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 906, 912, 914, 915, 917, 941, 942, 946, 948, 951, 958, 962, 965, 968, 969, 985, 999, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1072, 1081, 1083, 1085, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1161, 1162, 1163, 1169, 1170, 1171, 1172, 1188, 1200, 1207, 1210, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1281, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "84663b", frames: [533, 546, 550, 572, 583, 594, 639, 642, 668, 692, 696, 700, 718, 723, 845, 884, 887, 893, 918, 921, 943, 1010, 1051, 1105, 1190, 1208, 1250, 1260, 1278, 1280, 1288, 1296, 1301, 1308, 1330, 1337, 1353] }, { color: "847565", frames: [1071, 1091, 1161, 1168, 1180, 1204, 1206, 1208, 1214, 1215, 1322, 1387] }, { color: "848c9e", frames: [1087, 1104, 1113, 1116, 1129, 1158, 1169, 1190, 1196, 1221, 1230, 1232, 1271, 1318, 1320, 1338, 1343, 1351, 1355, 1358, 1359, 1385] }, { color: "85909a", frames: [314, 328, 334, 341, 344, 364, 367, 371, 372, 393, 395, 419, 420, 438, 440, 446, 449, 450, 451, 465, 470, 499, 502, 510, 519, 541, 543, 549, 562, 565, 584, 587, 598, 604, 642, 671, 679, 715, 730, 731, 754, 761, 781, 803, 815, 825, 826, 846, 872, 882, 884, 897, 899, 915, 918, 924, 964, 977, 978, 980, 982, 993, 995, 1010, 1016, 1017, 1030, 1031, 1044, 1045, 1046, 1047, 1049, 1060, 1078, 1081, 1082, 1083, 1084, 1096, 1097, 1112, 1113, 1115, 1117, 1125, 1127, 1135, 1142, 1144, 1150, 1152, 1155, 1177, 1179, 1185, 1187, 1190, 1191, 1198, 1221, 1239, 1246, 1253, 1255, 1267, 1273, 1276, 1287, 1300, 1301, 1302, 1303, 1324, 1330, 1332, 1343, 1360, 1363, 1365, 1374, 1397] }, { color: "877e5b", frames: [15, 16, 18, 19, 21, 23, 27, 31, 34, 40, 43, 52, 55, 59, 70, 71, 74, 76, 78, 79, 82, 92, 106, 107, 120, 121, 123, 151, 153, 159, 168, 170, 171, 172, 184, 185, 188, 190, 197, 201, 208, 228, 238, 241, 243, 247, 250, 256, 259, 266, 269, 279, 281, 283, 284, 286, 294, 303, 304, 305, 307, 308, 310, 311, 322, 325, 334, 337, 338, 339, 340, 341, 343, 354, 355, 357, 363, 368, 369, 373, 390, 395, 410, 420, 423, 429, 433, 441, 461, 466, 468, 472, 477, 489, 490, 508, 511, 514, 526, 532, 536, 564, 566, 581, 591, 598, 602, 604, 607, 618, 621, 623, 630, 631, 632, 633, 635, 640, 650, 655, 671, 675, 686, 736, 741, 742, 748, 754, 768, 782, 785, 796, 804, 809, 822, 825, 826, 836, 837, 838, 843, 846, 847, 849, 853, 871, 873, 874, 876, 878, 879, 897, 900, 915, 916, 917, 929, 930, 941, 946, 948, 951, 954, 958, 964, 965, 967, 968, 969, 985, 997, 1000, 1004, 1012, 1017, 1020, 1023, 1054, 1063, 1072, 1081, 1082, 1085, 1087, 1099, 1110, 1112, 1113, 1116, 1122, 1139, 1145, 1149, 1151, 1158, 1162, 1163, 1169, 1170, 1172, 1188, 1202, 1210, 1220, 1221, 1226, 1230, 1232, 1241, 1249, 1255, 1262, 1270, 1271, 1276, 1284, 1290, 1293, 1294, 1295, 1299, 1300, 1318, 1320, 1338, 1343, 1344, 1350, 1355, 1357, 1358, 1359, 1360, 1361, 1363, 1365, 1368, 1372, 1375, 1381, 1385, 1400, 1403, 1404, 1408, 1410, 1412] }, { color: "878269", frames: [1071, 1091, 1161, 1168, 1180, 1204, 1206, 1208, 1214, 1215, 1322, 1387] }, { color: "878977", frames: [1071, 1091, 1161, 1168, 1180, 1204, 1206, 1208, 1214, 1215, 1322, 1387] }, { color: "879799", frames: [468, 477, 505, 601, 604, 643, 662, 663, 674, 696, 698, 703, 704, 726, 727, 728, 731, 752, 766, 782, 809, 819, 822, 826, 839, 869, 879, 888, 893, 897, 913, 916, 923, 953, 964, 1000, 1025, 1036, 1050, 1064, 1087, 1139, 1146, 1158, 1172, 1178, 1184, 1192, 1195, 1201, 1221, 1230, 1232, 1238, 1239, 1240, 1243, 1244, 1248, 1253, 1257, 1268, 1271, 1277, 1281, 1315, 1318, 1320, 1324, 1326, 1355, 1358, 1363, 1371, 1392, 1400, 1412] }, { color: "87acb7", frames: [1302, 1303, 1360, 1362, 1385] }, { color: "87c6c3", frames: [1312, 1385] }, { color: "888b88", frames: [1044, 1045, 1046, 1047, 1049, 1056, 1060, 1106, 1113, 1115, 1117, 1155, 1164, 1179, 1190, 1257, 1259, 1302, 1303, 1331, 1334, 1360, 1364, 1377, 1394, 1404] }, { color: "896f4f", frames: [447, 448, 449, 581, 660, 664, 891, 1071, 1215, 1322] }, { color: "899689", frames: [639, 642, 644, 678, 792, 796, 887, 893, 974, 1010, 1051, 1190, 1200, 1249, 1260, 1278, 1280, 1288, 1301, 1330, 1331, 1337] }, { color: "89dbf7", frames: [1113, 1115, 1116, 1117, 1126, 1155, 1169, 1173, 1179, 1188, 1190, 1193, 1200, 1241, 1244, 1273, 1276, 1282, 1284, 1286, 1287, 1301, 1302, 1303, 1310, 1318, 1323, 1332, 1337, 1338, 1343, 1358, 1359, 1360, 1385, 1411, 1417] }, { color: "8a7043", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "8a8971", frames: [302, 307, 310, 317, 334, 343, 349, 351, 359, 367, 391, 401, 403, 404, 407, 470, 486, 499, 514, 516, 520, 522, 535, 540, 579, 580, 584, 585, 590, 609, 633, 641, 651, 653, 657, 668, 694, 711, 735, 738, 746, 759, 768, 772, 773, 775, 818, 819, 824, 834, 873, 875, 885, 929, 930, 941, 964, 968, 988, 1000, 1007, 1026, 1047, 1048, 1062, 1068, 1070, 1074, 1077, 1084, 1086, 1090, 1093, 1115, 1118, 1130, 1131, 1139, 1152, 1167, 1220, 1222, 1241, 1269, 1271, 1279, 1286, 1287, 1294, 1296, 1312, 1326, 1328, 1347, 1356, 1385, 1389, 1400] }, { color: "8a97ac", frames: [1087, 1104, 1113, 1116, 1129, 1158, 1169, 1173, 1188, 1193, 1221, 1230, 1232, 1241, 1271, 1273, 1284, 1301, 1310, 1318, 1320, 1332, 1338, 1343, 1355, 1358, 1359, 1385] }, { color: "8ab7b8", frames: [628, 630, 631, 632, 636, 640, 659, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 738, 739, 741, 753, 761, 763, 764, 768, 769, 773, 775, 781, 786, 788, 795, 796, 804, 805, 808, 809, 819, 824, 826, 827, 832, 836, 838, 840, 841, 842, 843, 844, 846, 847, 849, 850, 855, 857, 859, 862, 863, 865, 867, 875, 881, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 918, 921, 927, 928, 931, 943, 951, 952, 956, 959, 961, 964, 965, 970, 972, 986, 988, 996, 998, 999, 1001, 1004, 1006, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1057, 1059, 1061, 1066, 1068, 1070, 1071, 1074, 1075, 1080, 1081, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1161, 1162, 1163, 1165, 1168, 1170, 1172, 1175, 1180, 1182, 1183, 1204, 1206, 1207, 1208, 1209, 1214, 1217, 1223, 1229, 1236, 1261, 1263, 1264, 1283, 1284, 1298, 1299, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "8b7a6a", frames: [1062, 1156, 1157, 1312, 1385] }, { color: "8b9948", frames: [1400, 1401, 1412] }, { color: "8c7c59", frames: [1330, 1333, 1337] }, { color: "8da16d", frames: [273, 464, 465, 485, 608, 611, 628, 964, 998, 999, 1001, 1057, 1154, 1360, 1386, 1387] }, { color: "8dacae", frames: [639, 642, 644, 678, 792, 796, 887, 893, 974, 1010, 1051, 1190, 1200, 1249, 1260, 1278, 1280, 1288, 1301, 1330, 1331, 1337] }, { color: "8e9f61", frames: [261, 262, 267, 269, 302, 310, 334, 564, 609, 639, 642, 796, 964, 1000, 1062, 1200, 1312, 1385] }, { color: "8eaf3c", frames: [1010, 1012, 1013, 1016, 1017, 1018, 1020, 1021, 1023, 1031, 1040, 1043, 1051, 1053, 1054, 1058, 1072, 1073, 1075, 1077, 1078, 1081, 1082, 1083, 1084, 1085, 1086, 1092, 1093, 1096, 1097, 1099, 1110, 1112, 1115, 1117, 1122, 1123, 1125, 1127, 1135, 1139, 1140, 1141, 1142, 1144, 1145, 1149, 1150, 1151, 1152, 1153, 1156, 1157, 1162, 1163, 1169, 1170, 1172, 1175, 1177, 1185, 1186, 1187, 1188, 1190, 1191, 1198, 1199, 1201, 1210, 1215, 1216, 1218, 1220, 1221, 1226, 1228, 1232, 1235, 1237, 1239, 1241, 1246, 1249, 1253, 1255, 1256, 1257, 1260, 1261, 1262, 1263, 1264, 1265, 1267, 1270, 1272, 1273, 1274, 1275, 1276, 1278, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1293, 1294, 1295, 1297, 1299, 1300, 1301, 1310, 1311, 1317, 1318, 1321, 1323, 1324, 1330, 1332, 1337, 1344, 1345, 1347, 1350, 1351, 1354, 1357, 1358, 1361, 1363, 1365, 1368, 1369, 1372, 1379, 1391, 1397, 1398, 1400, 1403, 1404, 1408, 1410, 1412, 1418] }, { color: "8f9485", frames: [1071, 1215, 1322] }, { color: "8f9e53", frames: [1401, 1412] }, { color: "90886c", frames: [1358, 1360, 1372, 1375, 1381, 1400, 1408] }, { color: "909693", frames: [1044, 1045, 1046, 1047, 1049, 1056, 1060, 1106, 1113, 1115, 1117, 1155, 1164, 1179, 1190, 1257, 1259, 1302, 1303, 1331, 1334, 1360, 1364, 1377, 1394, 1404] }, { color: "909ea2", frames: [314, 328, 334, 341, 344, 364, 367, 371, 372, 393, 395, 419, 420, 438, 440, 446, 449, 450, 451, 465, 470, 499, 502, 510, 519, 541, 543, 549, 562, 565, 584, 587, 598, 604, 642, 671, 679, 715, 730, 731, 754, 761, 781, 803, 815, 825, 826, 846, 872, 882, 884, 897, 899, 915, 918, 924, 964, 977, 978, 980, 982, 993, 995, 1010, 1016, 1017, 1030, 1031, 1044, 1045, 1046, 1047, 1049, 1060, 1078, 1081, 1082, 1083, 1084, 1096, 1097, 1112, 1113, 1115, 1117, 1125, 1127, 1135, 1142, 1144, 1150, 1152, 1155, 1177, 1179, 1185, 1187, 1190, 1191, 1198, 1221, 1239, 1246, 1253, 1255, 1267, 1273, 1276, 1287, 1300, 1301, 1302, 1303, 1324, 1330, 1332, 1343, 1360, 1363, 1365, 1374, 1397] }, { color: "90b7bc", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 734, 735, 736, 741, 742, 747, 748, 754, 755, 768, 775, 778, 780, 791, 796, 800, 804, 809, 817, 822, 825, 826, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 858, 859, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 912, 914, 915, 917, 941, 942, 946, 948, 951, 958, 962, 965, 968, 969, 985, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1072, 1081, 1085, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1162, 1163, 1169, 1170, 1171, 1172, 1188, 1200, 1207, 1210, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "90bacb", frames: [1251, 1254, 1257, 1265, 1283] }, { color: "90c4a8", frames: [1051, 1052, 1053, 1058, 1059, 1061, 1066, 1068, 1069, 1070, 1072, 1074, 1075, 1079, 1080, 1081, 1084, 1085, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1101, 1102, 1104, 1109, 1110, 1111, 1112, 1113, 1115, 1126, 1140, 1141, 1143, 1145, 1149, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1162, 1163, 1165, 1170, 1171, 1172, 1175, 1180, 1182, 1183, 1184, 1185, 1190, 1200, 1201, 1205, 1207, 1209, 1215, 1216, 1217, 1220, 1223, 1229, 1236, 1242, 1244, 1252, 1258, 1260, 1261, 1263, 1264, 1267, 1269, 1276, 1278, 1280, 1282, 1283, 1284, 1286, 1287, 1288, 1298, 1299, 1301, 1306, 1307, 1308, 1311, 1313, 1316, 1318, 1320, 1321, 1323, 1324, 1326, 1330, 1331, 1335, 1337, 1343, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1380, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1411, 1415, 1416, 1417, 1418] }, { color: "917343", frames: [1001, 1057, 1154, 1360, 1386, 1387] }, { color: "918584", frames: [583, 584, 594, 639, 642, 696, 887, 951, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "91a9ba", frames: [466, 468, 477, 508, 512, 514, 526, 532, 536, 564, 566, 581, 598, 602, 604, 607, 621, 623, 630, 631, 632, 633, 635, 640, 655, 671, 736, 741, 742, 744, 748, 754, 768, 782, 796, 804, 809, 822, 825, 826, 836, 837, 838, 843, 846, 847, 848, 849, 853, 867, 873, 874, 876, 878, 897, 915, 916, 917, 923, 941, 946, 948, 951, 953, 958, 964, 965, 968, 969, 985, 1000, 1003, 1004, 1012, 1020, 1023, 1054, 1072, 1081, 1085, 1087, 1099, 1110, 1112, 1122, 1139, 1145, 1149, 1151, 1158, 1162, 1163, 1169, 1170, 1172, 1188, 1192, 1195, 1201, 1210, 1220, 1221, 1226, 1230, 1232, 1241, 1249, 1255, 1262, 1270, 1271, 1276, 1284, 1290, 1293, 1294, 1295, 1299, 1300, 1318, 1320, 1324, 1344, 1350, 1355, 1357, 1358, 1361, 1363, 1365, 1368, 1372, 1400, 1403, 1404, 1410, 1412] }, { color: "93bbc4", frames: [679, 702, 738, 739, 761, 767, 781, 833, 847, 872, 875, 897, 964, 968, 996, 1004, 1044, 1045, 1046, 1047, 1049, 1060, 1074, 1090, 1113, 1115, 1117, 1134, 1155, 1159, 1179, 1182, 1185, 1190, 1251, 1255, 1269, 1276, 1278, 1289, 1302, 1303, 1330, 1360, 1363, 1370, 1392, 1394] }, { color: "949c87", frames: [336, 342, 356, 367, 414, 448, 463, 466, 469, 509, 511, 550, 557, 606, 662, 689, 734, 744, 773, 848, 849, 867, 877, 884, 976, 1003, 1032, 1066, 1164, 1190, 1191, 1193, 1195, 1227, 1259, 1352, 1362, 1372, 1376, 1410, 1414] }, { color: "95afb5", frames: [1179, 1190, 1216, 1244, 1265, 1302, 1303, 1360, 1414] }, { color: "969b86", frames: [1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "96b473", frames: [259, 261, 262, 269, 302, 307, 308, 310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "96cdd8", frames: [628, 630, 631, 632, 636, 640, 659, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 738, 739, 741, 753, 761, 763, 764, 768, 769, 773, 775, 781, 786, 788, 795, 796, 804, 805, 808, 809, 819, 824, 826, 827, 832, 836, 838, 840, 841, 842, 843, 844, 846, 847, 849, 850, 855, 857, 859, 862, 863, 865, 867, 875, 881, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 918, 921, 927, 928, 931, 943, 951, 952, 956, 959, 961, 964, 965, 970, 972, 986, 988, 996, 998, 999, 1001, 1004, 1006, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1057, 1059, 1061, 1066, 1068, 1070, 1071, 1074, 1075, 1080, 1081, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1161, 1162, 1163, 1165, 1168, 1170, 1172, 1175, 1180, 1182, 1183, 1204, 1206, 1207, 1208, 1209, 1214, 1217, 1223, 1229, 1236, 1261, 1263, 1264, 1283, 1284, 1298, 1299, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "977b70", frames: [334, 335, 337, 341, 345, 349, 351, 356, 357, 359, 362, 367, 368, 369, 372, 376, 379, 386, 388, 392, 395, 400, 404, 407, 415, 417, 419, 420, 421, 422, 430, 431, 444, 445, 450, 451, 466, 468, 471, 475, 479, 486, 491, 493, 494, 497, 499, 505, 514, 518, 519, 523, 535, 536, 543, 545, 551, 557, 558, 561, 567, 569, 570, 573, 575, 577, 578, 579, 580, 581, 582, 584, 587, 588, 589, 592, 593, 595, 601, 603, 604, 607, 609, 614, 617, 618, 623, 624, 628, 630, 631, 636, 640, 648, 659, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 738, 739, 741, 753, 763, 764, 768, 769, 772, 773, 775, 784, 786, 788, 795, 796, 804, 805, 808, 809, 819, 821, 824, 826, 827, 832, 836, 838, 840, 841, 842, 843, 844, 846, 847, 849, 850, 855, 857, 859, 862, 865, 867, 875, 877, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 915, 916, 918, 921, 923, 927, 928, 931, 951, 952, 964, 965, 968, 970, 971, 972, 988, 996, 1000, 1004, 1006, 1013, 1015, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1058, 1059, 1061, 1062, 1066, 1068, 1070, 1074, 1075, 1079, 1080, 1081, 1085, 1086, 1087, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1140, 1141, 1143, 1145, 1149, 1150, 1151, 1152, 1153, 1156, 1157, 1158, 1159, 1160, 1162, 1163, 1165, 1170, 1172, 1175, 1180, 1182, 1183, 1201, 1207, 1209, 1217, 1221, 1223, 1229, 1230, 1232, 1236, 1237, 1261, 1263, 1264, 1271, 1275, 1283, 1284, 1287, 1298, 1299, 1306, 1307, 1312, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1385, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "979891", frames: [242, 258, 264, 286, 294, 295, 297, 320, 327, 329, 332, 373, 382, 395, 415, 433, 439, 443, 446, 450, 451, 506, 509, 517, 518, 527, 530, 533, 541, 546, 555, 572, 583, 594, 604, 610, 639, 642, 666, 667, 669, 709, 712, 724, 728, 747, 748, 750, 788, 849, 857, 887, 923, 934, 961, 970, 971, 982, 1010, 1051, 1054, 1076, 1080, 1099, 1149, 1172, 1174, 1177, 1190, 1198, 1199, 1210, 1223, 1229, 1231, 1232, 1246, 1260, 1265, 1278, 1280, 1281, 1286, 1288, 1292, 1301, 1323, 1330, 1335, 1337, 1350, 1368, 1374, 1387, 1391, 1402, 1410, 1416, 1417] }, { color: "97a296", frames: [1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "989160", frames: [329, 344, 385, 389, 394, 401, 421, 428, 439, 443, 450, 477, 483, 488, 503, 514, 519, 523, 530, 533, 546, 565, 572, 583, 585, 594, 609, 629, 637, 639, 642, 649, 664, 670, 672, 678, 682, 778, 791, 816, 819, 821, 834, 836, 859, 879, 887, 888, 889, 890, 897, 919, 975, 987, 1004, 1010, 1026, 1042, 1051, 1054, 1067, 1069, 1085, 1087, 1102, 1104, 1160, 1170, 1171, 1190, 1196, 1242, 1244, 1248, 1252, 1258, 1260, 1267, 1278, 1280, 1286, 1287, 1288, 1301, 1313, 1326, 1330, 1337, 1351, 1355, 1360, 1380, 1387] }, { color: "998f4f", frames: [1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "998f71", frames: [1071, 1091, 1161, 1168, 1180, 1204, 1206, 1208, 1214, 1215, 1322, 1387] }, { color: "9ba79a", frames: [1071, 1091, 1161, 1168, 1180, 1204, 1206, 1208, 1214, 1215, 1322, 1387] }, { color: "9bc3df", frames: [1303, 1360] }, { color: "9ca087", frames: [1071, 1215, 1322] }, { color: "9cbfa6", frames: [221, 228, 241, 250, 265, 273, 307, 317, 323, 329, 333, 338, 344, 365, 367, 385, 389, 395, 401, 452, 465, 473, 477, 483, 494, 503, 509, 510, 514, 518, 523, 532, 534, 541, 543, 552, 565, 567, 577, 589, 624, 628, 657, 672, 677, 682, 728, 729, 732, 744, 753, 778, 825, 826, 834, 835, 836, 838, 840, 847, 859, 861, 866, 873, 876, 877, 878, 879, 885, 889, 896, 897, 898, 907, 919, 924, 927, 941, 944, 948, 964, 966, 975, 978, 998, 999, 1001, 1004, 1021, 1029, 1037, 1047, 1054, 1055, 1057, 1067, 1069, 1075, 1078, 1087, 1114, 1125, 1137, 1141, 1148, 1151, 1170, 1171, 1172, 1175, 1187, 1189, 1190, 1196, 1197, 1209, 1214, 1231, 1240, 1247, 1259, 1262, 1263, 1267, 1274, 1280, 1284, 1290, 1309, 1319, 1326, 1351, 1353, 1355, 1357, 1360, 1372, 1380, 1386, 1390, 1393, 1398, 1402, 1408, 1413, 1419] }, { color: "9fc7d3", frames: [1302, 1303, 1360, 1362, 1385] }, { color: "9fd0d7", frames: [672, 682, 778, 859, 879, 889, 919, 1004, 1054, 1067, 1087, 1190, 1196, 1251, 1254, 1283, 1286, 1287, 1345, 1351] }, { color: "a0b1b6", frames: [314, 393, 440, 465, 541, 584, 587, 679, 715, 730, 761, 781, 825, 846, 897, 924, 964, 977, 978, 995, 1030, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1246, 1302, 1303, 1343, 1360, 1365, 1374] }, { color: "a19fc1", frames: [369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "a1b15e", frames: [1398, 1400, 1401, 1410, 1412, 1413, 1415] }, { color: "a1c4c3", frames: [632, 637, 649, 653, 666, 672, 676, 677, 689, 691, 692, 698, 715, 726, 734, 735, 742, 747, 754, 755, 761, 768, 775, 778, 780, 781, 791, 796, 800, 804, 817, 827, 832, 840, 841, 843, 847, 857, 858, 859, 863, 873, 874, 881, 884, 890, 893, 899, 903, 912, 914, 942, 943, 948, 956, 959, 961, 962, 969, 986, 1020, 1043, 1049, 1052, 1070, 1071, 1091, 1109, 1113, 1118, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1161, 1168, 1171, 1180, 1200, 1204, 1206, 1207, 1208, 1214, 1251, 1254, 1263, 1273, 1279, 1283, 1286, 1287, 1293, 1298, 1299, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1362, 1372, 1377, 1379, 1380, 1386, 1387, 1392, 1398] }, { color: "a29490", frames: [583, 584, 594, 639, 642, 696, 887, 951, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "a29f7a", frames: [314, 393, 440, 465, 541, 584, 587, 679, 715, 730, 761, 781, 825, 846, 897, 924, 964, 977, 978, 995, 1030, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1246, 1302, 1303, 1343, 1360, 1365, 1374] }, { color: "a3cde2", frames: [1251, 1254, 1255, 1257, 1279, 1283, 1304, 1339, 1376, 1377, 1380, 1383, 1384, 1392, 1413, 1414] }, { color: "a4e7f7", frames: [1113, 1115, 1116, 1117, 1126, 1155, 1169, 1173, 1179, 1188, 1190, 1193, 1200, 1241, 1244, 1273, 1276, 1282, 1284, 1286, 1287, 1301, 1302, 1303, 1310, 1318, 1323, 1332, 1337, 1338, 1343, 1358, 1359, 1360, 1385, 1411, 1417] }, { color: "a4ebe2", frames: [1057, 1360] }, { color: "a5bfc4", frames: [1190, 1191, 1192, 1193, 1197, 1199, 1200, 1202, 1205, 1226, 1243, 1245, 1260, 1271, 1278, 1280, 1288, 1293, 1295, 1301, 1302, 1303, 1322, 1325, 1326, 1330, 1337, 1344, 1359, 1360, 1363, 1366, 1386, 1403, 1404] }, { color: "a5cdc6", frames: [1312, 1385] }, { color: "a6a285", frames: [1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "a79a9c", frames: [583, 584, 594, 639, 642, 696, 887, 951, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "a7ccdd", frames: [466, 468, 471, 475, 477, 479, 486, 491, 497, 499, 505, 508, 512, 514, 518, 519, 523, 526, 532, 535, 536, 543, 545, 557, 558, 561, 564, 566, 567, 569, 570, 573, 575, 577, 578, 579, 580, 581, 582, 584, 587, 588, 589, 592, 593, 595, 598, 601, 602, 603, 604, 607, 609, 614, 617, 618, 621, 623, 624, 628, 630, 631, 632, 633, 635, 636, 640, 655, 659, 671, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 736, 738, 739, 741, 742, 744, 748, 753, 754, 763, 764, 768, 769, 773, 775, 786, 788, 795, 796, 804, 805, 808, 809, 819, 822, 824, 825, 826, 827, 832, 836, 837, 838, 840, 841, 842, 843, 844, 846, 847, 848, 849, 850, 853, 855, 857, 859, 862, 865, 867, 873, 874, 875, 876, 878, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 915, 917, 918, 921, 927, 928, 931, 941, 946, 948, 951, 952, 958, 965, 968, 969, 970, 972, 985, 988, 996, 1003, 1004, 1006, 1012, 1020, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1054, 1059, 1061, 1066, 1068, 1070, 1072, 1074, 1075, 1080, 1081, 1085, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1122, 1139, 1140, 1141, 1143, 1145, 1149, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1162, 1163, 1165, 1169, 1170, 1172, 1175, 1180, 1182, 1183, 1188, 1207, 1209, 1210, 1217, 1220, 1223, 1226, 1229, 1236, 1241, 1249, 1255, 1261, 1262, 1263, 1264, 1270, 1276, 1283, 1284, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1357, 1358, 1361, 1363, 1364, 1365, 1366, 1368, 1370, 1372, 1374, 1375, 1382, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1403, 1404, 1410, 1412, 1415, 1416, 1418] }, { color: "a7d9c8", frames: [1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "a8ccdc", frames: [468, 477, 505, 601, 604, 643, 662, 663, 674, 696, 698, 703, 704, 726, 727, 728, 731, 752, 766, 782, 809, 819, 822, 826, 839, 869, 879, 888, 893, 897, 913, 916, 923, 953, 964, 1000, 1025, 1036, 1050, 1064, 1087, 1139, 1146, 1158, 1172, 1178, 1184, 1192, 1195, 1201, 1221, 1230, 1232, 1238, 1239, 1240, 1243, 1244, 1248, 1253, 1257, 1268, 1271, 1277, 1281, 1315, 1318, 1320, 1324, 1326, 1355, 1358, 1363, 1371, 1392, 1400, 1412] }, { color: "a9b59f", frames: [329, 344, 385, 389, 394, 401, 421, 428, 439, 443, 450, 477, 483, 488, 503, 514, 519, 523, 530, 533, 546, 565, 572, 583, 585, 594, 609, 629, 637, 639, 642, 649, 664, 670, 672, 678, 682, 778, 791, 816, 819, 821, 834, 836, 859, 879, 887, 888, 889, 890, 897, 919, 975, 987, 1004, 1010, 1026, 1042, 1051, 1054, 1067, 1069, 1085, 1087, 1102, 1104, 1160, 1170, 1171, 1190, 1196, 1242, 1244, 1248, 1252, 1258, 1260, 1267, 1278, 1280, 1286, 1287, 1288, 1301, 1313, 1326, 1330, 1337, 1351, 1355, 1360, 1380, 1387] }, { color: "aa9a77", frames: [310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "abb1a3", frames: [1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "aca890", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "acd8de", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 730, 734, 735, 736, 741, 742, 745, 747, 748, 754, 755, 761, 768, 775, 778, 780, 781, 791, 796, 800, 804, 809, 817, 821, 822, 825, 826, 827, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 857, 858, 859, 863, 866, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 906, 912, 914, 915, 917, 941, 942, 943, 946, 948, 951, 956, 958, 959, 961, 962, 965, 968, 969, 985, 986, 999, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1071, 1072, 1081, 1083, 1085, 1091, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1161, 1162, 1163, 1168, 1169, 1170, 1171, 1172, 1180, 1188, 1200, 1204, 1206, 1207, 1208, 1210, 1214, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1281, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1387, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "add6e4", frames: [1302, 1303, 1360, 1362, 1385] }, { color: "b19c70", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "b1a4ad", frames: [583, 584, 594, 639, 642, 696, 887, 951, 1010, 1051, 1190, 1260, 1278, 1280, 1288, 1301, 1330, 1337] }, { color: "b1daba", frames: [221, 222, 224, 228, 236, 241, 250, 254, 265, 269, 273, 288, 289, 302, 307, 317, 323, 329, 333, 338, 344, 349, 354, 357, 362, 363, 365, 366, 367, 370, 377, 379, 385, 389, 394, 395, 400, 401, 421, 428, 434, 441, 451, 452, 465, 473, 477, 483, 488, 494, 503, 509, 510, 514, 518, 519, 523, 532, 534, 539, 541, 543, 549, 552, 558, 565, 567, 575, 577, 585, 589, 609, 618, 624, 628, 629, 631, 637, 644, 646, 649, 651, 653, 657, 664, 670, 672, 677, 678, 682, 697, 698, 716, 728, 729, 732, 742, 744, 753, 765, 778, 784, 791, 804, 816, 819, 821, 825, 826, 834, 835, 836, 838, 840, 842, 847, 859, 861, 866, 873, 876, 877, 878, 879, 885, 888, 889, 890, 896, 897, 898, 900, 907, 919, 922, 924, 927, 941, 944, 948, 964, 966, 975, 978, 980, 986, 987, 998, 999, 1001, 1004, 1016, 1021, 1026, 1029, 1035, 1037, 1042, 1044, 1047, 1051, 1054, 1055, 1056, 1057, 1067, 1069, 1075, 1078, 1085, 1087, 1102, 1104, 1114, 1122, 1123, 1125, 1137, 1141, 1148, 1151, 1160, 1170, 1171, 1172, 1174, 1175, 1187, 1189, 1190, 1191, 1196, 1197, 1209, 1210, 1214, 1215, 1218, 1226, 1231, 1240, 1242, 1244, 1247, 1252, 1258, 1259, 1262, 1263, 1267, 1274, 1280, 1284, 1286, 1287, 1290, 1309, 1311, 1313, 1317, 1319, 1326, 1331, 1334, 1344, 1351, 1353, 1355, 1357, 1360, 1372, 1377, 1380, 1384, 1386, 1387, 1388, 1390, 1393, 1398, 1402, 1408, 1410, 1411, 1413, 1419] }, { color: "b1dbd0", frames: [1312, 1385] }, { color: "b1e9f2", frames: [628, 630, 631, 632, 636, 640, 659, 681, 687, 693, 694, 696, 697, 702, 704, 709, 712, 714, 715, 722, 724, 733, 735, 738, 739, 741, 753, 761, 763, 764, 768, 769, 773, 775, 781, 786, 788, 795, 796, 804, 805, 808, 809, 819, 824, 826, 827, 832, 836, 838, 840, 841, 842, 843, 844, 846, 847, 849, 850, 855, 857, 859, 862, 863, 865, 867, 875, 881, 885, 887, 888, 893, 896, 897, 898, 908, 911, 914, 918, 921, 927, 928, 931, 943, 951, 952, 956, 959, 961, 964, 965, 970, 972, 986, 988, 996, 998, 999, 1001, 1004, 1006, 1023, 1033, 1035, 1047, 1050, 1051, 1052, 1053, 1057, 1059, 1061, 1066, 1068, 1070, 1071, 1074, 1075, 1080, 1081, 1086, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1140, 1141, 1143, 1145, 1150, 1151, 1153, 1156, 1157, 1159, 1160, 1161, 1162, 1163, 1165, 1168, 1170, 1172, 1175, 1180, 1182, 1183, 1204, 1206, 1207, 1208, 1209, 1214, 1217, 1223, 1229, 1236, 1261, 1263, 1264, 1283, 1284, 1298, 1299, 1306, 1307, 1316, 1318, 1320, 1321, 1323, 1324, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1358, 1360, 1361, 1364, 1365, 1366, 1370, 1374, 1375, 1382, 1387, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1415, 1416, 1418] }, { color: "b2ac79", frames: [307, 308, 310, 312, 314, 317, 323, 328, 329, 334, 341, 344, 364, 367, 369, 371, 372, 385, 389, 395, 401, 419, 420, 438, 446, 449, 450, 451, 468, 470, 477, 483, 493, 499, 502, 510, 519, 523, 543, 549, 562, 565, 598, 604, 642, 671, 672, 682, 731, 754, 778, 803, 815, 826, 859, 872, 879, 882, 884, 889, 897, 899, 915, 916, 918, 919, 964, 980, 982, 993, 1000, 1004, 1010, 1016, 1017, 1031, 1054, 1067, 1078, 1081, 1082, 1083, 1084, 1087, 1096, 1097, 1112, 1115, 1125, 1127, 1135, 1142, 1144, 1150, 1152, 1158, 1177, 1185, 1187, 1190, 1191, 1196, 1198, 1221, 1230, 1232, 1239, 1246, 1253, 1254, 1255, 1267, 1271, 1273, 1276, 1287, 1300, 1301, 1320, 1324, 1330, 1332, 1351, 1355, 1358, 1363, 1397] }, { color: "b2d9f7", frames: [1303, 1360] }, { color: "b4f0fd", frames: [1113, 1115, 1116, 1117, 1155, 1169, 1173, 1179, 1188, 1190, 1193, 1241, 1273, 1284, 1301, 1302, 1303, 1310, 1318, 1332, 1338, 1343, 1358, 1359, 1360, 1385] }, { color: "b5a18b", frames: [327, 329, 331, 337, 339, 354, 357, 359, 363, 365, 368, 377, 378, 383, 387, 390, 399, 415, 416, 426, 438, 439, 442, 443, 449, 450, 477, 480, 493, 494, 501, 502, 505, 509, 515, 523, 526, 527, 529, 530, 532, 533, 534, 546, 548, 554, 572, 576, 578, 583, 588, 593, 594, 600, 602, 606, 614, 618, 625, 630, 632, 639, 642, 655, 656, 662, 663, 666, 671, 673, 676, 679, 680, 689, 703, 707, 715, 716, 719, 724, 731, 739, 742, 743, 747, 754, 759, 766, 768, 771, 775, 778, 797, 800, 804, 811, 819, 820, 829, 832, 833, 841, 842, 843, 847, 849, 853, 864, 871, 874, 881, 884, 887, 888, 898, 899, 907, 912, 914, 920, 923, 938, 942, 947, 962, 971, 972, 974, 976, 980, 985, 990, 999, 1006, 1010, 1011, 1017, 1020, 1040, 1049, 1050, 1051, 1062, 1065, 1067, 1070, 1075, 1106, 1109, 1113, 1117, 1118, 1122, 1126, 1139, 1145, 1147, 1162, 1164, 1174, 1177, 1178, 1181, 1185, 1190, 1192, 1193, 1194, 1196, 1197, 1200, 1202, 1207, 1208, 1226, 1238, 1246, 1248, 1252, 1260, 1265, 1266, 1269, 1276, 1278, 1279, 1280, 1281, 1282, 1283, 1286, 1288, 1291, 1293, 1299, 1300, 1301, 1303, 1309, 1318, 1320, 1322, 1326, 1330, 1332, 1333, 1334, 1337, 1342, 1344, 1362, 1363, 1368, 1372, 1374, 1377, 1378, 1379, 1392, 1395, 1398, 1402, 1408, 1413, 1416, 1418] }, { color: "b5af8a", frames: [11, 15, 188, 259, 269, 307, 308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "b5b69c", frames: [302, 307, 310, 317, 329, 334, 343, 349, 351, 359, 361, 367, 372, 391, 394, 401, 403, 404, 407, 409, 410, 412, 415, 421, 426, 428, 444, 468, 470, 477, 486, 488, 499, 503, 505, 514, 516, 519, 520, 522, 535, 540, 579, 580, 584, 585, 590, 601, 604, 609, 629, 633, 637, 641, 643, 649, 651, 653, 657, 662, 663, 664, 668, 670, 674, 678, 694, 696, 698, 703, 704, 711, 726, 727, 728, 731, 735, 738, 746, 752, 759, 766, 768, 772, 773, 775, 791, 809, 816, 818, 819, 821, 822, 824, 826, 834, 836, 839, 869, 873, 875, 879, 885, 888, 890, 893, 897, 913, 929, 930, 941, 964, 968, 975, 987, 988, 1000, 1007, 1025, 1026, 1036, 1042, 1047, 1048, 1050, 1051, 1062, 1064, 1068, 1069, 1070, 1074, 1077, 1084, 1085, 1086, 1090, 1093, 1102, 1104, 1115, 1118, 1130, 1131, 1139, 1146, 1152, 1160, 1167, 1170, 1171, 1172, 1178, 1184, 1220, 1222, 1238, 1239, 1240, 1241, 1242, 1243, 1244, 1248, 1252, 1253, 1257, 1258, 1267, 1268, 1269, 1271, 1277, 1279, 1281, 1286, 1287, 1294, 1296, 1312, 1313, 1315, 1318, 1326, 1328, 1347, 1355, 1356, 1360, 1363, 1371, 1380, 1385, 1387, 1389, 1392, 1400, 1412] }, { color: "b5dcd8", frames: [639, 642, 644, 678, 792, 796, 887, 893, 974, 1010, 1051, 1190, 1200, 1249, 1260, 1278, 1280, 1288, 1301, 1330, 1331, 1337] }, { color: "b5def5", frames: [1251, 1254, 1255, 1257, 1265, 1279, 1283, 1304, 1339, 1376, 1380, 1383, 1384, 1392, 1414] }, { color: "b6cace", frames: [1113, 1115, 1116, 1117, 1126, 1155, 1169, 1173, 1179, 1188, 1190, 1193, 1200, 1241, 1244, 1273, 1276, 1282, 1284, 1286, 1287, 1301, 1302, 1303, 1310, 1318, 1323, 1332, 1337, 1338, 1343, 1358, 1359, 1360, 1385, 1411, 1417] }, { color: "b7d9da", frames: [649, 650, 659, 667, 672, 675, 682, 686, 701, 704, 714, 717, 722, 728, 729, 730, 732, 735, 737, 741, 745, 748, 751, 753, 754, 755, 762, 763, 764, 765, 770, 772, 773, 775, 776, 777, 778, 783, 784, 791, 794, 795, 803, 807, 808, 811, 816, 817, 821, 822, 824, 825, 827, 828, 832, 835, 836, 840, 842, 843, 844, 846, 851, 853, 859, 860, 863, 864, 868, 877, 879, 880, 887, 889, 893, 895, 896, 905, 907, 912, 914, 915, 919, 926, 927, 934, 936, 957, 958, 967, 968, 971, 972, 973, 974, 982, 985, 987, 1004, 1010, 1013, 1017, 1021, 1023, 1040, 1043, 1053, 1054, 1055, 1058, 1059, 1067, 1072, 1073, 1075, 1077, 1078, 1079, 1081, 1083, 1084, 1085, 1086, 1087, 1088, 1091, 1092, 1093, 1096, 1097, 1099, 1110, 1112, 1117, 1140, 1141, 1145, 1149, 1151, 1152, 1153, 1156, 1157, 1159, 1165, 1170, 1171, 1172, 1186, 1190, 1196, 1201, 1214, 1215, 1216, 1217, 1218, 1228, 1232, 1235, 1236, 1237, 1251, 1254, 1255, 1256, 1257, 1261, 1263, 1264, 1265, 1272, 1273, 1274, 1275, 1276, 1279, 1280, 1281, 1283, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1294, 1297, 1304, 1310, 1311, 1317, 1319, 1321, 1323, 1324, 1330, 1339, 1344, 1345, 1347, 1351, 1354, 1356, 1357, 1365, 1368, 1369, 1376, 1379, 1380, 1382, 1383, 1384, 1391, 1397, 1398, 1400, 1408, 1414, 1418] }, { color: "b8c0b7", frames: [1044, 1045, 1046, 1047, 1049, 1056, 1060, 1106, 1113, 1115, 1117, 1155, 1164, 1179, 1190, 1257, 1259, 1302, 1303, 1331, 1334, 1360, 1364, 1377, 1394, 1404] }, { color: "b9ba9a", frames: [1320, 1321, 1355, 1356, 1358, 1416] }, { color: "babca4", frames: [393, 395, 397, 398, 402, 403, 409, 429, 433, 435, 436, 440, 444, 446, 449, 450, 453, 457, 458, 465, 472, 474, 486, 487, 506, 509, 516, 517, 522, 525, 527, 535, 536, 541, 547, 548, 549, 551, 556, 560, 569, 577, 584, 587, 599, 603, 612, 615, 616, 621, 622, 623, 631, 633, 649, 659, 667, 675, 679, 686, 701, 717, 722, 728, 729, 730, 732, 737, 741, 745, 748, 751, 755, 761, 762, 765, 770, 772, 773, 776, 777, 781, 783, 784, 791, 794, 795, 803, 807, 811, 816, 817, 821, 822, 824, 825, 827, 828, 835, 836, 840, 842, 843, 844, 846, 853, 859, 860, 864, 868, 877, 880, 895, 896, 897, 912, 914, 915, 926, 927, 936, 957, 958, 964, 967, 968, 971, 973, 974, 982, 985, 1010, 1013, 1017, 1021, 1023, 1040, 1043, 1044, 1045, 1046, 1047, 1049, 1053, 1058, 1060, 1072, 1073, 1075, 1077, 1078, 1081, 1083, 1084, 1085, 1086, 1092, 1093, 1096, 1110, 1112, 1113, 1115, 1117, 1140, 1141, 1145, 1149, 1151, 1152, 1153, 1155, 1156, 1157, 1170, 1179, 1186, 1190, 1201, 1215, 1216, 1218, 1228, 1232, 1235, 1237, 1255, 1256, 1257, 1261, 1263, 1264, 1265, 1272, 1273, 1274, 1275, 1276, 1279, 1280, 1281, 1284, 1286, 1287, 1288, 1289, 1290, 1292, 1294, 1297, 1302, 1303, 1310, 1311, 1317, 1321, 1323, 1330, 1344, 1345, 1347, 1351, 1354, 1357, 1360, 1365, 1368, 1369, 1379, 1391, 1397, 1398, 1400, 1408, 1418] }, { color: "bad2df", frames: [1190, 1191, 1192, 1193, 1195, 1197, 1199, 1200, 1202, 1205, 1226, 1243, 1245, 1259, 1271, 1288, 1293, 1295, 1302, 1303, 1322, 1325, 1326, 1337, 1344, 1352, 1359, 1360, 1362, 1363, 1366, 1372, 1376, 1386, 1403, 1404, 1410] }, { color: "bcb58c", frames: [1337, 1343, 1344, 1392, 1411, 1417] }, { color: "bec8ae", frames: [1071, 1091, 1161, 1168, 1180, 1204, 1206, 1208, 1214, 1215, 1322, 1387] }, { color: "bee3c4", frames: [221, 228, 241, 250, 265, 273, 307, 317, 323, 329, 333, 338, 344, 365, 367, 385, 389, 395, 401, 452, 465, 473, 477, 483, 494, 503, 509, 510, 514, 518, 523, 532, 534, 541, 543, 552, 565, 567, 577, 589, 624, 628, 657, 672, 677, 682, 728, 729, 732, 744, 753, 778, 825, 826, 834, 835, 836, 838, 840, 847, 859, 861, 866, 873, 876, 877, 878, 879, 885, 889, 896, 897, 898, 907, 919, 924, 927, 941, 944, 948, 964, 966, 975, 978, 998, 999, 1001, 1004, 1021, 1029, 1037, 1047, 1054, 1055, 1057, 1067, 1069, 1075, 1078, 1087, 1114, 1125, 1137, 1141, 1148, 1151, 1170, 1171, 1172, 1175, 1187, 1189, 1190, 1196, 1197, 1209, 1214, 1231, 1240, 1247, 1259, 1262, 1263, 1267, 1274, 1280, 1284, 1290, 1309, 1319, 1326, 1351, 1353, 1355, 1357, 1360, 1372, 1380, 1386, 1390, 1393, 1398, 1402, 1408, 1413, 1419] }, { color: "bfeff2", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 730, 734, 735, 736, 741, 742, 745, 747, 748, 754, 755, 761, 768, 775, 778, 780, 781, 791, 796, 800, 804, 809, 817, 821, 822, 825, 826, 827, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 857, 858, 859, 863, 866, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 906, 912, 914, 915, 917, 941, 942, 943, 946, 948, 951, 956, 958, 959, 961, 962, 965, 968, 969, 985, 986, 999, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1071, 1072, 1081, 1083, 1085, 1091, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1161, 1162, 1163, 1168, 1169, 1170, 1171, 1172, 1180, 1188, 1200, 1204, 1206, 1207, 1208, 1210, 1214, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1281, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1387, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "c0ae83", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "c0e0e8", frames: [1179, 1190, 1216, 1244, 1265, 1302, 1303, 1360, 1414] }, { color: "c0e7f7", frames: [1302, 1303, 1360] }, { color: "c1e3d0", frames: [1049, 1058, 1060, 1070, 1109, 1113, 1115, 1117, 1139, 1142, 1145, 1155, 1179, 1190, 1207, 1252, 1283, 1286, 1293, 1302, 1303, 1318, 1320, 1322, 1326, 1344, 1360, 1362, 1364, 1377, 1379, 1392, 1396, 1398, 1410] }, { color: "c2ccb6", frames: [314, 393, 440, 465, 541, 584, 587, 679, 715, 730, 761, 781, 825, 846, 897, 924, 964, 977, 978, 995, 1030, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1246, 1302, 1303, 1343, 1360, 1365, 1374] }, { color: "c8b27a", frames: [533, 538, 546, 550, 572, 574, 583, 594, 624, 633, 639, 642, 668, 673, 676, 678, 692, 696, 700, 718, 723, 744, 782, 821, 845, 865, 879, 883, 884, 887, 893, 916, 918, 921, 925, 943, 953, 984, 1010, 1015, 1032, 1051, 1058, 1087, 1105, 1113, 1173, 1188, 1190, 1193, 1208, 1241, 1250, 1260, 1273, 1278, 1280, 1284, 1288, 1296, 1301, 1308, 1310, 1330, 1332, 1337, 1353] }, { color: "c9be85", frames: [1322, 1364, 1396, 1410] }, { color: "cac3a1", frames: [1355, 1357, 1358, 1360, 1380, 1386, 1387, 1393, 1398, 1413] }, { color: "cbeffc", frames: [1302, 1303, 1360, 1362, 1385] }, { color: "ccf7f7", frames: [632, 633, 635, 637, 640, 649, 653, 655, 666, 671, 672, 676, 677, 689, 691, 692, 698, 715, 726, 730, 734, 735, 736, 741, 742, 745, 747, 748, 754, 755, 768, 775, 778, 780, 791, 796, 800, 804, 809, 817, 821, 822, 825, 826, 832, 836, 837, 838, 840, 841, 843, 846, 847, 853, 858, 859, 866, 873, 874, 876, 878, 881, 884, 890, 893, 899, 903, 906, 912, 914, 915, 917, 941, 942, 946, 948, 951, 958, 962, 965, 968, 969, 985, 999, 1004, 1012, 1020, 1023, 1043, 1049, 1052, 1054, 1070, 1072, 1081, 1083, 1085, 1099, 1109, 1110, 1112, 1113, 1118, 1122, 1125, 1127, 1128, 1137, 1139, 1144, 1145, 1149, 1151, 1161, 1162, 1163, 1169, 1170, 1171, 1172, 1188, 1200, 1207, 1210, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1273, 1276, 1279, 1281, 1283, 1284, 1286, 1287, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1332, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1386, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "ceecf6", frames: [466, 468, 471, 475, 477, 479, 486, 491, 497, 499, 505, 508, 512, 514, 518, 519, 523, 526, 532, 535, 536, 543, 545, 557, 558, 561, 564, 566, 567, 569, 570, 573, 575, 577, 578, 579, 580, 581, 582, 584, 587, 588, 589, 592, 593, 595, 598, 601, 602, 603, 604, 607, 609, 614, 617, 618, 621, 623, 624, 628, 630, 631, 632, 633, 635, 636, 640, 643, 655, 659, 662, 663, 671, 674, 681, 687, 693, 694, 696, 697, 698, 702, 703, 704, 709, 712, 714, 715, 722, 724, 726, 727, 728, 731, 733, 735, 736, 738, 739, 741, 742, 744, 748, 752, 753, 754, 763, 764, 766, 768, 769, 773, 775, 782, 786, 788, 795, 796, 804, 805, 808, 809, 819, 822, 824, 825, 826, 827, 832, 836, 837, 838, 839, 840, 841, 842, 843, 844, 846, 847, 848, 849, 850, 853, 855, 857, 859, 862, 865, 867, 869, 873, 874, 875, 876, 878, 879, 885, 887, 888, 893, 896, 897, 898, 908, 911, 913, 914, 915, 916, 917, 918, 921, 923, 927, 928, 931, 941, 946, 948, 951, 952, 953, 958, 964, 965, 968, 969, 970, 972, 985, 988, 996, 1000, 1003, 1004, 1006, 1012, 1020, 1023, 1025, 1033, 1035, 1036, 1047, 1050, 1051, 1052, 1053, 1054, 1059, 1061, 1064, 1066, 1068, 1070, 1072, 1074, 1075, 1080, 1081, 1085, 1086, 1087, 1089, 1090, 1091, 1092, 1094, 1097, 1099, 1109, 1110, 1111, 1112, 1115, 1122, 1139, 1140, 1141, 1143, 1145, 1146, 1149, 1150, 1151, 1153, 1156, 1157, 1158, 1159, 1160, 1162, 1163, 1165, 1169, 1170, 1172, 1175, 1178, 1180, 1182, 1183, 1184, 1188, 1192, 1195, 1201, 1207, 1209, 1210, 1217, 1220, 1221, 1223, 1226, 1229, 1230, 1232, 1236, 1238, 1239, 1240, 1241, 1243, 1244, 1248, 1249, 1253, 1255, 1257, 1261, 1262, 1263, 1264, 1268, 1270, 1271, 1276, 1277, 1281, 1283, 1284, 1290, 1293, 1294, 1295, 1298, 1299, 1300, 1306, 1307, 1315, 1316, 1318, 1320, 1321, 1323, 1324, 1326, 1331, 1335, 1344, 1345, 1346, 1350, 1351, 1354, 1355, 1356, 1357, 1358, 1361, 1363, 1364, 1365, 1366, 1368, 1370, 1371, 1372, 1374, 1375, 1382, 1391, 1392, 1394, 1396, 1398, 1400, 1401, 1403, 1404, 1410, 1412, 1415, 1416, 1418] }, { color: "d4f5f8", frames: [1071, 1215, 1322] }, { color: "d5e3ec", frames: [1190, 1191, 1192, 1193, 1196, 1197, 1199, 1200, 1202, 1205, 1226, 1260, 1278, 1280, 1288, 1295, 1301, 1302, 1303, 1322, 1325, 1326, 1330, 1337, 1351, 1359, 1360, 1363, 1366, 1386, 1403, 1404] }, { color: "d5fdf2", frames: [1057, 1360] }, { color: "d9c489", frames: [310, 312, 314, 328, 334, 341, 344, 364, 367, 369, 371, 372, 395, 419, 420, 438, 446, 449, 450, 451, 468, 470, 499, 502, 510, 519, 543, 549, 562, 565, 598, 604, 609, 642, 671, 731, 754, 803, 815, 826, 872, 882, 884, 897, 899, 915, 916, 918, 964, 980, 982, 993, 1000, 1010, 1016, 1017, 1031, 1062, 1078, 1081, 1082, 1083, 1084, 1087, 1096, 1097, 1112, 1115, 1125, 1127, 1135, 1142, 1144, 1150, 1152, 1158, 1177, 1185, 1187, 1191, 1198, 1221, 1230, 1232, 1239, 1246, 1253, 1255, 1267, 1271, 1273, 1276, 1287, 1300, 1301, 1312, 1320, 1324, 1330, 1332, 1355, 1358, 1363, 1385, 1397] }, { color: "dbdaaa", frames: [308, 310, 312, 314, 317, 323, 328, 329, 334, 341, 344, 364, 367, 369, 371, 372, 385, 389, 395, 401, 419, 420, 438, 446, 449, 450, 451, 468, 470, 477, 483, 493, 499, 502, 510, 519, 523, 543, 549, 562, 565, 598, 604, 642, 671, 672, 682, 731, 754, 778, 803, 815, 826, 859, 872, 879, 882, 884, 889, 897, 899, 915, 916, 918, 919, 964, 980, 982, 993, 1000, 1004, 1010, 1016, 1017, 1031, 1054, 1067, 1078, 1081, 1082, 1083, 1084, 1087, 1096, 1097, 1112, 1115, 1125, 1127, 1135, 1142, 1144, 1150, 1152, 1158, 1177, 1185, 1187, 1190, 1191, 1196, 1198, 1221, 1230, 1232, 1239, 1246, 1253, 1254, 1255, 1267, 1271, 1273, 1276, 1287, 1300, 1301, 1320, 1324, 1330, 1332, 1351, 1355, 1358, 1363, 1397] }, { color: "dde6cd", frames: [221, 228, 241, 250, 265, 273, 307, 317, 323, 329, 333, 338, 344, 365, 367, 385, 389, 395, 401, 452, 465, 473, 477, 483, 494, 503, 509, 510, 514, 518, 523, 532, 534, 541, 543, 552, 565, 567, 577, 589, 624, 628, 657, 672, 677, 682, 728, 729, 732, 744, 753, 778, 825, 826, 834, 835, 836, 838, 840, 847, 859, 861, 866, 873, 876, 877, 878, 879, 885, 889, 896, 897, 898, 907, 919, 924, 927, 941, 944, 948, 964, 966, 975, 978, 998, 999, 1001, 1004, 1021, 1029, 1037, 1047, 1054, 1055, 1057, 1067, 1069, 1075, 1078, 1087, 1114, 1125, 1137, 1141, 1148, 1151, 1170, 1171, 1172, 1175, 1187, 1189, 1190, 1196, 1197, 1209, 1214, 1231, 1240, 1247, 1259, 1262, 1263, 1267, 1274, 1280, 1284, 1290, 1309, 1319, 1326, 1351, 1353, 1355, 1357, 1360, 1372, 1380, 1386, 1390, 1393, 1398, 1402, 1408, 1413, 1419] }, { color: "dfcfa2", frames: [310, 334, 369, 468, 609, 897, 916, 964, 1000, 1062, 1087, 1158, 1221, 1230, 1232, 1271, 1312, 1320, 1355, 1358, 1385] }, { color: "e0d9b1", frames: [1330, 1333, 1337, 1339, 1341, 1348, 1363, 1370, 1377, 1383, 1384, 1385, 1394, 1411, 1413] }, { color: "e0e4ca", frames: [1360, 1375] }, { color: "e3d097", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "e6d39d", frames: [313, 314, 393, 440, 465, 541, 584, 587, 679, 761, 781, 897, 964, 1044, 1045, 1046, 1047, 1049, 1060, 1113, 1115, 1117, 1155, 1179, 1190, 1302, 1303, 1360] }, { color: "e7f9f5", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "e9fefe", frames: [671, 679, 703, 707, 717, 724, 730, 731, 739, 741, 742, 754, 759, 766, 768, 771, 796, 797, 803, 804, 811, 815, 819, 820, 826, 829, 835, 836, 837, 838, 840, 842, 849, 853, 863, 864, 865, 871, 872, 878, 882, 884, 885, 887, 893, 896, 898, 899, 907, 912, 915, 918, 920, 922, 923, 927, 938, 971, 972, 976, 980, 982, 985, 990, 993, 999, 1006, 1010, 1011, 1016, 1017, 1031, 1040, 1047, 1050, 1057, 1062, 1075, 1078, 1081, 1082, 1083, 1084, 1085, 1096, 1097, 1112, 1115, 1125, 1126, 1127, 1135, 1139, 1142, 1144, 1147, 1150, 1152, 1162, 1163, 1164, 1165, 1169, 1177, 1178, 1185, 1187, 1190, 1191, 1192, 1193, 1194, 1196, 1197, 1198, 1200, 1202, 1207, 1208, 1221, 1226, 1239, 1243, 1245, 1246, 1248, 1253, 1255, 1267, 1271, 1273, 1274, 1276, 1281, 1282, 1287, 1288, 1291, 1293, 1300, 1301, 1319, 1324, 1330, 1332, 1333, 1334, 1337, 1342, 1344, 1360, 1363, 1368, 1372, 1374, 1378, 1379, 1386, 1395, 1397, 1402, 1408, 1413, 1415, 1416, 1418] }, { color: "ebd9aa", frames: [308, 310, 334, 369, 468, 897, 916, 964, 1000, 1087, 1158, 1221, 1230, 1232, 1271, 1320, 1355, 1358] }, { color: "ecfcfc", frames: [632, 653, 672, 1251, 1254, 1283] }, { color: "edfcfe", frames: [632, 633, 635, 640, 653, 655, 666, 671, 672, 676, 689, 715, 730, 735, 736, 741, 742, 745, 747, 748, 754, 761, 768, 775, 778, 781, 796, 800, 804, 809, 817, 821, 822, 825, 826, 827, 832, 836, 837, 838, 841, 843, 846, 847, 853, 857, 863, 866, 873, 874, 876, 878, 881, 884, 899, 906, 912, 914, 915, 917, 941, 942, 943, 946, 948, 951, 956, 958, 959, 961, 962, 965, 968, 969, 985, 986, 999, 1004, 1012, 1020, 1023, 1049, 1052, 1054, 1070, 1071, 1072, 1081, 1083, 1085, 1091, 1099, 1109, 1110, 1112, 1113, 1122, 1139, 1145, 1149, 1151, 1161, 1162, 1163, 1168, 1169, 1170, 1172, 1180, 1188, 1204, 1206, 1207, 1208, 1210, 1214, 1220, 1226, 1241, 1249, 1251, 1254, 1255, 1262, 1263, 1270, 1276, 1281, 1283, 1284, 1286, 1290, 1293, 1294, 1295, 1299, 1300, 1303, 1318, 1320, 1322, 1326, 1344, 1350, 1357, 1358, 1361, 1362, 1363, 1365, 1368, 1372, 1377, 1379, 1380, 1387, 1392, 1398, 1403, 1404, 1410, 1412] }, { color: "effdfa", frames: [1051, 1058, 1061, 1072, 1075, 1080, 1084, 1090, 1149, 1190, 1201, 1205, 1216, 1252, 1260, 1269, 1278, 1280, 1288, 1301, 1321, 1323, 1330, 1337, 1398, 1415] }, { color: "f8eee7", frames: [1062, 1076, 1078, 1156, 1157, 1173, 1189, 1285, 1295, 1310, 1312, 1333, 1348, 1357, 1385, 1393, 1417] }, { color: "f8f9e3", frames: [1322, 1364, 1396, 1410] }, { color: "fdfbfa", frames: [1062, 1076, 1078, 1156, 1157, 1173, 1189, 1285, 1295, 1310, 1312, 1333, 1348, 1357, 1385, 1393, 1417] }, { color: "fdfcfd", frames: [1052, 1054, 1055, 1057, 1067, 1072, 1081, 1084, 1085, 1087, 1088, 1099, 1110, 1112, 1122, 1139, 1145, 1149, 1151, 1162, 1163, 1165, 1169, 1170, 1172, 1188, 1189, 1190, 1196, 1198, 1199, 1200, 1201, 1202, 1207, 1210, 1220, 1221, 1226, 1239, 1241, 1246, 1247, 1248, 1249, 1251, 1253, 1254, 1255, 1257, 1261, 1262, 1263, 1267, 1270, 1273, 1276, 1279, 1284, 1287, 1288, 1290, 1293, 1294, 1295, 1299, 1300, 1301, 1304, 1306, 1310, 1311, 1317, 1318, 1324, 1330, 1332, 1339, 1344, 1350, 1351, 1357, 1358, 1359, 1360, 1361, 1362, 1363, 1365, 1368, 1370, 1372, 1373, 1376, 1377, 1380, 1383, 1384, 1386, 1391, 1397, 1399, 1402, 1403, 1404, 1410, 1412, 1414, 1418] }];
-
-/***/ }),
-/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9987,7 +9853,7 @@ function hsvToRgb(h, s, v) {
 }
 
 /***/ }),
-/* 88 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10024,7 +9890,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 89 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10041,7 +9907,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(88);
+var camelize = __webpack_require__(86);
 
 var msPattern = /^-ms-/;
 
@@ -10069,7 +9935,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 90 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10086,7 +9952,7 @@ module.exports = camelizeStyleName;
  * 
  */
 
-var isTextNode = __webpack_require__(98);
+var isTextNode = __webpack_require__(96);
 
 /*eslint-disable no-bitwise */
 
@@ -10114,7 +9980,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 91 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10247,7 +10113,7 @@ module.exports = createArrayFromMixed;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 92 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10268,8 +10134,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(6);
 
-var createArrayFromMixed = __webpack_require__(91);
-var getMarkupWrap = __webpack_require__(93);
+var createArrayFromMixed = __webpack_require__(89);
+var getMarkupWrap = __webpack_require__(91);
 var invariant = __webpack_require__(1);
 
 /**
@@ -10337,7 +10203,7 @@ module.exports = createNodesFromMarkup;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 93 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10438,7 +10304,7 @@ module.exports = getMarkupWrap;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 94 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10482,7 +10348,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ }),
-/* 95 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10520,7 +10386,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 96 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10537,7 +10403,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(95);
+var hyphenate = __webpack_require__(93);
 
 var msPattern = /^ms-/;
 
@@ -10564,7 +10430,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 97 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10592,7 +10458,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 98 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10609,7 +10475,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(97);
+var isNode = __webpack_require__(95);
 
 /**
  * @param {*} object The object to check.
@@ -10622,7 +10488,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 99 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10657,7 +10523,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ }),
-/* 100 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10685,7 +10551,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 101 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10702,7 +10568,7 @@ module.exports = performance || {};
  * @typechecks
  */
 
-var performance = __webpack_require__(100);
+var performance = __webpack_require__(98);
 
 var performanceNow;
 
@@ -10724,7 +10590,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 102 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10803,7 +10669,7 @@ var ARIADOMPropertyConfig = {
 module.exports = ARIADOMPropertyConfig;
 
 /***/ }),
-/* 103 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10832,7 +10698,7 @@ var AutoFocusUtils = {
 module.exports = AutoFocusUtils;
 
 /***/ }),
-/* 104 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10850,9 +10716,9 @@ module.exports = AutoFocusUtils;
 
 var EventPropagators = __webpack_require__(22);
 var ExecutionEnvironment = __webpack_require__(6);
-var FallbackCompositionState = __webpack_require__(110);
-var SyntheticCompositionEvent = __webpack_require__(153);
-var SyntheticInputEvent = __webpack_require__(156);
+var FallbackCompositionState = __webpack_require__(108);
+var SyntheticCompositionEvent = __webpack_require__(151);
+var SyntheticInputEvent = __webpack_require__(154);
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -11222,7 +11088,7 @@ var BeforeInputEventPlugin = {
 module.exports = BeforeInputEventPlugin;
 
 /***/ }),
-/* 105 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11242,10 +11108,10 @@ var CSSProperty = __webpack_require__(57);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(8);
 
-var camelizeStyleName = __webpack_require__(89);
-var dangerousStyleValue = __webpack_require__(163);
-var hyphenateStyleName = __webpack_require__(96);
-var memoizeStringOnly = __webpack_require__(99);
+var camelizeStyleName = __webpack_require__(87);
+var dangerousStyleValue = __webpack_require__(161);
+var hyphenateStyleName = __webpack_require__(94);
+var memoizeStringOnly = __webpack_require__(97);
 var warning = __webpack_require__(2);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -11437,7 +11303,7 @@ module.exports = CSSPropertyOperations;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 106 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11763,7 +11629,7 @@ var ChangeEventPlugin = {
 module.exports = ChangeEventPlugin;
 
 /***/ }),
-/* 107 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11784,7 +11650,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(17);
 var ExecutionEnvironment = __webpack_require__(6);
 
-var createNodesFromMarkup = __webpack_require__(92);
+var createNodesFromMarkup = __webpack_require__(90);
 var emptyFunction = __webpack_require__(9);
 var invariant = __webpack_require__(1);
 
@@ -11817,7 +11683,7 @@ module.exports = Danger;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 108 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11848,7 +11714,7 @@ var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'Tap
 module.exports = DefaultEventPluginOrder;
 
 /***/ }),
-/* 109 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11866,7 +11732,7 @@ module.exports = DefaultEventPluginOrder;
 
 var EventPropagators = __webpack_require__(22);
 var ReactDOMComponentTree = __webpack_require__(5);
-var SyntheticMouseEvent = __webpack_require__(28);
+var SyntheticMouseEvent = __webpack_require__(27);
 
 var eventTypes = {
   mouseEnter: {
@@ -11953,7 +11819,7 @@ var EnterLeaveEventPlugin = {
 module.exports = EnterLeaveEventPlugin;
 
 /***/ }),
-/* 110 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12053,7 +11919,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 module.exports = FallbackCompositionState;
 
 /***/ }),
-/* 111 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12270,7 +12136,7 @@ var HTMLDOMPropertyConfig = {
 module.exports = HTMLDOMPropertyConfig;
 
 /***/ }),
-/* 112 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12430,7 +12296,7 @@ module.exports = ReactChildReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 113 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12447,7 +12313,7 @@ module.exports = ReactChildReconciler;
 
 
 var DOMChildrenOperations = __webpack_require__(33);
-var ReactDOMIDOperations = __webpack_require__(120);
+var ReactDOMIDOperations = __webpack_require__(118);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -12465,7 +12331,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 /***/ }),
-/* 114 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12494,7 +12360,7 @@ var ReactNodeTypes = __webpack_require__(67);
 var ReactReconciler = __webpack_require__(18);
 
 if (process.env.NODE_ENV !== 'production') {
-  var checkReactTypeSpec = __webpack_require__(162);
+  var checkReactTypeSpec = __webpack_require__(160);
 }
 
 var emptyObject = __webpack_require__(20);
@@ -13373,7 +13239,7 @@ module.exports = ReactCompositeComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 115 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13392,15 +13258,15 @@ module.exports = ReactCompositeComponent;
 
 
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDefaultInjection = __webpack_require__(132);
+var ReactDefaultInjection = __webpack_require__(130);
 var ReactMount = __webpack_require__(66);
 var ReactReconciler = __webpack_require__(18);
 var ReactUpdates = __webpack_require__(10);
-var ReactVersion = __webpack_require__(147);
+var ReactVersion = __webpack_require__(145);
 
-var findDOMNode = __webpack_require__(164);
+var findDOMNode = __webpack_require__(162);
 var getHostComponentFromComposite = __webpack_require__(72);
-var renderSubtreeIntoContainer = __webpack_require__(172);
+var renderSubtreeIntoContainer = __webpack_require__(170);
 var warning = __webpack_require__(2);
 
 ReactDefaultInjection.inject();
@@ -13477,9 +13343,9 @@ if (process.env.NODE_ENV !== 'production') {
 
 if (process.env.NODE_ENV !== 'production') {
   var ReactInstrumentation = __webpack_require__(8);
-  var ReactDOMUnknownPropertyHook = __webpack_require__(129);
-  var ReactDOMNullInputValuePropHook = __webpack_require__(123);
-  var ReactDOMInvalidARIAHook = __webpack_require__(122);
+  var ReactDOMUnknownPropertyHook = __webpack_require__(127);
+  var ReactDOMNullInputValuePropHook = __webpack_require__(121);
+  var ReactDOMInvalidARIAHook = __webpack_require__(120);
 
   ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
   ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
@@ -13490,7 +13356,7 @@ module.exports = ReactDOM;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 116 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13511,27 +13377,27 @@ module.exports = ReactDOM;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
-var AutoFocusUtils = __webpack_require__(103);
-var CSSPropertyOperations = __webpack_require__(105);
+var AutoFocusUtils = __webpack_require__(101);
+var CSSPropertyOperations = __webpack_require__(103);
 var DOMLazyTree = __webpack_require__(17);
 var DOMNamespaces = __webpack_require__(34);
 var DOMProperty = __webpack_require__(13);
 var DOMPropertyOperations = __webpack_require__(59);
 var EventPluginHub = __webpack_require__(21);
-var EventPluginRegistry = __webpack_require__(26);
-var ReactBrowserEventEmitter = __webpack_require__(27);
+var EventPluginRegistry = __webpack_require__(25);
+var ReactBrowserEventEmitter = __webpack_require__(26);
 var ReactDOMComponentFlags = __webpack_require__(60);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMInput = __webpack_require__(121);
-var ReactDOMOption = __webpack_require__(124);
+var ReactDOMInput = __webpack_require__(119);
+var ReactDOMOption = __webpack_require__(122);
 var ReactDOMSelect = __webpack_require__(61);
-var ReactDOMTextarea = __webpack_require__(127);
+var ReactDOMTextarea = __webpack_require__(125);
 var ReactInstrumentation = __webpack_require__(8);
-var ReactMultiChild = __webpack_require__(140);
-var ReactServerRenderingTransaction = __webpack_require__(145);
+var ReactMultiChild = __webpack_require__(138);
+var ReactServerRenderingTransaction = __webpack_require__(143);
 
 var emptyFunction = __webpack_require__(9);
-var escapeTextContentForBrowser = __webpack_require__(30);
+var escapeTextContentForBrowser = __webpack_require__(29);
 var invariant = __webpack_require__(1);
 var isEventSupported = __webpack_require__(45);
 var shallowEqual = __webpack_require__(32);
@@ -14497,7 +14363,7 @@ module.exports = ReactDOMComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 117 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14536,7 +14402,7 @@ module.exports = ReactDOMContainerInfo;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 118 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14601,7 +14467,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 module.exports = ReactDOMEmptyComponent;
 
 /***/ }),
-/* 119 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14625,7 +14491,7 @@ var ReactDOMFeatureFlags = {
 module.exports = ReactDOMFeatureFlags;
 
 /***/ }),
-/* 120 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14664,7 +14530,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 /***/ }),
-/* 121 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14948,7 +14814,7 @@ module.exports = ReactDOMInput;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 122 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15047,7 +14913,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 123 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15096,7 +14962,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 124 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15225,7 +15091,7 @@ module.exports = ReactDOMOption;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 125 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15243,7 +15109,7 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(6);
 
-var getNodeForCharacterOffset = __webpack_require__(169);
+var getNodeForCharacterOffset = __webpack_require__(167);
 var getTextContentAccessor = __webpack_require__(73);
 
 /**
@@ -15442,7 +15308,7 @@ var ReactDOMSelection = {
 module.exports = ReactDOMSelection;
 
 /***/ }),
-/* 126 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15465,7 +15331,7 @@ var DOMChildrenOperations = __webpack_require__(33);
 var DOMLazyTree = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(5);
 
-var escapeTextContentForBrowser = __webpack_require__(30);
+var escapeTextContentForBrowser = __webpack_require__(29);
 var invariant = __webpack_require__(1);
 var validateDOMNesting = __webpack_require__(47);
 
@@ -15612,7 +15478,7 @@ module.exports = ReactDOMTextComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 127 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15778,7 +15644,7 @@ module.exports = ReactDOMTextarea;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 128 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15920,7 +15786,7 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 129 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15937,7 +15803,7 @@ module.exports = {
 
 
 var DOMProperty = __webpack_require__(13);
-var EventPluginRegistry = __webpack_require__(26);
+var EventPluginRegistry = __webpack_require__(25);
 var ReactComponentTreeHook = __webpack_require__(7);
 
 var warning = __webpack_require__(2);
@@ -16038,7 +15904,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 130 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16055,12 +15921,12 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactInvalidSetStateWarningHook = __webpack_require__(138);
-var ReactHostOperationHistoryHook = __webpack_require__(136);
+var ReactInvalidSetStateWarningHook = __webpack_require__(136);
+var ReactHostOperationHistoryHook = __webpack_require__(134);
 var ReactComponentTreeHook = __webpack_require__(7);
 var ExecutionEnvironment = __webpack_require__(6);
 
-var performanceNow = __webpack_require__(101);
+var performanceNow = __webpack_require__(99);
 var warning = __webpack_require__(2);
 
 var hooks = [];
@@ -16405,7 +16271,7 @@ module.exports = ReactDebugTool;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 131 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16424,7 +16290,7 @@ module.exports = ReactDebugTool;
 var _assign = __webpack_require__(4);
 
 var ReactUpdates = __webpack_require__(10);
-var Transaction = __webpack_require__(29);
+var Transaction = __webpack_require__(28);
 
 var emptyFunction = __webpack_require__(9);
 
@@ -16478,7 +16344,7 @@ var ReactDefaultBatchingStrategy = {
 module.exports = ReactDefaultBatchingStrategy;
 
 /***/ }),
-/* 132 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16494,25 +16360,25 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var ARIADOMPropertyConfig = __webpack_require__(102);
-var BeforeInputEventPlugin = __webpack_require__(104);
-var ChangeEventPlugin = __webpack_require__(106);
-var DefaultEventPluginOrder = __webpack_require__(108);
-var EnterLeaveEventPlugin = __webpack_require__(109);
-var HTMLDOMPropertyConfig = __webpack_require__(111);
-var ReactComponentBrowserEnvironment = __webpack_require__(113);
-var ReactDOMComponent = __webpack_require__(116);
+var ARIADOMPropertyConfig = __webpack_require__(100);
+var BeforeInputEventPlugin = __webpack_require__(102);
+var ChangeEventPlugin = __webpack_require__(104);
+var DefaultEventPluginOrder = __webpack_require__(106);
+var EnterLeaveEventPlugin = __webpack_require__(107);
+var HTMLDOMPropertyConfig = __webpack_require__(109);
+var ReactComponentBrowserEnvironment = __webpack_require__(111);
+var ReactDOMComponent = __webpack_require__(114);
 var ReactDOMComponentTree = __webpack_require__(5);
-var ReactDOMEmptyComponent = __webpack_require__(118);
-var ReactDOMTreeTraversal = __webpack_require__(128);
-var ReactDOMTextComponent = __webpack_require__(126);
-var ReactDefaultBatchingStrategy = __webpack_require__(131);
-var ReactEventListener = __webpack_require__(135);
-var ReactInjection = __webpack_require__(137);
-var ReactReconcileTransaction = __webpack_require__(143);
-var SVGDOMPropertyConfig = __webpack_require__(148);
-var SelectEventPlugin = __webpack_require__(149);
-var SimpleEventPlugin = __webpack_require__(150);
+var ReactDOMEmptyComponent = __webpack_require__(116);
+var ReactDOMTreeTraversal = __webpack_require__(126);
+var ReactDOMTextComponent = __webpack_require__(124);
+var ReactDefaultBatchingStrategy = __webpack_require__(129);
+var ReactEventListener = __webpack_require__(133);
+var ReactInjection = __webpack_require__(135);
+var ReactReconcileTransaction = __webpack_require__(141);
+var SVGDOMPropertyConfig = __webpack_require__(146);
+var SelectEventPlugin = __webpack_require__(147);
+var SimpleEventPlugin = __webpack_require__(148);
 
 var alreadyInjected = false;
 
@@ -16569,7 +16435,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 133 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16594,7 +16460,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 134 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16632,7 +16498,7 @@ var ReactEventEmitterMixin = {
 module.exports = ReactEventEmitterMixin;
 
 /***/ }),
-/* 135 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16657,7 +16523,7 @@ var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(10);
 
 var getEventTarget = __webpack_require__(44);
-var getUnboundedScrollPosition = __webpack_require__(94);
+var getUnboundedScrollPosition = __webpack_require__(92);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -16792,7 +16658,7 @@ var ReactEventListener = {
 module.exports = ReactEventListener;
 
 /***/ }),
-/* 136 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16831,7 +16697,7 @@ var ReactHostOperationHistoryHook = {
 module.exports = ReactHostOperationHistoryHook;
 
 /***/ }),
-/* 137 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16852,7 +16718,7 @@ var EventPluginHub = __webpack_require__(21);
 var EventPluginUtils = __webpack_require__(35);
 var ReactComponentEnvironment = __webpack_require__(38);
 var ReactEmptyComponent = __webpack_require__(62);
-var ReactBrowserEventEmitter = __webpack_require__(27);
+var ReactBrowserEventEmitter = __webpack_require__(26);
 var ReactHostComponent = __webpack_require__(64);
 var ReactUpdates = __webpack_require__(10);
 
@@ -16870,7 +16736,7 @@ var ReactInjection = {
 module.exports = ReactInjection;
 
 /***/ }),
-/* 138 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16913,7 +16779,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 139 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16929,7 +16795,7 @@ module.exports = ReactInvalidSetStateWarningHook;
 
 
 
-var adler32 = __webpack_require__(161);
+var adler32 = __webpack_require__(159);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -16968,7 +16834,7 @@ var ReactMarkupChecksum = {
 module.exports = ReactMarkupChecksum;
 
 /***/ }),
-/* 140 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16992,10 +16858,10 @@ var ReactInstrumentation = __webpack_require__(8);
 
 var ReactCurrentOwner = __webpack_require__(11);
 var ReactReconciler = __webpack_require__(18);
-var ReactChildReconciler = __webpack_require__(112);
+var ReactChildReconciler = __webpack_require__(110);
 
 var emptyFunction = __webpack_require__(9);
-var flattenChildren = __webpack_require__(165);
+var flattenChildren = __webpack_require__(163);
 var invariant = __webpack_require__(1);
 
 /**
@@ -17424,7 +17290,7 @@ module.exports = ReactMultiChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 141 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17524,7 +17390,7 @@ module.exports = ReactOwner;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 142 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17555,7 +17421,7 @@ module.exports = ReactPropTypeLocationNames;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 143 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17575,10 +17441,10 @@ var _assign = __webpack_require__(4);
 
 var CallbackQueue = __webpack_require__(58);
 var PooledClass = __webpack_require__(14);
-var ReactBrowserEventEmitter = __webpack_require__(27);
+var ReactBrowserEventEmitter = __webpack_require__(26);
 var ReactInputSelection = __webpack_require__(65);
 var ReactInstrumentation = __webpack_require__(8);
-var Transaction = __webpack_require__(29);
+var Transaction = __webpack_require__(28);
 var ReactUpdateQueue = __webpack_require__(40);
 
 /**
@@ -17739,7 +17605,7 @@ module.exports = ReactReconcileTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 144 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17756,7 +17622,7 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ReactOwner = __webpack_require__(141);
+var ReactOwner = __webpack_require__(139);
 
 var ReactRef = {};
 
@@ -17833,7 +17699,7 @@ ReactRef.detachRefs = function (instance, element) {
 module.exports = ReactRef;
 
 /***/ }),
-/* 145 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17852,9 +17718,9 @@ module.exports = ReactRef;
 var _assign = __webpack_require__(4);
 
 var PooledClass = __webpack_require__(14);
-var Transaction = __webpack_require__(29);
+var Transaction = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(8);
-var ReactServerUpdateQueue = __webpack_require__(146);
+var ReactServerUpdateQueue = __webpack_require__(144);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -17929,7 +17795,7 @@ module.exports = ReactServerRenderingTransaction;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 146 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18074,7 +17940,7 @@ module.exports = ReactServerUpdateQueue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 147 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18093,7 +17959,7 @@ module.exports = ReactServerUpdateQueue;
 module.exports = '15.4.2';
 
 /***/ }),
-/* 148 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18400,7 +18266,7 @@ Object.keys(ATTRS).forEach(function (key) {
 module.exports = SVGDOMPropertyConfig;
 
 /***/ }),
-/* 149 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18596,7 +18462,7 @@ var SelectEventPlugin = {
 module.exports = SelectEventPlugin;
 
 /***/ }),
-/* 150 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18618,17 +18484,17 @@ var _prodInvariant = __webpack_require__(3);
 var EventListener = __webpack_require__(54);
 var EventPropagators = __webpack_require__(22);
 var ReactDOMComponentTree = __webpack_require__(5);
-var SyntheticAnimationEvent = __webpack_require__(151);
-var SyntheticClipboardEvent = __webpack_require__(152);
+var SyntheticAnimationEvent = __webpack_require__(149);
+var SyntheticClipboardEvent = __webpack_require__(150);
 var SyntheticEvent = __webpack_require__(12);
-var SyntheticFocusEvent = __webpack_require__(155);
-var SyntheticKeyboardEvent = __webpack_require__(157);
-var SyntheticMouseEvent = __webpack_require__(28);
-var SyntheticDragEvent = __webpack_require__(154);
-var SyntheticTouchEvent = __webpack_require__(158);
-var SyntheticTransitionEvent = __webpack_require__(159);
+var SyntheticFocusEvent = __webpack_require__(153);
+var SyntheticKeyboardEvent = __webpack_require__(155);
+var SyntheticMouseEvent = __webpack_require__(27);
+var SyntheticDragEvent = __webpack_require__(152);
+var SyntheticTouchEvent = __webpack_require__(156);
+var SyntheticTransitionEvent = __webpack_require__(157);
 var SyntheticUIEvent = __webpack_require__(24);
-var SyntheticWheelEvent = __webpack_require__(160);
+var SyntheticWheelEvent = __webpack_require__(158);
 
 var emptyFunction = __webpack_require__(9);
 var getEventCharCode = __webpack_require__(42);
@@ -18830,7 +18696,7 @@ module.exports = SimpleEventPlugin;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 151 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18874,7 +18740,7 @@ SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 module.exports = SyntheticAnimationEvent;
 
 /***/ }),
-/* 152 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18917,7 +18783,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 /***/ }),
-/* 153 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18958,7 +18824,7 @@ SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface
 module.exports = SyntheticCompositionEvent;
 
 /***/ }),
-/* 154 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18974,7 +18840,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(28);
+var SyntheticMouseEvent = __webpack_require__(27);
 
 /**
  * @interface DragEvent
@@ -18999,7 +18865,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 module.exports = SyntheticDragEvent;
 
 /***/ }),
-/* 155 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19040,7 +18906,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 module.exports = SyntheticFocusEvent;
 
 /***/ }),
-/* 156 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19082,7 +18948,7 @@ SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 module.exports = SyntheticInputEvent;
 
 /***/ }),
-/* 157 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19101,7 +18967,7 @@ module.exports = SyntheticInputEvent;
 var SyntheticUIEvent = __webpack_require__(24);
 
 var getEventCharCode = __webpack_require__(42);
-var getEventKey = __webpack_require__(166);
+var getEventKey = __webpack_require__(164);
 var getEventModifierState = __webpack_require__(43);
 
 /**
@@ -19171,7 +19037,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 module.exports = SyntheticKeyboardEvent;
 
 /***/ }),
-/* 158 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19221,7 +19087,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 module.exports = SyntheticTouchEvent;
 
 /***/ }),
-/* 159 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19265,7 +19131,7 @@ SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 module.exports = SyntheticTransitionEvent;
 
 /***/ }),
-/* 160 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19281,7 +19147,7 @@ module.exports = SyntheticTransitionEvent;
 
 
 
-var SyntheticMouseEvent = __webpack_require__(28);
+var SyntheticMouseEvent = __webpack_require__(27);
 
 /**
  * @interface WheelEvent
@@ -19324,7 +19190,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 module.exports = SyntheticWheelEvent;
 
 /***/ }),
-/* 161 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19373,7 +19239,7 @@ function adler32(data) {
 module.exports = adler32;
 
 /***/ }),
-/* 162 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19391,7 +19257,7 @@ module.exports = adler32;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypeLocationNames = __webpack_require__(142);
+var ReactPropTypeLocationNames = __webpack_require__(140);
 var ReactPropTypesSecret = __webpack_require__(68);
 
 var invariant = __webpack_require__(1);
@@ -19466,7 +19332,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 163 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19551,7 +19417,7 @@ module.exports = dangerousStyleValue;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 164 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19617,7 +19483,7 @@ module.exports = findDOMNode;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 165 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19699,7 +19565,7 @@ module.exports = flattenChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 166 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19806,7 +19672,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 /***/ }),
-/* 167 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19852,7 +19718,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 168 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19878,7 +19744,7 @@ function getNextDebugID() {
 module.exports = getNextDebugID;
 
 /***/ }),
-/* 169 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19957,7 +19823,7 @@ function getNodeForCharacterOffset(root, offset) {
 module.exports = getNodeForCharacterOffset;
 
 /***/ }),
-/* 170 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20063,7 +19929,7 @@ function getVendorPrefixedEventName(eventName) {
 module.exports = getVendorPrefixedEventName;
 
 /***/ }),
-/* 171 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20079,7 +19945,7 @@ module.exports = getVendorPrefixedEventName;
 
 
 
-var escapeTextContentForBrowser = __webpack_require__(30);
+var escapeTextContentForBrowser = __webpack_require__(29);
 
 /**
  * Escapes attribute value to prevent scripting attacks.
@@ -20094,7 +19960,7 @@ function quoteAttributeValueForBrowser(value) {
 module.exports = quoteAttributeValueForBrowser;
 
 /***/ }),
-/* 172 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20115,7 +19981,7 @@ var ReactMount = __webpack_require__(66);
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ }),
-/* 173 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20179,7 +20045,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 174 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20297,7 +20163,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 175 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20313,11 +20179,11 @@ module.exports = PooledClass;
 
 
 
-var PooledClass = __webpack_require__(174);
+var PooledClass = __webpack_require__(172);
 var ReactElement = __webpack_require__(15);
 
 var emptyFunction = __webpack_require__(9);
-var traverseAllChildren = __webpack_require__(183);
+var traverseAllChildren = __webpack_require__(181);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -20493,7 +20359,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 /***/ }),
-/* 176 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21216,7 +21082,7 @@ module.exports = ReactClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 177 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21392,7 +21258,7 @@ module.exports = ReactDOMFactories;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 178 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21832,7 +21698,7 @@ module.exports = ReactPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 179 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21879,7 +21745,7 @@ ReactPureComponent.prototype.isPureReactComponent = true;
 module.exports = ReactPureComponent;
 
 /***/ }),
-/* 180 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21898,7 +21764,7 @@ module.exports = ReactPureComponent;
 module.exports = '15.4.2';
 
 /***/ }),
-/* 181 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21991,7 +21857,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 182 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22035,7 +21901,7 @@ module.exports = onlyChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 183 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22058,7 +21924,7 @@ var REACT_ELEMENT_TYPE = __webpack_require__(78);
 
 var getIteratorFn = __webpack_require__(52);
 var invariant = __webpack_require__(1);
-var KeyEscapeUtils = __webpack_require__(173);
+var KeyEscapeUtils = __webpack_require__(171);
 var warning = __webpack_require__(2);
 
 var SEPARATOR = '.';
@@ -22217,7 +22083,7 @@ module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 184 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22225,11 +22091,11 @@ module.exports = traverseAllChildren;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(25);
+var _react = __webpack_require__(31);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(85);
+var _reactDom = __webpack_require__(84);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -22237,15 +22103,11 @@ var _dot = __webpack_require__(81);
 
 var _dot2 = _interopRequireDefault(_dot);
 
-var _frame = __webpack_require__(82);
-
-var _frame2 = _interopRequireDefault(_frame);
-
-var _name = __webpack_require__(83);
+var _name = __webpack_require__(82);
 
 var _name2 = _interopRequireDefault(_name);
 
-var _utils = __webpack_require__(84);
+var _utils = __webpack_require__(83);
 
 var _Carol = __webpack_require__(53);
 
@@ -22266,24 +22128,33 @@ var Main = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
 
 		_this.state = {
-			input: "belivet",
-			colorClicked: "#323a17"
+			input: [{ name: "belivet", opacity: 0.2 }, { name: "richard", opacity: 0.8 }]
 		};
 
-		_this.clickColor = _this.clickColor.bind(_this);
 		_this.clickNames = _this.clickNames.bind(_this);
 		return _this;
 	}
 
 	_createClass(Main, [{
-		key: 'clickColor',
-		value: function clickColor(color) {
-			this.setState({ colorClicked: color });
-		}
-	}, {
 		key: 'clickNames',
 		value: function clickNames(word) {
-			this.setState({ input: word });
+			var newInput = this.state.input;
+			if (word != newInput[0].name && word != newInput[1].name) {
+				newInput[0].name = newInput[1].name;
+				newInput[0].opacity = newInput[1].opacity;
+				newInput[1].name = word;
+				newInput[1].opacity = 1.0;
+
+				this.setState({ input: newInput });
+			}
+		}
+	}, {
+		key: 'handleOpacity',
+		value: function handleOpacity(num, event) {
+			var newInput = this.state.input;
+			newInput[Number(num)].opacity = event.target.value / 100;
+
+			this.setState({ input: newInput });
 		}
 	}, {
 		key: 'render',
@@ -22292,8 +22163,8 @@ var Main = function (_React$Component) {
 				height: this.props.height,
 				width: this.props.width / 2.2
 			};
-			var found = (0, _utils.searchKeyWords)(_Carol.wordColor, this.state.input.toLowerCase());
-
+			var found0 = (0, _utils.searchKeyWords)(_Carol.wordColor, this.state.input[0].name.toLowerCase());
+			var found1 = (0, _utils.searchKeyWords)(_Carol.wordColor, this.state.input[1].name.toLowerCase());
 			return _react2.default.createElement(
 				'div',
 				{ className: 'main' },
@@ -22314,16 +22185,36 @@ var Main = function (_React$Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'keyword' },
-							this.state.input.toUpperCase()
-						)
+							this.state.input[0].name.toUpperCase()
+						),
+						_react2.default.createElement('input', { type: 'range',
+							min: '0', max: '100',
+							step: '1',
+							value: this.state.input[0].opacity * 100,
+							onChange: this.handleOpacity.bind(this, '0') }),
+						'and',
+						_react2.default.createElement(
+							'div',
+							{ className: 'keyword' },
+							this.state.input[1].name.toUpperCase()
+						),
+						_react2.default.createElement('input', { type: 'range',
+							min: '0', max: '100',
+							step: '1',
+							value: this.state.input[1].opacity * 100,
+							onChange: this.handleOpacity.bind(this, '1') })
 					),
 					_react2.default.createElement(
 						'svg',
 						{ width: this.props.width, height: this.props.height },
-						_react2.default.createElement(_dot2.default, { arrColor: found == undefined ? [] : found,
+						_react2.default.createElement(_dot2.default, { arrColor: found0 == undefined ? [] : found0,
+							opacity: this.state.input[0].opacity,
 							center: [300, 300],
-							radius: 300,
-							callback: this.clickColor })
+							radius: 300 }),
+						_react2.default.createElement(_dot2.default, { arrColor: found1 == undefined ? [] : found1,
+							opacity: this.state.input[1].opacity,
+							center: [300, 300],
+							radius: 300 })
 					),
 					_react2.default.createElement(_name2.default, { callback: this.clickNames })
 				),
@@ -22348,8 +22239,6 @@ var Main = function (_React$Component) {
 					_react2.default.createElement('br', null),
 					'You can now try to click on different name above and see the beautiful colors associate with them. And you can also click on the color dot to see all the frames that contain this color. (Notice: some general color may be contained in lots of frames and the frame list will be really long.)'
 				),
-				_react2.default.createElement(_frame2.default, { width: this.props.width,
-					colorClicked: this.state.colorClicked }),
 				_react2.default.createElement(
 					'div',
 					{ id: 'separate' },

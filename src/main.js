@@ -10,26 +10,42 @@ class Main extends React.Component{
 		width: 600, height: 600
 	};
 
-	constructor(props){
+	constructor(props) {
 		super(props);
 		this.state = {
-			input: "belivet"
+			input: [{name: "belivet", opacity: 0.2}, 
+					{name: "richard", opacity: 0.8}]
 		};
 
 		this.clickNames = this.clickNames.bind(this);
 	}
 
-	clickNames(word){
-		this.setState({input: word});
+	clickNames(word) {
+		let newInput = this.state.input;
+		if( (word!=newInput[0].name) && (word!=newInput[1].name) ){
+			newInput[0].name = newInput[1].name;
+			newInput[0].opacity = newInput[1].opacity;
+			newInput[1].name = word;
+			newInput[1].opacity = 1.0;
+
+			this.setState({input: newInput});
+		}
 	}
 
-	render(){
+	handleOpacity(num, event) {
+		let newInput = this.state.input;
+		newInput[Number(num)].opacity = event.target.value / 100;
+
+		this.setState({input: newInput});
+	}
+
+	render() {
 		let style = {
 			height: this.props.height,
 			width: this.props.width / 2.2
 		};
-		let found = searchKeyWords(wordColor, this.state.input.toLowerCase());
-
+		let found0 = searchKeyWords(wordColor, this.state.input[0].name.toLowerCase());
+		let found1 = searchKeyWords(wordColor, this.state.input[1].name.toLowerCase());
 		return(
 			<div className="main">
 
@@ -38,12 +54,32 @@ class Main extends React.Component{
 					<div className="discribe" style={style}>
 						The color<br/>when<br/>they talk<br/>about<br/>
 						<div className="keyword">
-							{this.state.input.toUpperCase()}
+							{this.state.input[0].name.toUpperCase()}
 						</div>
+						<input type="range" 
+						       min="0" max="100" 
+						       step="1" 
+						       value={this.state.input[0].opacity * 100}
+						       onChange={this.handleOpacity.bind(this, '0')} />
+						and
+						<div className="keyword">
+							{this.state.input[1].name.toUpperCase()}
+						</div>
+						<input type="range" 
+						       min="0" max="100" 
+						       step="1" 
+						       value={this.state.input[1].opacity * 100}
+						       onChange={this.handleOpacity.bind(this, '1')} />
 					</div>
 
 					<svg width={this.props.width} height={this.props.height}>
-						<Dot arrColor={ (found==undefined)?[]:found}
+						<Dot arrColor={ (found0==undefined)?[]:found0}
+		  					 opacity={this.state.input[0].opacity} 
+		  					 center={[300, 300]}
+		  					 radius={300} />
+
+		  				<Dot arrColor={ (found1==undefined)?[]:found1}
+		  					 opacity={this.state.input[1].opacity} 
 		  					 center={[300, 300]}
 		  					 radius={300} />
 					</svg>

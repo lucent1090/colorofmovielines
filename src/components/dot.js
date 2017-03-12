@@ -36,7 +36,8 @@ class Dot extends React.Component{
 		  				cx={coord.x}
 		  				cy={coord.y}
 		  				r={10}
-		  				fill={val} />
+		  				fill={val}
+		  				fillOpacity={this.props.opacity} />
 		  	);
 		});
 		return(
