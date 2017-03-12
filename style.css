@@ -68,19 +68,6 @@ html, body {
 	margin-left: 8px;
 }
 
-.relatedFrames {
-	position: static;
-	margin: 0 auto;
-}
-.relatedFrames .frames {
-	margin: 0 auto;
-	text-align: left;
-}
-.relatedFrames svg {
-	position: relative;
-	left: -55%;
-}
-
 .intro {
 	width: 60%;
 	color: #444444;

@@ -11,10 +11,6 @@ class Dot extends React.Component{
 		this.getCoord = this.getCoord.bind(this);
 	}
 
-	handleClick(val){
-		this.props.callback(val);
-	}
-
   	getCoord(angle, radius){
 		let x, y;
 		let { center } = this.props;
@@ -40,8 +36,7 @@ class Dot extends React.Component{
 		  				cx={coord.x}
 		  				cy={coord.y}
 		  				r={10}
-		  				fill={val}
-		  				onClick={this.handleClick.bind(this, val)} />
+		  				fill={val} />
 		  	);
 		});
 		return(

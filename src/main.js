@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Dot from './components/dot.js';
-import ShowFrame from './components/frame.js';
 import ShowName from './components/name.js';
 import { searchKeyWords } from './utils/utils.js';
 import { wordColor } from './data/Carol1.js';
@@ -14,16 +13,10 @@ class Main extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			input: "belivet",
-			colorClicked: "#323a17"
+			input: "belivet"
 		};
 
-		this.clickColor = this.clickColor.bind(this);
 		this.clickNames = this.clickNames.bind(this);
-	}
-
-	clickColor(color){
-		this.setState({colorClicked: color});
 	}
 
 	clickNames(word){
@@ -52,8 +45,7 @@ class Main extends React.Component{
 					<svg width={this.props.width} height={this.props.height}>
 						<Dot arrColor={ (found==undefined)?[]:found}
 		  					 center={[300, 300]}
-		  					 radius={300}
-		  					 callback={this.clickColor} />
+		  					 radius={300} />
 					</svg>
 
 					<ShowName callback={this.clickNames} />
@@ -75,8 +67,6 @@ class Main extends React.Component{
 				<br/>
 				You can now try to click on different name above and see the beautiful colors associate with them. And you can also click on the color dot to see all the frames that contain this color. (Notice: some general color may be contained in lots of frames and the frame list will be really long.) 
 				</div>
-				<ShowFrame width={this.props.width}
-						   colorClicked={this.state.colorClicked} />
 
 				<div id="separate">
 				HOW WE PRESENT THE COLOR
