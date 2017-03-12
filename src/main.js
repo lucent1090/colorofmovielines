@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Dot from './components/dot.js';
+import ReactTransitionGroup from 'react-addons-transition-group';
+import AnimateDots from './components/animateDots.js';
 import ShowFrame from './components/frame.js';
 import ShowName from './components/name.js';
-import { searchKeyWords } from './utils/utils.js';
+import { searchKeyWords, searchFrameColors } from './utils/utils.js';
 import { wordColor } from './data/Carol1.js';
+import { wordFrameColor } from './data/Carol3.js';
 
 class Main extends React.Component{
 	static defaultProps = {
@@ -15,11 +17,39 @@ class Main extends React.Component{
 		super(props);
 		this.state = {
 			input: "belivet",
-			colorClicked: "#323a17"
+			colorClicked: "#323a17",
+			isPlaying: false,
+			nFrame: 0,
+			totalFrame: 0
 		};
 
 		this.clickColor = this.clickColor.bind(this);
 		this.clickNames = this.clickNames.bind(this);
+		this.play = this.play.bind(this);
+		this.getColors = this.getColors.bind(this);
+		
+	}
+
+	getColors() {
+		let num = this.state.nFrame;
+		if( num == this.state.totalFrame - 1 ){
+			clearInterval(this.interval);
+
+			this.setState({isPlaying: false});
+			this.setState({nFrame: 0});
+		}else{
+			this.setState({nFrame: num+1});
+		}
+	}
+
+	play() {
+		let found = searchFrameColors(wordFrameColor, this.state.input.toLowerCase());
+
+		this.setState({isPlaying: true});
+		this.setState({totalFrame: found.length});
+		this.setState({nFrame: 0});
+
+		this.interval = setInterval(this.getColors, 2000);
 	}
 
 	clickColor(color){
@@ -35,7 +65,16 @@ class Main extends React.Component{
 			height: this.props.height,
 			width: this.props.width / 2.2
 		};
-		let found = searchKeyWords(wordColor, this.state.input.toLowerCase());
+
+		let found = undefined;
+		if( this.state.isPlaying ){
+			let arr = searchFrameColors(wordFrameColor, this.state.input.toLowerCase());
+			if(arr!=undefined){
+				found = arr[this.state.nFrame].color;
+			}
+		}else{
+			found = searchKeyWords(wordColor, this.state.input.toLowerCase());
+		}
 
 		return(
 			<div className="main">
@@ -47,14 +86,17 @@ class Main extends React.Component{
 						<div className="keyword">
 							{this.state.input.toUpperCase()}
 						</div>
+						<button className="playframes" onClick={this.play}>
+							Play Frames
+						</button>
 					</div>
 
-					<svg width={this.props.width} height={this.props.height}>
-						<Dot arrColor={ (found==undefined)?[]:found}
-		  					 center={[300, 300]}
-		  					 radius={300}
-		  					 callback={this.clickColor} />
-					</svg>
+					<ReactTransitionGroup>
+						<AnimateDots key={found} 
+									 height={this.props.height}
+									 width={this.props.width}
+									 colors={found} />
+					</ReactTransitionGroup>
 
 					<ShowName callback={this.clickNames} />
 

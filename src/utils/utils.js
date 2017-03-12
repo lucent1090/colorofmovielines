@@ -8,6 +8,18 @@ export function searchKeyWords(wordColor, word){
 	return found;
 }
 
+export function searchFrameColors(wordFrameColor, word){
+	let found = undefined;
+	wordFrameColor.map((val, idx) => {
+		if( word == val.keyword ){
+			found = val.arr;
+		}
+	});
+
+	return found;
+}
+
+
 Array.prototype.indexOfKeyword = function (word, arr) {
 	let index = undefined;
 	arr.map((val, idx) => {

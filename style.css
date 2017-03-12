@@ -28,6 +28,9 @@ html, body {
 	color: #82A0BC;
 	margin-top: 10px;
 }
+.graph .discribe .playframes{
+	font-size: 25px;
+}
 .graph svg {
 	display: inline-block;
 	vertical-align: top;
@@ -107,4 +110,21 @@ html, body {
 	line-height: 36px;
 	font-weight: 300;
 	font-size: 18px;
+}
+
+.fadeIn {
+	animation-name: In;
+	animation-duration: 2s;
+}
+@keyframes In {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+}
+.fadeOut {
+	animation-name: Out;
+	animation-duration: 1s;
+}
+@keyframes Out {
+  0%   { opacity:1; }
+  100% { opacity:0; }
 }
