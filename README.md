@@ -12,4 +12,4 @@ A small project try to understand the movie Carol arrange the color related to t
 * ES6 using Babel
 * Webpack
 
-![image]()
+![image](https://github.com/lucent1090/colorofmovielines/blob/master/screenshots/chrome.png)
