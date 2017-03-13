@@ -1,2 +1,15 @@
-# colorofmovielines
-The color of movie lines
+# The Color in Carol
+A small project try to understand the movie Carol arrange the color related to the main actor/actress.
+
+## To Run:
+1. Install npm
+2. Run 'npm install'
+3. Run 'webpack'
+4. Open index.html with browser
+
+## Build with:
+* React
+* ES6 using Babel
+* Webpack
+
+![image]()

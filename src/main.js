@@ -14,9 +14,9 @@ class Main extends React.Component{
 	constructor(props) {
 		super(props);
 		this.state = {
-			language: 'en',
-			input: [{name: "belivet", opacity: 0.2}, 
-					{name: "richard", opacity: 0.8}]
+			language: 'cht',
+			input: [{name: "belivet", opacity: 0.9}, 
+					{name: "richard", opacity: 0.1}]
 		};
 
 		this.clickNames = this.clickNames.bind(this);
