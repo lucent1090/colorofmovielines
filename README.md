@@ -1,7 +1,7 @@
 # The Color in Carol
 A small project try to understand the movie Carol arrange the color related to the main actor/actress.
 
-## Demo Link: [Here](https://lucent1090.github.io/colorofmovielines/)
+Demo Link: [Here](https://lucent1090.github.io/colorofmovielines/)
 
 ## To Run:
 1. Install npm
