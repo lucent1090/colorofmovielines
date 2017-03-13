@@ -21,7 +21,7 @@ export const content = [
 		'en': "MCCQ algorithm works based on the RGB color space, which means it's on a 3-dimension world. To show the color in 2-dimension world, we decide to use the concept of color ring by converting the RGB color to HSV (Hue, Saturation, Value) color space. "
 	},
 	{
-		'cht': "針對每一個顏色圖中的顏色，根據 HSV 的定義，我們利用色相作為角度，飽和度決定半徑大小，在顏色環中上色，HSV 顏色空間中，明亮度是第三個維度，在這裡我們沒有劃上第三個維度，而是將原本的顏色直接呈現，以表達明亮度",
+		'cht': "針對每一個顏色圖中的顏色，根據 HSV 的定義，我們利用色相作為角度，飽和度決定半徑大小，在顏色環中上色，HSV 顏色空間中，明亮度是第三個維度，在這裡我們沒有畫上第三個維度，而是將原本的顏色直接呈現，以表達明亮度",
 		'en': "For each RGB color vector, we will have a correspondent HSV color vector. Then we use the hue as the degree and the saturation as the radius in our color ring. (This part is exactly same as the definition of HSV color space) The value, which also called the brightness in color space, will not be shown in the color ring coordinate but directly shown in the color of each dot. "
 	}
 ];
